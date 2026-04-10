@@ -181,6 +181,28 @@
 
 .archive-notice a { color: var(--gold); }
 
+/* ── Suggest Edit ── */
+.suggest-edit {
+  margin-top: 20px;
+}
+
+.suggest-edit-link {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  padding: 6px 14px;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.suggest-edit-link:hover {
+  color: var(--gold);
+  border-color: var(--gold-dark);
+}
+
 /* ── Responsive ── */
 @media (max-width: 640px) {
   .article-toc {

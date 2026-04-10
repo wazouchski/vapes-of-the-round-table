@@ -143,11 +143,26 @@
     <p class="archive-notice">
       Content sourced from archived community discussions, preserved via the <a href="https://web.archive.org">Internet Archive Wayback Machine</a>. This wiki preserves community knowledge that would otherwise be lost.
     </p>
+    <div class="suggest-edit">
+      <a id="suggest-edit-btn" class="suggest-edit-link" href="#" target="_blank" rel="noopener">
+        ✏️ Suggest an edit or correction
+      </a>
+    </div>
   </footer>
 </div>
 </main>
 <script>
 // Build TOC from headers
+// Pre-fill Google Form with current page URL
+(function() {
+  var btn = document.getElementById('suggest-edit-btn');
+  if (btn) {
+    var pageUrl = encodeURIComponent(window.location.href);
+    var base = 'https://docs.google.com/forms/d/e/GOOGLE_FORM_ID/viewform';
+    btn.href = base + '?entry.PAGE_URL_ENTRY_ID=' + pageUrl + '&usp=pp_url';
+  }
+})();
+
 (function() {
   var toc = document.getElementById('toc');
   var headers = document.querySelectorAll('.article-body h2');
