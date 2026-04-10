@@ -284,7 +284,7 @@ footer a:hover { color: var(--gold); }
   transform: translateY(-3px);
 }
 
-.artisan-card.sponsored {
+.artisan-card.donor {
   border-color: var(--gold-dark);
   background: linear-gradient(135deg, var(--card-bg) 0%, #252040 100%);
 }
@@ -322,7 +322,7 @@ footer a:hover { color: var(--gold); }
   letter-spacing: 0.05em;
 }
 
-.sponsored-badge {
+.donor-badge {
   float: right;
   background: rgba(233,196,106,0.1);
   border: 1px solid var(--gold-dark);
