@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Compendium — Vapes of the Round Table</title>
+  <meta name="description" content="Community-preserved dry herb vaporizer knowledge from FuckCombustion.com.">
+  <link rel="stylesheet" href="../assets/style.css">
+  <style>
+    .search-bar {
+      display: flex;
+      max-width: 480px;
+      margin: 0 auto 48px;
+    }
+    .search-bar input {
+      flex: 1;
+      padding: 12px 18px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-right: none;
+      border-radius: 6px 0 0 6px;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      outline: none;
+    }
+    .search-bar input::placeholder { color: var(--text-muted); }
+    .search-bar input:focus { border-color: var(--gold-dark); }
+    .search-bar button {
+      padding: 12px 20px;
+      background: var(--gold);
+      border: none;
+      border-radius: 0 6px 6px 0;
+      color: var(--deep-navy);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-family: var(--font-body);
+    }
+
+    .model-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .model-card {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color var(--transition), transform var(--transition);
+    }
+
+    .model-card:hover {
+      border-color: var(--gold-dark);
+      transform: translateY(-3px);
+      color: var(--text);
+    }
+
+    .model-card h3 {
+      font-family: var(--font-title);
+      font-size: 1rem;
+      color: var(--white);
+      margin-bottom: 6px;
+    }
+
+    .model-card .thread-meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+    }
+
+    .model-card .read-more {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .pipeline-status {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .pipeline-status h3 {
+      font-family: var(--font-title);
+      color: var(--white);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+
+    .stat-row {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: var(--font-title);
+      font-size: 1.6rem;
+      color: var(--gold);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="../index.html" class="nav-logo">Vapes of the Round Table</a>
+  <ul class="nav-links">
+    <li><a href="https://muddyriverworkshop.com/vapes-of-the-round-table/" target="_blank">Reviews</a></li>
+    <li><a href="index.html" class="active">Compendium</a></li>
+    <li><a href="../artisans.html">Artisans</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <h1>The Compendium</h1>
+    <div class="page-divider"></div>
+    <p>
+      Fifteen years of community wisdom from FuckCombustion.com, preserved by vaporizer model.
+      Temperatures, techniques, maintenance, comparisons &mdash; rescued from the archive.
+    </p>
+  </div>
+
+  <!-- Pipeline status bar -->
+  <div class="pipeline-status">
+    <div>
+      <h3>Archive Processing Status</h3>
+      <p style="font-size:0.8rem; color: var(--text-muted); max-width: 320px;">
+        Processing 30,829 FC threads. More articles added as models are classified and synthesized.
+      </p>
+    </div>
+    <div class="stat-row">
+      <div class="stat">
+        <span class="stat-num">30,829</span>
+        <span class="stat-label">Threads Found</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">82</span>
+        <span class="stat-label">Extracted</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">11</span>
+        <span class="stat-label">Articles Live</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search-bar">
+    <input type="text" id="search" placeholder="Search models... (e.g. Mighty, Dynavap, Arizer)" oninput="filterModels()">
+    <button>Search</button>
+  </div>
+
+  <!-- Model grid -->
+  <div class="model-cards" id="model-grid">
+
+    <a class="model-card" href="grasshopper.html">
+      <h3>Grasshopper (Hopper Labs)</h3>
+      <p class="thread-meta">8 source threads &middot; tips, comparisons, troubleshooting</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="mighty.html">
+      <h3>Storz &amp; Bickel Mighty</h3>
+      <p class="thread-meta">7 source threads &middot; tips, comparisons, accessories</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-extreme-q.html">
+      <h3>Arizer Extreme Q</h3>
+      <p class="thread-meta">6 source threads &middot; tips, comparisons, bags vs whip</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="volcano-classic.html">
+      <h3>Volcano Classic (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">4 source threads &middot; bag technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="volcano.html">
+      <h3>Volcano (General)</h3>
+      <p class="thread-meta">4 source threads &middot; technique, accessories, vapor density</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-solo-2.html">
+      <h3>Arizer Solo 2</h3>
+      <p class="thread-meta">4 source threads &middot; tips, WPA, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-solo.html">
+      <h3>Arizer Solo</h3>
+      <p class="thread-meta">3 source threads &middot; glass stems, accessories, technique</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="storz-bickel-mighty.html">
+      <h3>Mighty+ (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">3 source threads &middot; troubleshooting, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-air-2.html">
+      <h3>Arizer Air 2</h3>
+      <p class="thread-meta">2 source threads &middot; comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="sticky-brick-runt.html">
+      <h3>Sticky Brick Runt</h3>
+      <p class="thread-meta">2 source threads &middot; butane technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="angus-vaporizer.html">
+      <h3>Angus (YLLVAPE)</h3>
+      <p class="thread-meta">1 source thread &middot; vs Mighty comparison, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    &copy; 2025 Vapes of the Round Table &nbsp;&middot;&nbsp;
+    Part of <a href="https://muddyriverworkshop.com" target="_blank">Muddy River Workshop</a>
+    &nbsp;&middot;&nbsp;
+    Source: <a href="https://web.archive.org/web/*/fuckcombustion.com/" target="_blank">FC Archive</a>
+  </p>
+</footer>
+
+<script>
+function filterModels() {
+  var q = document.getElementById('search').value.toLowerCase();
+  var cards = document.querySelectorAll('.model-card');
+  cards.forEach(function(card) {
+    var text = card.textContent.toLowerCase();
+    card.classList.toggle('hidden', q.length > 0 && !text.includes(q));
+  });
+}
+</script>
+
+</body>
+</html>
