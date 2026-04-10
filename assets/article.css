@@ -1,0 +1,191 @@
+/* ============================================================
+   Compendium Article Pages
+   Extends the base style.css with article-specific layout
+   ============================================================ */
+
+.article-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.article-title {
+  font-family: var(--font-title);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--white);
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 12px;
+  margin-bottom: 10px;
+}
+
+.article-meta {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 24px;
+}
+
+.article-meta a { color: var(--gold); }
+
+/* ── TOC ── */
+.article-toc {
+  float: right;
+  clear: right;
+  margin: 0 0 20px 28px;
+  padding: 16px 20px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  min-width: 200px;
+  max-width: 260px;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+}
+
+.article-toc strong {
+  display: block;
+  font-family: var(--font-title);
+  color: var(--gold);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.article-toc ol {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.article-toc li { margin: 5px 0; }
+.article-toc a { color: var(--text-muted); text-decoration: none; }
+.article-toc a:hover { color: var(--gold); }
+
+/* ── Article Body ── */
+.article-body {
+  line-height: 1.75;
+}
+
+.article-body h2 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--white);
+  border-bottom: 1px solid var(--card-border);
+  padding-bottom: 6px;
+  margin-top: 36px;
+  margin-bottom: 14px;
+  clear: both;
+}
+
+.article-body h3 {
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  color: var(--gold);
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.article-body p {
+  margin: 0.8em 0;
+  color: var(--text);
+}
+
+.article-body ul, .article-body ol {
+  padding-left: 24px;
+  margin: 0.8em 0;
+  color: var(--text);
+}
+
+.article-body li { margin: 6px 0; }
+
+.article-body strong { color: var(--white); }
+.article-body em { color: var(--text-muted); font-style: italic; }
+
+.article-body a { color: var(--gold); }
+.article-body a:hover { color: var(--gold-light); }
+
+/* ── Specs Table ── */
+.specs-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: 16px 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+}
+
+.specs-table td {
+  border: 1px solid var(--card-border);
+  padding: 8px 14px;
+  color: var(--text);
+  vertical-align: top;
+}
+
+.specs-table tr:first-child td {
+  background: var(--card-bg);
+  color: var(--gold);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.specs-table tr:nth-child(even) td {
+  background: rgba(255,255,255,0.02);
+}
+
+.specs-table td:first-child {
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+  width: 40%;
+}
+
+/* ── Article Footer ── */
+.article-footer {
+  margin-top: 56px;
+  padding-top: 24px;
+  border-top: 1px solid var(--card-border);
+  clear: both;
+}
+
+.article-footer h2 {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--white);
+  margin-bottom: 14px;
+}
+
+.source-threads {
+  list-style: none;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+}
+
+.source-threads li { margin: 8px 0; }
+.source-threads a { color: var(--gold); }
+.post-count { color: var(--text-muted); font-size: 0.8rem; }
+
+.archive-notice {
+  margin-top: 20px;
+  padding: 14px 18px;
+  background: var(--card-bg);
+  border-left: 3px solid var(--gold-dark);
+  border-radius: 0 6px 6px 0;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.archive-notice a { color: var(--gold); }
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .article-toc {
+    float: none;
+    margin: 0 0 24px 0;
+    max-width: 100%;
+  }
+}
