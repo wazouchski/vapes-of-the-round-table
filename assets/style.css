@@ -323,7 +323,7 @@ footer a:hover { color: var(--gold); }
 }
 
 .donor-badge {
-  float: right;
+  display: inline-block;
   background: rgba(233,196,106,0.1);
   border: 1px solid var(--gold-dark);
   color: var(--gold);
@@ -333,7 +333,7 @@ footer a:hover { color: var(--gold); }
   text-transform: uppercase;
   padding: 3px 7px;
   border-radius: 4px;
-  margin-top: 2px;
+  margin-bottom: 10px;
 }
 
 .artisan-cta {
