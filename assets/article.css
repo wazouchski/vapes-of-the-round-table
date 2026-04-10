@@ -181,26 +181,21 @@
 
 .archive-notice a { color: var(--gold); }
 
-/* ── Suggest Edit ── */
-.suggest-edit {
-  margin-top: 20px;
-}
-
-.suggest-edit-link {
-  display: inline-block;
+/* ── Suggest Edit (inside TOC box) ── */
+.toc-suggest-edit {
+  display: block;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid var(--card-border);
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   text-decoration: none;
-  border: 1px solid var(--card-border);
-  border-radius: 4px;
-  padding: 6px 14px;
-  transition: color 0.2s, border-color 0.2s;
+  transition: color 0.2s;
 }
 
-.suggest-edit-link:hover {
+.toc-suggest-edit:hover {
   color: var(--gold);
-  border-color: var(--gold-dark);
 }
 
 /* ── Responsive ── */

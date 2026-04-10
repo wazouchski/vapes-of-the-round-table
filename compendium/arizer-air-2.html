@@ -139,26 +139,11 @@
     <p class="archive-notice">
       Content sourced from archived community discussions, preserved via the <a href="https://web.archive.org">Internet Archive Wayback Machine</a>. This wiki preserves community knowledge that would otherwise be lost.
     </p>
-    <div class="suggest-edit">
-      <a id="suggest-edit-btn" class="suggest-edit-link" href="#" target="_blank" rel="noopener">
-        ✏️ Suggest an edit or correction
-      </a>
-    </div>
   </footer>
 </div>
 </main>
 <script>
 // Build TOC from headers
-// Pre-fill Google Form with current page URL
-(function() {
-  var btn = document.getElementById('suggest-edit-btn');
-  if (btn) {
-    var pageUrl = encodeURIComponent(window.location.href);
-    var base = 'https://docs.google.com/forms/d/e/19Hcg2QOlro2AvmOVcTp2vfDBpLUFCamPouRRoKcikQ4/viewform';
-    btn.href = base + '?entry.1148040316=' + pageUrl + '&usp=pp_url';
-  }
-})();
-
 (function() {
   var toc = document.getElementById('toc');
   var headers = document.querySelectorAll('.article-body h2');
@@ -169,7 +154,7 @@
     list += '<li><a href="#' + id + '">' + h.textContent + '</a></li>';
   });
   list += '</ol>';
-  toc.innerHTML = '<strong>Contents</strong>' + list;
+  toc.innerHTML = '<strong>Contents</strong>' + list + '<a class="toc-suggest-edit" href="https://docs.google.com/forms/d/e/19Hcg2QOlro2AvmOVcTp2vfDBpLUFCamPouRRoKcikQ4/viewform?entry.1148040316=' + encodeURIComponent(window.location.href) + '&usp=pp_url" target="_blank" rel="noopener">✏️ Suggest an edit</a>';
 })();
 </script>
 </body>
