@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="800" height="800">
+  <!-- Background -->
+  <rect width="400" height="400" fill="#0f0f1a"/>
+
+  <!-- Outer ring -->
+  <circle cx="200" cy="200" r="180" fill="none" stroke="#e9c46a" stroke-width="3"/>
+
+  <!-- Inner ring -->
+  <circle cx="200" cy="200" r="140" fill="none" stroke="#e9c46a" stroke-width="1" opacity="0.4"/>
+
+  <!-- Round table surface -->
+  <circle cx="200" cy="200" r="100" fill="#1e2235" stroke="#e9c46a" stroke-width="2.5"/>
+
+  <!-- Crossed swords -->
+  <!-- Sword 1 (top-left to bottom-right) -->
+  <g transform="rotate(-45, 200, 200)">
+    <!-- Blade -->
+    <rect x="196" y="100" width="8" height="140" rx="2" fill="#e9c46a"/>
+    <!-- Guard -->
+    <rect x="178" y="224" width="44" height="8" rx="2" fill="#c49a3a"/>
+    <!-- Handle -->
+    <rect x="196" y="232" width="8" height="36" rx="2" fill="#c49a3a"/>
+    <!-- Pommel -->
+    <circle cx="200" cy="272" r="7" fill="#e9c46a"/>
+  </g>
+
+  <!-- Sword 2 (top-right to bottom-left) -->
+  <g transform="rotate(45, 200, 200)">
+    <!-- Blade -->
+    <rect x="196" y="100" width="8" height="140" rx="2" fill="#e9c46a"/>
+    <!-- Guard -->
+    <rect x="178" y="224" width="44" height="8" rx="2" fill="#c49a3a"/>
+    <!-- Handle -->
+    <rect x="196" y="232" width="8" height="36" rx="2" fill="#c49a3a"/>
+    <!-- Pommel -->
+    <circle cx="200" cy="272" r="7" fill="#e9c46a"/>
+  </g>
+
+  <!-- Center shield/emblem -->
+  <circle cx="200" cy="200" r="18" fill="#0f0f1a" stroke="#e9c46a" stroke-width="2"/>
+  <circle cx="200" cy="200" r="10" fill="#e9c46a"/>
+
+  <!-- Small dots at compass points on outer ring -->
+  <circle cx="200" cy="22" r="5" fill="#e9c46a"/>
+  <circle cx="378" cy="200" r="5" fill="#e9c46a"/>
+  <circle cx="200" cy="378" r="5" fill="#e9c46a"/>
+  <circle cx="22" cy="200" r="5" fill="#e9c46a"/>
+
+  <!-- THE ROUND TABLE text arc (top) -->
+  <path id="topArc" d="M 50,200 A 150,150 0 0,1 350,200" fill="none"/>
+  <text font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#e9c46a" letter-spacing="4">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">THE ROUND TABLE</textPath>
+  </text>
+
+  <!-- Est. arc (bottom) -->
+  <path id="botArc" d="M 80,200 A 120,120 0 0,0 320,200" fill="none"/>
+  <text font-family="Georgia, serif" font-size="14" fill="#c49a3a" letter-spacing="3" opacity="0.85">
+    <textPath href="#botArc" startOffset="50%" text-anchor="middle">COMMUNITY · KNOWLEDGE · VAPOR</textPath>
+  </text>
+
+</svg>
