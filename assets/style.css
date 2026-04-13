@@ -531,3 +531,160 @@ footer a:hover { color: var(--gold); }
   color: var(--text-muted);
   opacity: 0.6;
 }
+
+/* ============================================================
+   BUY ME A COFFEE NAV LINK
+   ============================================================ */
+.nav-bmc {
+  background: var(--gold);
+  color: var(--charcoal) !important;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: background 0.2s, transform 0.15s;
+}
+.nav-bmc:hover {
+  background: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   SPONSORS PAGE
+   ============================================================ */
+.sponsors-section {
+  margin-bottom: 60px;
+}
+
+.sponsors-section-title {
+  font-family: var(--font-title);
+  color: var(--gold);
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.sponsors-intro {
+  color: var(--text-muted);
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: 32px;
+}
+
+.sponsor-empty {
+  background: var(--card-bg);
+  border: 1px dashed var(--card-border);
+  border-radius: 12px;
+  padding: 52px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.sponsor-empty-icon { font-size: 2.5rem; margin-bottom: 16px; }
+.sponsor-empty p { font-size: 1rem; margin-bottom: 6px; }
+.sponsor-empty-sub { font-size: 0.88rem; opacity: 0.7; }
+
+.sponsor-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.sponsor-tier {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  position: relative;
+}
+
+.sponsor-tier.featured {
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 28px rgba(233,196,106,.12);
+}
+
+.tier-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold);
+  color: var(--charcoal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.tier-icon { font-size: 1.8rem; margin-bottom: 12px; }
+
+.sponsor-tier h3 {
+  font-family: var(--font-title);
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.tier-price {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.tier-features {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.tier-features li {
+  font-size: 0.88rem;
+  color: var(--text);
+  padding-left: 18px;
+  position: relative;
+  line-height: 1.45;
+}
+
+.tier-features li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--gold-dark);
+  font-size: 0.65rem;
+  top: 3px;
+}
+
+.why-sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.why-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.why-icon { font-size: 1.6rem; margin-bottom: 10px; }
+
+.why-item h4 {
+  font-family: var(--font-title);
+  color: var(--gold);
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+
+.why-item p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
