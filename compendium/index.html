@@ -6,11 +6,12 @@
   <title>The Compendium — The Round Table</title>
   <meta name="description" content="Community-preserved dry herb vaporizer knowledge from the community archive.">
   <link rel="stylesheet" href="../assets/style.css">
+  <script defer data-domain="theroundtable.wiki" src="https://plausible.io/js/script.js"></script>
   <style>
     .search-bar {
       display: flex;
       max-width: 480px;
-      margin: 0 auto 48px;
+      margin: 0 auto 24px;
     }
     .search-bar input {
       flex: 1;
@@ -36,6 +37,34 @@
       font-size: 0.85rem;
       cursor: pointer;
       font-family: var(--font-body);
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+
+    .filter-tab {
+      padding: 8px 18px;
+      border-radius: 20px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--card-border);
+      background: transparent;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-family: var(--font-body);
+      transition: all 0.2s;
+    }
+    .filter-tab:hover { border-color: var(--gold-dark); color: var(--gold); }
+    .filter-tab.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--deep-navy);
     }
 
     .model-cards {
@@ -84,6 +113,20 @@
       text-transform: uppercase;
     }
 
+    .category-badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      background: rgba(233,196,106,0.12);
+      color: var(--gold-dark);
+      border: 1px solid rgba(233,196,106,0.2);
+    }
+
     .pipeline-status {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -109,9 +152,7 @@
       flex-wrap: wrap;
     }
 
-    .stat {
-      text-align: center;
-    }
+    .stat { text-align: center; }
 
     .stat-num {
       font-family: var(--font-title);
@@ -127,8 +168,25 @@
       letter-spacing: 0.08em;
     }
 
+    .no-results {
+      display: none;
+      grid-column: 1/-1;
+      text-align: center;
+      padding: 52px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
     .hidden { display: none !important; }
   </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSX1RMMMSL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSX1RMMMSL');
+</script>
 </head>
 <body>
 
@@ -159,20 +217,20 @@
     <div>
       <h3>Archive Processing Status</h3>
       <p style="font-size:0.8rem; color: var(--text-muted); max-width: 320px;">
-        Processing 30,829 archived threads. More articles added as models are classified and synthesized.
+        Processing 30,108 archived threads. More articles added as models are classified and synthesized.
       </p>
     </div>
     <div class="stat-row">
       <div class="stat">
-        <span class="stat-num">30,829</span>
+        <span class="stat-num">30,108</span>
         <span class="stat-label">Threads Found</span>
       </div>
       <div class="stat">
-        <span class="stat-num">1,785</span>
+        <span class="stat-num">3,450</span>
         <span class="stat-label">Extracted</span>
       </div>
       <div class="stat">
-        <span class="stat-num">36</span>
+        <span class="stat-num">50</span>
         <span class="stat-label">Articles Live</span>
       </div>
     </div>
@@ -180,216 +238,368 @@
 
   <!-- Search -->
   <div class="search-bar">
-    <input type="text" id="search" placeholder="Search models... (e.g. Mighty, Dynavap, Arizer)" oninput="filterModels()">
-    <button>Search</button>
+    <input type="text" id="search" placeholder="Search models… (e.g. Mighty, DynaVap, Arizer)" oninput="filterModels()">
+    <button onclick="filterModels()">Search</button>
+  </div>
+
+  <!-- Category filter tabs -->
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-cat="all" onclick="setCategory(this)">All</button>
+    <button class="filter-tab" data-cat="desktop" onclick="setCategory(this)">🖥 Desktop</button>
+    <button class="filter-tab" data-cat="portable-battery" onclick="setCategory(this)">🔋 Portable (Battery)</button>
+    <button class="filter-tab" data-cat="portable-torch" onclick="setCategory(this)">🔥 Portable (Torch/Butane)</button>
   </div>
 
   <!-- Model grid -->
   <div class="model-cards" id="model-grid">
 
-    <a class="model-card" href="arizer-solo.html">
-      <h3>Arizer Solo</h3>
-      <p class="thread-meta">Tips, techniques, temperature guide, accessories</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="arizer-air.html">
-      <h3>Arizer Air</h3>
-      <p class="thread-meta">Comparisons, removable batteries, stems, technique</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="arizer-extreme-q.html">
+    <!-- ── DESKTOP ── -->
+    <a class="model-card" href="arizer-extreme-q.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Arizer Extreme Q</h3>
       <p class="thread-meta">Bag vs whip, temperature guide, DDave mod, tips</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="mighty.html">
-      <h3>Mighty+ (Storz &amp; Bickel)</h3>
-      <p class="thread-meta">Tips, comparisons, cooling unit, dosing capsules</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="storz-bickel-mighty.html">
-      <h3>Mighty (Storz &amp; Bickel)</h3>
-      <p class="thread-meta">Original Mighty, hybrid heating, community reception, comparisons</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="volcano-classic.html">
+    <a class="model-card" href="volcano-classic.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Volcano Classic (Storz &amp; Bickel)</h3>
       <p class="thread-meta">Bag technique, valve systems, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="volcano.html">
+    <a class="model-card" href="volcano.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Volcano (Storz &amp; Bickel)</h3>
       <p class="thread-meta">Technique, vapor density, accessories, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="arizer-air-2.html">
-      <h3>Arizer Air 2</h3>
-      <p class="thread-meta">Comparisons, tips, stems, water pipe adapters</p>
+    <a class="model-card" href="volcano-digit.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Volcano Digit (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Digital temperature, precision, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="arizer-solo-2.html">
-      <h3>Arizer Solo 2</h3>
-      <p class="thread-meta">Digital temperature, WPA, comparisons, technique</p>
+    <a class="model-card" href="volcano-hybrid.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Volcano Hybrid (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Bag and whip, app control, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="arizer-argo.html">
-      <h3>Arizer ArGo</h3>
-      <p class="thread-meta">Portability, stems, comparisons, technique</p>
+    <a class="model-card" href="storz-bickel-plenty.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Plenty (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Whip-style, coil heater, technique, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="grasshopper.html">
-      <h3>Grasshopper (Hopper Labs)</h3>
-      <p class="thread-meta">Reliability, on-demand use, comparisons, tips</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="sticky-brick-runt.html">
-      <h3>Sticky Brick Runt</h3>
-      <p class="thread-meta">Butane technique, comparisons, tips</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="angus-vaporizer.html">
-      <h3>Angus (YLLVAPE)</h3>
-      <p class="thread-meta">vs Mighty comparison, halogen heating, tips</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="storz-bickel-crafty.html">
-      <h3>Crafty (Storz &amp; Bickel)</h3>
-      <p class="thread-meta">Portability, battery life, comparisons, maintenance</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="crafty.html">
-      <h3>Crafty+ (Storz &amp; Bickel)</h3>
-      <p class="thread-meta">Improvements over original, tips, accessories</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="firefly-2.html">
-      <h3>Firefly 2</h3>
-      <p class="thread-meta">On-demand convection, technique, comparisons, tips</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="davinci-iq.html">
-      <h3>DaVinci IQ</h3>
-      <p class="thread-meta">Smart paths, flavor chamber, comparisons, tips</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="davinci-ascent.html">
-      <h3>DaVinci Ascent</h3>
-      <p class="thread-meta">All-glass vapor path, technique, comparisons</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="magic-flight-launch-box.html">
-      <h3>Magic Flight Launch Box</h3>
-      <p class="thread-meta">Technique, batteries, stealth, comparisons</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="da-buddha.html">
+    <a class="model-card" href="da-buddha.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Da Buddha (7th Floor)</h3>
       <p class="thread-meta">Desktop whip, temperature control, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="ssv.html">
+    <a class="model-card" href="ssv.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Silver Surfer (7th Floor)</h3>
       <p class="thread-meta">Desktop whip, angled heater cover, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="lsv.html">
+    <a class="model-card" href="lsv.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Life Saber (7th Floor)</h3>
       <p class="thread-meta">On-demand log-style, technique, tips</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="anvil.html">
-      <h3>Anvil (Vestratto)</h3>
-      <p class="thread-meta">Convection, thermal mass, technique, comparisons</p>
+    <a class="model-card" href="7th-floor-life-saber.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Life Saber — Alt Article (7th Floor)</h3>
+      <p class="thread-meta">On-demand desktop, technique, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="pax-3.html">
-      <h3>Pax 3</h3>
-      <p class="thread-meta">App control, technique, half-pack lid, tips</p>
+    <a class="model-card" href="7th-floor-lsv.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>LSV (7th Floor)</h3>
+      <p class="thread-meta">Log-style desktop, on-demand, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="pax-2.html">
-      <h3>Pax 2</h3>
-      <p class="thread-meta">Technique, cleaning, comparisons</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="arizer-v-tower.html">
+    <a class="model-card" href="arizer-v-tower.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Arizer V-Tower</h3>
       <p class="thread-meta">Desktop whip and bag, temperature guide, tips</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="arizer-air-max.html">
-      <h3>Arizer Air MAX</h3>
-      <p class="thread-meta">Larger battery, comparisons, stems, technique</p>
-      <span class="read-more">Read Article &rarr;</span>
-    </a>
-
-    <a class="model-card" href="underdog.html">
+    <a class="model-card" href="underdog.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Underdog (Log Vape)</h3>
       <p class="thread-meta">Log-style desktop, on-demand, wood craftsmanship</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="e-nano.html">
+    <a class="model-card" href="e-nano.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>E-Nano (Epicvape)</h3>
       <p class="thread-meta">Log vape, stems, technique, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="boundless-cfx.html">
-      <h3>Boundless CFX</h3>
-      <p class="thread-meta">Hybrid heating, value pick, comparisons, tips</p>
+    <a class="model-card" href="cloud-evo.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Cloud EVO (VapeXhale)</h3>
+      <p class="thread-meta">Full convection, HydraTube, technique, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="vapcap.html">
-      <h3>DynaVap VapCap</h3>
-      <p class="thread-meta">Butane torch technique, click system, comparisons</p>
+    <a class="model-card" href="ditanium.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Ditanium</h3>
+      <p class="thread-meta">Dual-use desktop, technique, tips</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="7th-floor-life-saber.html">
-      <h3>Life Saber (7th Floor)</h3>
-      <p class="thread-meta">On-demand desktop, technique, comparisons</p>
+    <a class="model-card" href="herborizer.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
+      <h3>Herborizer</h3>
+      <p class="thread-meta">Full convection desktop, technique, comparisons</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="vapolution.html">
+    <a class="model-card" href="vapolution.html" data-category="desktop">
+      <div class="category-badge">Desktop</div>
       <h3>Vapolution</h3>
       <p class="thread-meta">Glass-on-glass desktop, technique, tips</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
 
-    <a class="model-card" href="7th-floor-lsv.html">
-      <h3>LSV (7th Floor)</h3>
-      <p class="thread-meta">Log-style desktop, on-demand, comparisons</p>
+    <!-- ── PORTABLE (BATTERY) ── -->
+    <a class="model-card" href="arizer-solo.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer Solo</h3>
+      <p class="thread-meta">Tips, techniques, temperature guide, accessories</p>
       <span class="read-more">Read Article &rarr;</span>
     </a>
+
+    <a class="model-card" href="arizer-air.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer Air</h3>
+      <p class="thread-meta">Comparisons, removable batteries, stems, technique</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-air-2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer Air 2</h3>
+      <p class="thread-meta">Comparisons, tips, stems, water pipe adapters</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-air-max.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer Air MAX</h3>
+      <p class="thread-meta">Larger battery, comparisons, stems, technique</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-solo-2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer Solo 2</h3>
+      <p class="thread-meta">Digital temperature, WPA, comparisons, technique</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="arizer-argo.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Arizer ArGo</h3>
+      <p class="thread-meta">Portability, stems, comparisons, technique</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="mighty.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Mighty+ (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Tips, comparisons, cooling unit, dosing capsules</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="storz-bickel-mighty.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Mighty (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Original Mighty, hybrid heating, community reception</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="storz-bickel-crafty.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Crafty (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Portability, battery life, comparisons, maintenance</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="crafty.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Crafty+ (Storz &amp; Bickel)</h3>
+      <p class="thread-meta">Improvements over original, tips, accessories</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="grasshopper.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Grasshopper (Hopper Labs)</h3>
+      <p class="thread-meta">Reliability, on-demand use, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="ghost-mv1.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Ghost MV1</h3>
+      <p class="thread-meta">On-demand convection, crucible system, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="firefly-2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Firefly 2</h3>
+      <p class="thread-meta">On-demand convection, technique, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="davinci-iq.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>DaVinci IQ</h3>
+      <p class="thread-meta">Smart paths, flavor chamber, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="davinci-iq2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>DaVinci IQ2</h3>
+      <p class="thread-meta">Air dial, dosage pod, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="davinci-ascent.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>DaVinci Ascent</h3>
+      <p class="thread-meta">All-glass vapor path, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="davinci-miqro.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>DaVinci Miqro</h3>
+      <p class="thread-meta">Ultra-compact, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="magic-flight-launch-box.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Magic Flight Launch Box</h3>
+      <p class="thread-meta">Technique, batteries, stealth, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="pax-3.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Pax 3</h3>
+      <p class="thread-meta">App control, technique, half-pack lid, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="pax-2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Pax 2</h3>
+      <p class="thread-meta">Technique, cleaning, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="boundless-cfx.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Boundless CFX</h3>
+      <p class="thread-meta">Hybrid heating, value pick, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="boundless-tera.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Boundless Tera</h3>
+      <p class="thread-meta">Dual-use, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="fury-2.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Fury 2 (Healthy Rips)</h3>
+      <p class="thread-meta">Hybrid heating, value, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="fury-edge.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Fury Edge (Healthy Rips)</h3>
+      <p class="thread-meta">Full convection, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="tinymight.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Tinymight</h3>
+      <p class="thread-meta">On-demand convection, 18650, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="flowermate-v5-0s.html" data-category="portable-battery">
+      <div class="category-badge">Portable · Battery</div>
+      <h3>Flowermate V5.0S</h3>
+      <p class="thread-meta">Budget pick, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <!-- ── PORTABLE (TORCH/BUTANE) ── -->
+    <a class="model-card" href="vapcap.html" data-category="portable-torch">
+      <div class="category-badge">Portable · Torch</div>
+      <h3>DynaVap VapCap</h3>
+      <p class="thread-meta">Butane torch technique, click system, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="dynavap.html" data-category="portable-torch">
+      <div class="category-badge">Portable · Torch</div>
+      <h3>DynaVap (General)</h3>
+      <p class="thread-meta">Induction heaters, technique, mods, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="sticky-brick-runt.html" data-category="portable-torch">
+      <div class="category-badge">Portable · Torch</div>
+      <h3>Sticky Brick Runt</h3>
+      <p class="thread-meta">Butane technique, comparisons, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="angus-vaporizer.html" data-category="portable-torch">
+      <div class="category-badge">Portable · Torch</div>
+      <h3>Angus (YLLVAPE)</h3>
+      <p class="thread-meta">vs Mighty comparison, halogen heating, tips</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <a class="model-card" href="anvil.html" data-category="portable-torch">
+      <div class="category-badge">Portable · Torch</div>
+      <h3>Anvil (Vestratto)</h3>
+      <p class="thread-meta">Convection, thermal mass, technique, comparisons</p>
+      <span class="read-more">Read Article &rarr;</span>
+    </a>
+
+    <div class="no-results" id="no-results">No articles found for that search.</div>
 
   </div>
 
@@ -398,20 +608,40 @@
 <footer>
   <p>
     &copy; 2025 The Round Table &nbsp;&middot;&nbsp;
-    Part of <a href="https://muddyriverworkshop.com" target="_blank">Muddy River Workshop</a> &nbsp;&middot;&nbsp; <a href="https://buymeacoffee.com/theroundtable" target="_blank">☕ Buy Us a Coffee</a>
+    Part of <a href="https://muddyriverworkshop.com" target="_blank">Muddy River Workshop</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://buymeacoffee.com/theroundtable" target="_blank">☕ Buy Us a Coffee</a>
+    &nbsp;&middot;&nbsp;
+    <a href="../terms.html">Terms &amp; Credits</a>
     &nbsp;&middot;&nbsp;
     Source: <a href="https://web.archive.org" target="_blank">Wayback Machine</a>
   </p>
 </footer>
 
 <script>
+var activeCategory = 'all';
+
+function setCategory(btn) {
+  document.querySelectorAll('.filter-tab').forEach(function(b) { b.classList.remove('active'); });
+  btn.classList.add('active');
+  activeCategory = btn.dataset.cat;
+  filterModels();
+}
+
 function filterModels() {
-  var q = document.getElementById('search').value.toLowerCase();
+  var q = document.getElementById('search').value.toLowerCase().trim();
   var cards = document.querySelectorAll('.model-card');
+  var visible = 0;
+
   cards.forEach(function(card) {
-    var text = card.textContent.toLowerCase();
-    card.classList.toggle('hidden', q.length > 0 && !text.includes(q));
+    var catMatch = activeCategory === 'all' || card.dataset.category === activeCategory;
+    var textMatch = q.length === 0 || card.textContent.toLowerCase().includes(q);
+    var show = catMatch && textMatch;
+    card.classList.toggle('hidden', !show);
+    if (show) visible++;
   });
+
+  document.getElementById('no-results').style.display = visible === 0 ? 'block' : 'none';
 }
 </script>
 
