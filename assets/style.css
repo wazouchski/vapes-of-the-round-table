@@ -438,3 +438,96 @@ footer a:hover { color: var(--gold); }
     padding: 32px 20px 28px;
   }
 }
+
+/* ============================================================
+   AGE VERIFICATION GATE
+   ============================================================ */
+#age-gate {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.97);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+}
+
+#age-gate.hidden {
+  display: none;
+}
+
+.age-gate-box {
+  background: var(--card-bg);
+  border: 1px solid var(--gold-dark);
+  border-radius: 16px;
+  padding: 52px 48px;
+  max-width: 440px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(233, 196, 106, 0.12);
+}
+
+.age-gate-crest {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.age-gate-box h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.age-gate-box p {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin-bottom: 36px;
+}
+
+.age-gate-btns {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+}
+
+.age-gate-btns button {
+  padding: 13px 36px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-family: var(--font-title);
+  letter-spacing: 0.06em;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.age-gate-btns button:hover {
+  transform: translateY(-2px);
+}
+
+.btn-enter {
+  background: var(--gold);
+  color: var(--charcoal);
+  box-shadow: 0 4px 18px rgba(233, 196, 106, 0.3);
+}
+
+.btn-enter:hover {
+  box-shadow: 0 8px 28px rgba(233, 196, 106, 0.45);
+}
+
+.btn-leave {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border) !important;
+}
+
+.age-gate-disclaimer {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  opacity: 0.6;
+}
