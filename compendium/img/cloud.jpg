@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v27.3 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Vapor Ease</title>
+	<link rel="canonical" href="https://www.vapexhale.com/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Vapor Ease" />
+	<meta property="og:description" content="..." />
+	<meta property="og:url" content="https://www.vapexhale.com/" />
+	<meta property="og:site_name" content="Vapor Ease" />
+	<meta property="article:modified_time" content="2024-04-18T12:23:29+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https:\/\/schema.org","@graph":[{"@type":"WebPage","@id":"https:\/\/www.vapexhale.com\/","url":"https:\/\/www.vapexhale.com\/","name":"Vapor Ease","isPartOf":{"@id":"https:\/\/www.vapexhale.com\/#website"},"about":{"@id":"https:\/\/www.vapexhale.com\/#organization"},"datePublished":"2024-03-10T22:23:46+00:00","dateModified":"2024-04-18T12:23:29+00:00","breadcrumb":{"@id":"https:\/\/www.vapexhale.com\/#breadcrumb"},"inLanguage":"en","potentialAction":[{"@type":"ReadAction","target":["https:\/\/www.vapexhale.com\/"]}]},{"@type":"BreadcrumbList","@id":"https:\/\/www.vapexhale.com\/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https:\/\/www.vapexhale.com\/#website","url":"https:\/\/www.vapexhale.com\/","name":"Vapor Ease","description":"","publisher":{"@id":"https:\/\/www.vapexhale.com\/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https:\/\/www.vapexhale.com\/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en"},{"@type":"Organization","@id":"https:\/\/www.vapexhale.com\/#organization","name":"Vapor Ease","url":"https:\/\/www.vapexhale.com\/","logo":{"@type":"ImageObject","inLanguage":"en","@id":"https:\/\/www.vapexhale.com\/#\/schema\/logo\/image\/","url":"https:\/\/www.vapexhale.com\/wp-content\/uploads\/2024\/03\/cropped-Vapor-Ease-logo.png","contentUrl":"https:\/\/www.vapexhale.com\/wp-content\/uploads\/2024\/03\/cropped-Vapor-Ease-logo.png","width":544,"height":304,"caption":"Vapor Ease"},"image":{"@id":"https:\/\/www.vapexhale.com\/#\/schema\/logo\/image\/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<script>
+window.koko_analytics = {"url":"https:\/\/www.vapexhale.com\/","site_url":"https:\/\/www.vapexhale.com","post_id":45,"path":"\/","method":"cookie","use_cookie":true};
+</script>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://www.vapexhale.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vapexhale.com%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://www.vapexhale.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.vapexhale.com%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*wp_block_styles_on_demand_placeholder:69dda2a7cc5d2*/
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://www.vapexhale.com/wp-includes/css/dashicons.min.css?ver=6.9.4' media='all' />
+<link rel='stylesheet' id='admin-bar-css' href='https://www.vapexhale.com/wp-includes/css/admin-bar.min.css?ver=6.9.4' media='all' />
+<style id='admin-bar-inline-css'>
+
+    /* Hide CanvasJS credits for P404 charts specifically */
+    #p404RedirectChart .canvasjs-chart-credit {
+        display: none !important;
+    }
+    
+    #p404RedirectChart canvas {
+        border-radius: 6px;
+    }
+
+    .p404-redirect-adminbar-weekly-title {
+        font-weight: bold;
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 6px;
+    }
+
+    #wpadminbar #wp-admin-bar-p404_free_top_button .ab-icon:before {
+        content: "\f103";
+        color: #dc3545;
+        top: 3px;
+    }
+    
+    #wp-admin-bar-p404_free_top_button .ab-item {
+        min-width: 80px !important;
+        padding: 0px !important;
+    }
+    
+    /* Ensure proper positioning and z-index for P404 dropdown */
+    .p404-redirect-adminbar-dropdown-wrap { 
+        min-width: 0; 
+        padding: 0;
+        position: static !important;
+    }
+    
+    #wpadminbar #wp-admin-bar-p404_free_top_button_dropdown {
+        position: static !important;
+    }
+    
+    #wpadminbar #wp-admin-bar-p404_free_top_button_dropdown .ab-item {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .p404-redirect-dropdown-container {
+        min-width: 340px;
+        padding: 18px 18px 12px 18px;
+        background: #23282d !important;
+        color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        margin-top: 10px;
+        position: relative !important;
+        z-index: 999999 !important;
+        display: block !important;
+        border: 1px solid #444;
+    }
+    
+    /* Ensure P404 dropdown appears on hover */
+    #wpadminbar #wp-admin-bar-p404_free_top_button .p404-redirect-dropdown-container { 
+        display: none !important;
+    }
+    
+    #wpadminbar #wp-admin-bar-p404_free_top_button:hover .p404-redirect-dropdown-container { 
+        display: block !important;
+    }
+    
+    #wpadminbar #wp-admin-bar-p404_free_top_button:hover #wp-admin-bar-p404_free_top_button_dropdown .p404-redirect-dropdown-container {
+        display: block !important;
+    }
+    
+    .p404-redirect-card {
+        background: #2c3338;
+        border-radius: 8px;
+        padding: 18px 18px 12px 18px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: 1px solid #444;
+    }
+    
+    .p404-redirect-btn {
+        display: inline-block;
+        background: #dc3545;
+        color: #fff !important;
+        font-weight: bold;
+        padding: 5px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 17px;
+        transition: background 0.2s, box-shadow 0.2s;
+        margin-top: 8px;
+        box-shadow: 0 2px 8px rgba(220,53,69,0.15);
+        text-align: center;
+        line-height: 1.6;
+    }
+    
+    .p404-redirect-btn:hover {
+        background: #c82333;
+        color: #fff !important;
+        box-shadow: 0 4px 16px rgba(220,53,69,0.25);
+    }
+    
+    /* Prevent conflicts with other admin bar dropdowns */
+    #wpadminbar .ab-top-menu > li:hover > .ab-item,
+    #wpadminbar .ab-top-menu > li.hover > .ab-item {
+        z-index: auto;
+    }
+    
+    #wpadminbar #wp-admin-bar-p404_free_top_button:hover > .ab-item {
+        z-index: 999998 !important;
+    }
+    
+/*# sourceURL=admin-bar-inline-css */
+</style>
+<link rel='stylesheet' id='charity-house-google-fonts-css' href='https://www.vapexhale.com/wp-content/fonts/6048fb685161035510689443792bf8db.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='animate-css' href='https://www.vapexhale.com/wp-content/themes/charity-house/assets/css/animate.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='aos-style-css' href='https://www.vapexhale.com/wp-content/themes/charity-house/assets/css/aos.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='swiper-style-css' href='https://www.vapexhale.com/wp-content/themes/charity-house/assets/css/swiper-bundle.min.css?ver=1.0.0' media='all' />
+<link rel='stylesheet' id='charity-house-style-css' href='https://www.vapexhale.com/wp-content/themes/charity-house/style.css?ver=1.0.0' media='all' />
+<style id='charity-house-style-inline-css'>
+                                                
+        
+        
+/*# sourceURL=charity-house-style-inline-css */
+</style>
+<link rel="https://api.w.org/" href="https://www.vapexhale.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.vapexhale.com/wp-json/wp/v2/pages/45" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.vapexhale.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9.4" />
+<link rel='shortlink' href='https://www.vapexhale.com/' />
+    <script type="text/javascript">
+        let storageKey = 'theme-preference';
+
+        let getColorPreference = function () {
+            if (localStorage.getItem(storageKey))
+                return localStorage.getItem(storageKey)
+            else
+                return window.matchMedia('(prefers-color-scheme: dark)').matches
+                    ? 'dark'
+                    : 'light'
+        }
+
+        let theme = {
+            value: getColorPreference()
+        };
+
+        let setPreference = function () {
+            localStorage.setItem(storageKey, theme.value);
+            reflectPreference();
+        }
+
+        let reflectPreference = function () {
+            document.firstElementChild.setAttribute("data-theme", theme.value);
+            document.querySelector("#theme-toggle-mode-button")?.setAttribute("aria-label", theme.value);
+        }
+
+        // set early so no page flashes / CSS is made aware
+        reflectPreference();
+
+        window.addEventListener('load', function () {
+            reflectPreference();
+            let toggleBtn = document.querySelector("#theme-toggle-mode-button");
+            if (toggleBtn) {
+                toggleBtn.addEventListener("click", function () {
+                    theme.value = theme.value === 'light' ? 'dark' : 'light';
+                    setPreference();
+                });
+            }
+        });
+
+        // sync with system changes
+        window
+            .matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', ({matches: isDark}) => {
+                theme.value = isDark ? 'dark' : 'light';
+                setPreference();
+            });
+    </script>
+    		<style id="wp-custom-css">
+			.site-header .header-component-center {display: none;}		</style>
+		</head>
+
+<body class="home wp-singular page-template page-template-page-template page-template-template-front-page page-template-page-templatetemplate-front-page-php page page-id-45 wp-custom-logo wp-embed-responsive wp-theme-charity-house  charity-house-header_style_3 charity-house-light-mode">
+
+    
+    
+    <div id="page" class="site">
+        <div class="site-content-area">
+            
+            
+            
+            <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
+
+            
+            
+<header id="masthead" class="site-header theme-site-header header-has-height-none"  role="banner">
+    <div class="site-branding-center">
+    <div class="wrapper">
+        <div class="header-component-center">
+                            <div class="site-header-component header-component-date">
+                    <div class="header-component-icon">
+                        <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path fill="currentColor" d="M4.60069444,4.09375 L3.25,4.09375 C2.47334957,4.09375 1.84375,4.72334957 1.84375,5.5 L1.84375,7.26736111 L16.15625,7.26736111 L16.15625,5.5 C16.15625,4.72334957 15.5266504,4.09375 14.75,4.09375 L13.3993056,4.09375 L13.3993056,4.55555556 C13.3993056,5.02154581 13.0215458,5.39930556 12.5555556,5.39930556 C12.0895653,5.39930556 11.7118056,5.02154581 11.7118056,4.55555556 L11.7118056,4.09375 L6.28819444,4.09375 L6.28819444,4.55555556 C6.28819444,5.02154581 5.9104347,5.39930556 5.44444444,5.39930556 C4.97845419,5.39930556 4.60069444,5.02154581 4.60069444,4.55555556 L4.60069444,4.09375 Z M6.28819444,2.40625 L11.7118056,2.40625 L11.7118056,1 C11.7118056,0.534009742 12.0895653,0.15625 12.5555556,0.15625 C13.0215458,0.15625 13.3993056,0.534009742 13.3993056,1 L13.3993056,2.40625 L14.75,2.40625 C16.4586309,2.40625 17.84375,3.79136906 17.84375,5.5 L17.84375,15.875 C17.84375,17.5836309 16.4586309,18.96875 14.75,18.96875 L3.25,18.96875 C1.54136906,18.96875 0.15625,17.5836309 0.15625,15.875 L0.15625,5.5 C0.15625,3.79136906 1.54136906,2.40625 3.25,2.40625 L4.60069444,2.40625 L4.60069444,1 C4.60069444,0.534009742 4.97845419,0.15625 5.44444444,0.15625 C5.9104347,0.15625 6.28819444,0.534009742 6.28819444,1 L6.28819444,2.40625 Z M1.84375,8.95486111 L1.84375,15.875 C1.84375,16.6516504 2.47334957,17.28125 3.25,17.28125 L14.75,17.28125 C15.5266504,17.28125 16.15625,16.6516504 16.15625,15.875 L16.15625,8.95486111 L1.84375,8.95486111 Z" /></svg>                    </div>
+                    <div class="theme-display-date">
+                        Tuesday, April 14 2026                    </div>
+                </div>
+                                        <div class="site-header-component header-component-time">
+                    <div class="header-component-icon">
+                        <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 20 20"><path fill="currentColor" d="M16.32 17.113c1.729-1.782 2.68-4.124 2.68-6.613 0-2.37-0.862-4.608-2.438-6.355l0.688-0.688 0.647 0.646c0.098 0.098 0.226 0.146 0.353 0.146s0.256-0.049 0.353-0.146c0.195-0.195 0.195-0.512 0-0.707l-2-2c-0.195-0.195-0.512-0.195-0.707 0s-0.195 0.512 0 0.707l0.647 0.646-0.688 0.688c-1.747-1.576-3.985-2.438-6.355-2.438s-4.608 0.862-6.355 2.438l-0.688-0.688 0.646-0.646c0.195-0.195 0.195-0.512 0-0.707s-0.512-0.195-0.707 0l-2 2c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.146 0.354 0.146s0.256-0.049 0.354-0.146l0.646-0.646 0.688 0.688c-1.576 1.747-2.438 3.985-2.438 6.355 0 2.489 0.951 4.831 2.68 6.613l-2.034 2.034c-0.195 0.195-0.195 0.512 0 0.707 0.098 0.098 0.226 0.147 0.354 0.147s0.256-0.049 0.354-0.147l2.060-2.059c1.705 1.428 3.836 2.206 6.087 2.206s4.382-0.778 6.087-2.206l2.059 2.059c0.098 0.098 0.226 0.147 0.354 0.147s0.256-0.049 0.353-0.147c0.195-0.195 0.195-0.512 0-0.707l-2.034-2.034zM1 10.5c0-4.687 3.813-8.5 8.5-8.5s8.5 3.813 8.5 8.5c0 4.687-3.813 8.5-8.5 8.5s-8.5-3.813-8.5-8.5z"></path><path fill="currentColor" d="M15.129 7.25c-0.138-0.239-0.444-0.321-0.683-0.183l-4.92 2.841-3.835-2.685c-0.226-0.158-0.538-0.103-0.696 0.123s-0.103 0.538 0.123 0.696l4.096 2.868c0.001 0.001 0.002 0.001 0.002 0.002 0.009 0.006 0.018 0.012 0.027 0.017 0.002 0.001 0.004 0.003 0.006 0.004 0.009 0.005 0.018 0.010 0.027 0.015 0.002 0.001 0.004 0.002 0.006 0.003 0.010 0.005 0.020 0.009 0.031 0.014 0.006 0.003 0.013 0.005 0.019 0.007 0.004 0.001 0.008 0.003 0.013 0.005 0.007 0.002 0.014 0.004 0.021 0.006 0.004 0.001 0.008 0.002 0.012 0.003 0.007 0.002 0.014 0.003 0.022 0.005 0.004 0.001 0.008 0.002 0.012 0.002 0.007 0.001 0.014 0.002 0.021 0.003 0.005 0.001 0.010 0.001 0.015 0.002 0.006 0.001 0.012 0.001 0.018 0.002 0.009 0.001 0.018 0.001 0.027 0.001 0.002 0 0.004 0 0.006 0 0 0 0-0 0-0s0 0 0.001 0c0.019 0 0.037-0.001 0.056-0.003 0.001-0 0.002-0 0.003-0 0.018-0.002 0.036-0.005 0.054-0.010 0.002-0 0.003-0.001 0.005-0.001 0.017-0.004 0.034-0.009 0.050-0.015 0.003-0.001 0.006-0.002 0.008-0.003 0.016-0.006 0.031-0.012 0.046-0.020 0.004-0.002 0.007-0.004 0.011-0.006 0.005-0.003 0.011-0.005 0.016-0.008l5.196-3c0.239-0.138 0.321-0.444 0.183-0.683z"></path></svg>                    </div>
+                    <div class="theme-display-clock"></div>
+                </div>
+                    </div>
+        <div class="site-branding">
+            <div class="site-logo">
+            <a href="https://www.vapexhale.com/" class="custom-logo-link" rel="home" aria-current="page"><img width="544" height="304" src="https://www.vapexhale.com/wp-content/uploads/2024/03/cropped-Vapor-Ease-logo.png" class="custom-logo" alt="Vapor Ease" decoding="async" fetchpriority="high" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/cropped-Vapor-Ease-logo.png 544w, https://www.vapexhale.com/wp-content/uploads/2024/03/cropped-Vapor-Ease-logo-300x168.png 300w" sizes="(max-width: 544px) 100vw, 544px" /></a>        </div>
+                <div class="screen-reader-text">
+            <a href="https://www.vapexhale.com/" rel="home">Vapor Ease</a>
+        </div>
+        </div><!-- .site-branding -->    </div>
+</div>
+
+
+<div class="masthead-main-navigation has-sticky-header">
+    <div class="wrapper">
+        <div class="site-header-wrapper">
+            <div class="site-header-center">
+                <div id="site-navigation" class="main-navigation theme-primary-menu">
+                                            <nav class="primary-menu-wrapper"
+                             aria-label="Primary">
+                            <ul class="primary-menu reset-list-style">
+                                <li id="menu-item-67" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"><a href="https://www.vapexhale.com/category/new-releases/">New Releases</a></li>
+<li id="menu-item-66" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-66"><a href="https://www.vapexhale.com/category/learn/">Learn</a></li>
+<li id="menu-item-62" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62"><a href="https://www.vapexhale.com/state-laws-lists/">State Laws Lists<span class="icon"><svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-63" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><a href="https://www.vapexhale.com/state-laws-lists/list-of-states-where-marijuana-is-decriminalized/">List of States Where Marijuana is Decriminalized</a></li>
+</ul>
+</li>
+<li id="menu-item-65" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="https://www.vapexhale.com/what-we-do/">What We Do</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="https://www.vapexhale.com/about/">About</a></li>
+<li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://www.vapexhale.com/take-action/">Take Action</a></li>
+<li id="menu-item-81" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><a href="https://www.vapexhale.com/contact/">Contact</a></li>
+                            </ul>
+                        </nav><!-- .primary-menu-wrapper -->
+                                        </div><!-- .main-navigation -->
+                                    <div class="site-header-right">
+                      <a href="https://www.vapexhale.com/faqs/" class="theme-button"> FAQs </a>
+                      <a href="https://www.vapexhale.com/contact/" class="theme-button button-bg-color">Act Now </a>
+                    </div>
+                 
+            </div>
+        </div>
+    </div>
+
+</div></header><!-- #masthead -->
+
+
+
+
+<div class="theme-offcanvas-panel theme-offcanvas-panel-menu">
+    <div class="theme-offcanvas-header">
+        <button id="theme-offcanvas-close" class="theme-button theme-button-transparent" aria-expanded="false">
+            <span class="screen-reader-text">Close</span>
+            <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" d="M18.717 6.697l-1.414-1.414-5.303 5.303-5.303-5.303-1.414 1.414 5.303 5.303-5.303 5.303 1.414 1.414 5.303-5.303 5.303 5.303 1.414-1.414-5.303-5.303z" /></svg>        </button><!-- .nav-toggle -->
+    </div>
+
+    <div class="theme-offcanvas-content">
+        <nav aria-label="Mobile" role="navigation">
+            <ul id="theme-offcanvas-navigation" class="theme-offcanvas-menu reset-list-style">
+                
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-67"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/category/new-releases/">New Releases</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-66"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/category/learn/">Learn</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-62"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/state-laws-lists/">State Laws Lists</a><button class="theme-button sub-menu-toggle theme-button-transparent" data-toggle-target=".theme-offcanvas-menu .menu-item-62 > .sub-menu" data-toggle-duration="250" aria-expanded="false"><span class="screen-reader-text">Show sub menu</span><svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><path fill="currentColor" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path></svg></button></div><!-- .ancestor-wrapper -->
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-63"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/state-laws-lists/list-of-states-where-marijuana-is-decriminalized/">List of States Where Marijuana is Decriminalized</a></div><!-- .ancestor-wrapper --></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/what-we-do/">What We Do</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/about/">About</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/take-action/">Take Action</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-81"><div class="ancestor-wrapper"><a href="https://www.vapexhale.com/contact/">Contact</a></div><!-- .ancestor-wrapper --></li>
+
+                    
+            </ul><!-- .theme-offcanvas-navigation -->
+        </nav>
+    </div>
+</div> <!-- theme-offcanvas-panel-menu -->
+
+<div class="theme-search-panel">
+    <div class="wrapper">
+        <div id="theme-header-search" class="search-panel-wrapper">
+            <form role="search" aria-label="Search for:" method="get" class="search-form" action="https://www.vapexhale.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>            <button id="charity-house-search-canvas-close" class="theme-button theme-button-transparent search-close">
+                <span class="screen-reader-text">
+                    Close search                </span>
+                <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path fill="currentColor" d="M18.717 6.697l-1.414-1.414-5.303 5.303-5.303-5.303-1.414 1.414 5.303 5.303-5.303 5.303 1.414 1.414 5.303-5.303 5.303 5.303 1.414-1.414-5.303-5.303z" /></svg>            </button><!-- .search-toggle -->
+
+        </div>
+    </div>
+</div> <!-- theme-search-panel -->
+                        
+<section class="site-section site-banner-section site-banner-layout-carousal">
+    <div class="theme-banner-slider swiper-container">
+        <div class="swiper-wrapper">
+                    </div>
+
+        <!-- Control -->
+
+        <div class="theme-swiper-control swiper-control">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination theme-swiper-pagination"></div>
+        </div>
+
+    </div>
+</section>
+            <section class="site-section site-about-section about-section-layout1">
+            <div class="wrapper">
+                <div class="column-row">
+                                                                                <div class="column column-3 column-md-6 column-sm-6 column-xs-12" data-aos="flip-right">
+                                  <img class="about-featured-image has-border has-border-radius" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana.jpg">
+                                </div>
+                                <div class="column column-3 column-md-6 column-sm-6 column-xs-12" data-aos="flip-right">
+                                    <img class="about-featured-image has-border-radius" src="https://www.vapexhale.com/wp-content/uploads/2024/03/advocating-for-marijuana-legalization-1-1024x684.jpg">
+                                </div>
+                                                        <div class="column column-6 column-md-12 column-sm-12 column-xs-12" data-aos="fade-up">
+                                <header class="section-header site-section-header">
+                                                                        <h2 class="site-section-title">About</h2>                                </header>
+
+                                  <p class="site-section-content">Vapor Ease has been advocating for marijuana legalization ever since it was founded. It stood up for Americans who believe in responsible use and oppose prohibition. It also engages in lobbying and advocacy, so contributions to them aren&#039;t tax-deductible. As an organization, we at Vapor Ease continue to push for legal reforms both through voter initiatives and by working with legislators. We also provide media insights, challenge anti-marijuana narratives, and run educational and legal programs. Meanwhile, we have several partner...</p>                                <div class="theme-social-links">
+                                                                                                                                            </div>
+
+                                                                <a class='theme-primary-btn' href="https://www.vapexhale.com/about/">  About us</a>
+                            </div>
+                                    </div>
+            </div>
+        </section>
+    
+<section class="site-section theme-causes-block2 theme-block dd">
+    <div class="wrapper">
+        <div class="column-row">
+            <div class="column column-12">
+                <header class="section-header site-section-header text-center">
+                    <span class="site-sub-title"></span>
+                    <h2 class="site-section-title">
+                        From Our Research                    </h2>
+                </header>
+            </div>
+        </div>
+        <div class="column-row">
+                            <div class="column column-4 column-md-6 mb-md-24 column-sm-12 mb-sm-24">
+                    <div class="section-content" data-aos="fade-right">
+                                                    <div class="entry-image">
+                                <figure class="featured-media featured-media-medium">
+                                    <a href="https://www.vapexhale.com/learn/learning-about-the-risk-of-cancer-when-smoking-cannabis/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Learning-About-the-Risk-of-Cancer-when-Smoking-Cannabis-1-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Learning About the Risk of Cancer when Smoking Cannabis" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Learning-About-the-Risk-of-Cancer-when-Smoking-Cannabis-1-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Learning-About-the-Risk-of-Cancer-when-Smoking-Cannabis-1-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Learning-About-the-Risk-of-Cancer-when-Smoking-Cannabis-1-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Learning-About-the-Risk-of-Cancer-when-Smoking-Cannabis-1.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+                                                <div class="entry-details">
+                            <header class="entry-header">
+                                <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/learn/learning-about-the-risk-of-cancer-when-smoking-cannabis/" rel="bookmark">Learning About the Risk of Cancer when Smoking Cannabis</a></h3>                                <p>In the ongoing conversation about marijuana legalization, a critical topic that often surfaces is the potential risk of cancer associated with smoking cannabis. Understanding this risk is crucial, not just for individual users, but also for policymakers and healthcare professionals.<br />
+Here, we&#8217;ll delve into what current research tells us about cannabis smoking and its link to cancer, and what this means for those considering its use.<br />
+Firstly, it&#8217;s important to recognize that smoking, in general, is a known risk factor for various types of cancers. This is primarily due to the combustion process which releases &#8230;</p>
+                            </header>
+                        </div>
+                    </div> 
+                </div>
+                            <div class="column column-4 column-md-6 mb-md-24 column-sm-12 mb-sm-24">
+                    <div class="section-content" data-aos="fade-right">
+                                                    <div class="entry-image">
+                                <figure class="featured-media featured-media-medium">
+                                    <a href="https://www.vapexhale.com/learn/adult-use-regulations-regarding-marijuana/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Adult-Use Regulations Regarding Marijuana" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Adult-Use-Regulations-Regarding-Marijuana.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+                                                <div class="entry-details">
+                            <header class="entry-header">
+                                <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/learn/adult-use-regulations-regarding-marijuana/" rel="bookmark">Adult-Use Regulations Regarding Marijuana</a></h3>                                <p>As the landscape of marijuana legalization continues to evolve, understanding the nuances of adult-use laws is crucial for responsible and legal consumption. Across various regions where marijuana has been legalized for adult use, there are common regulations that one should be aware of.<br />
+Firstly, age restriction is a cornerstone of these laws.<br />
+Just like with alcohol, you must be at least 21 years old to purchase, possess, and use recreational marijuana. This age limit is strictly enforced, and valid identification is required at the point of purchase.<br />
+Secondly, there&#8217;s a limit on how much&#8230;</p>
+                            </header>
+                        </div>
+                    </div> 
+                </div>
+                            <div class="column column-4 column-md-6 mb-md-24 column-sm-12 mb-sm-24">
+                    <div class="section-content" data-aos="fade-right">
+                                                    <div class="entry-image">
+                                <figure class="featured-media featured-media-medium">
+                                    <a href="https://www.vapexhale.com/learn/marijuana-drug-testing-tips/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Marijuana-Drug-Testing-Tips-1-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Marijuana Drug Testing Tips" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Marijuana-Drug-Testing-Tips-1-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Marijuana-Drug-Testing-Tips-1-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Marijuana-Drug-Testing-Tips-1-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Marijuana-Drug-Testing-Tips-1.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+                                                <div class="entry-details">
+                            <header class="entry-header">
+                                <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/learn/marijuana-drug-testing-tips/" rel="bookmark">Marijuana Drug Testing Tips</a></h3>                                <p>With the evolving landscape of marijuana legalization, understanding the ins and outs of marijuana drug testing has become more relevant than ever. Whether you’re facing a test for employment, legal, or personal reasons, here are some straightforward tips to help you navigate this scenario.<br />
+Know the Types of Tests<br />
+Drug tests for marijuana can vary. The most common ones include urine, blood, saliva, and hair follicle tests. Keep in mind that each of these tests has a different detection window.<br />
+For instance, urine tests can detect marijuana 3-30 days after use, depending on frequency and quantity of use, while hair &#8230;</p>
+                            </header>
+                        </div>
+                    </div> 
+                </div>
+                            <div class="column column-4 column-md-6 mb-md-24 column-sm-12 mb-sm-24">
+                    <div class="section-content" data-aos="fade-right">
+                                                    <div class="entry-image">
+                                <figure class="featured-media featured-media-medium">
+                                    <a href="https://www.vapexhale.com/learn/what-is-medical-marijuana/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Medical-marijuana-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="What is Medical Marijuana?" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Medical-marijuana-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Medical-marijuana-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Medical-marijuana-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Medical-marijuana.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+                                                <div class="entry-details">
+                            <header class="entry-header">
+                                <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/learn/what-is-medical-marijuana/" rel="bookmark">What is Medical Marijuana?</a></h3>                                <p>Medical marijuana refers to using the whole, unprocessed marijuana plant or its basic extracts to treat certain health conditions. If you&#8217;re curious about this subject, especially in light of the evolving legal landscape, here&#8217;s what you should know.<br />
+Firstly, it&#8217;s crucial to understand the difference between medical and recreational marijuana. Medical marijuana uses the same plant as recreational, but it&#8217;s taken for managing certain medical conditions.<br />
+The marijuana plant contains many chemicals, but two are of significant medical interest: THC (delta-9-tetrahydrocannabinol) and CBD (cannabidiol). THC &#8230;</p>
+                            </header>
+                        </div>
+                    </div> 
+                </div>
+                            <div class="column column-4 column-md-6 mb-md-24 column-sm-12 mb-sm-24">
+                    <div class="section-content" data-aos="fade-right">
+                                                    <div class="entry-image">
+                                <figure class="featured-media featured-media-medium">
+                                    <a href="https://www.vapexhale.com/learn/7-reasons-why-you-should-try-vaping-marijuana/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/07/Vaping-Marijuana-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="7 Reasons Why You Should Try Vaping Marijuana" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/07/Vaping-Marijuana-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/07/Vaping-Marijuana-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/07/Vaping-Marijuana-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/07/Vaping-Marijuana.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+                                                <div class="entry-details">
+                            <header class="entry-header">
+                                <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/learn/7-reasons-why-you-should-try-vaping-marijuana/" rel="bookmark">7 Reasons Why You Should Try Vaping Marijuana</a></h3>                                <p>In recent years, vaping marijuana has gained significant popularity among both medical and recreational users. This method of consumption offers several advantages over traditional smoking and other forms of marijuana intake. Exploring unique signature e-juices can enhance your vaping experience, offering a variety of flavors and effects tailored to your preferences. If you&#8217;re curious about the potential benefits of vaping marijuana, here are 7 compelling reasons why you might want to give it a try:<br />
+Healthier Alternative to &#8230;</p>
+                            </header>
+                        </div>
+                    </div> 
+                </div>
+                    </div>
+    </div>
+</section>
+<section class="site-section must-read-layout1 theme-block">
+    <div class="wrapper-fluid">
+                    <div class="column-row column-row-collapse">
+                <div class="column column-12">
+                    <header class="section-header site-section-header">
+                        <h2 class="site-section-title">
+                            News Releases                        </h2>
+                    </header>
+                </div>
+            </div>
+        
+        <div class="column-row column-row-collapse">
+                                <div class="column column-4 column-sm-12 column-xs-12">
+                        <div class="section-content">
+
+                            <div class="entry-image">
+                                <figure class="featured-media featured-media-big">
+                                    <a href="https://www.vapexhale.com/new-releases/study-revealed-that-cannabis-treatment-can-help-improve-quality-of-life/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Study-Revealed-that-Cannabis-Treatment-Can-Help-Improve-Quality-of-Life-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Study Revealed that Cannabis Treatment Can Help Improve Quality of Life" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Study-Revealed-that-Cannabis-Treatment-Can-Help-Improve-Quality-of-Life-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Study-Revealed-that-Cannabis-Treatment-Can-Help-Improve-Quality-of-Life-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Study-Revealed-that-Cannabis-Treatment-Can-Help-Improve-Quality-of-Life-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Study-Revealed-that-Cannabis-Treatment-Can-Help-Improve-Quality-of-Life.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+
+                            <div class="section-content-detail section-content-bottom">
+                                                                    <div class="entry-categories">
+                                        <span class="screen-reader-text">Categories</span>
+                                        <div class="charity-house-entry-categories">
+                                            <a href="https://www.vapexhale.com/category/new-releases/" rel="category tag">New Releases</a>                                        </div>
+                                    </div><!-- .entry-categories -->
+                                                                <header class="entry-header">
+                                    <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/new-releases/study-revealed-that-cannabis-treatment-can-help-improve-quality-of-life/" rel="bookmark">Study Revealed that Cannabis Treatment Can Help Improve Quality of Life</a></h3>                                </header>
+                                <span class="posted-on">Posted on <a href="https://www.vapexhale.com/new-releases/study-revealed-that-cannabis-treatment-can-help-improve-quality-of-life/" rel="bookmark"><time class="entry-date published" datetime="2024-03-10T22:27:31+00:00">March 10, 2024</time><time class="updated" datetime="2024-03-10T22:30:31+00:00">March 10, 2024</time></a></span>                                <span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://www.vapexhale.com/author/beatrice/">beatrice</a></span></span>                            </div>
+                        </div>
+                    </div>
+                                <div class="column column-4 column-sm-12 column-xs-12">
+                        <div class="section-content">
+
+                            <div class="entry-image">
+                                <figure class="featured-media featured-media-big">
+                                    <a href="https://www.vapexhale.com/new-releases/the-best-events-that-highlight-marijuana-policies-in-the-us-in-2023/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/National-Cannabis-Festival-in-Washington-D.C.-1-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="The Best Events that Highlight Marijuana Policies in the US in 2023" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/National-Cannabis-Festival-in-Washington-D.C.-1-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/National-Cannabis-Festival-in-Washington-D.C.-1-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/National-Cannabis-Festival-in-Washington-D.C.-1-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/National-Cannabis-Festival-in-Washington-D.C.-1.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+
+                            <div class="section-content-detail section-content-bottom">
+                                                                    <div class="entry-categories">
+                                        <span class="screen-reader-text">Categories</span>
+                                        <div class="charity-house-entry-categories">
+                                            <a href="https://www.vapexhale.com/category/new-releases/" rel="category tag">New Releases</a>                                        </div>
+                                    </div><!-- .entry-categories -->
+                                                                <header class="entry-header">
+                                    <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/new-releases/the-best-events-that-highlight-marijuana-policies-in-the-us-in-2023/" rel="bookmark">The Best Events that Highlight Marijuana Policies in the US in 2023</a></h3>                                </header>
+                                <span class="posted-on">Posted on <a href="https://www.vapexhale.com/new-releases/the-best-events-that-highlight-marijuana-policies-in-the-us-in-2023/" rel="bookmark"><time class="entry-date published" datetime="2023-09-10T22:26:02+00:00">September 10, 2023</time><time class="updated" datetime="2024-03-10T22:30:49+00:00">March 10, 2024</time></a></span>                                <span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://www.vapexhale.com/author/beatrice/">beatrice</a></span></span>                            </div>
+                        </div>
+                    </div>
+                                <div class="column column-4 column-sm-12 column-xs-12">
+                        <div class="section-content">
+
+                            <div class="entry-image">
+                                <figure class="featured-media featured-media-big">
+                                    <a href="https://www.vapexhale.com/new-releases/cannabis-has-become-harder-to-access-for-young-people-post-legalization-survey-says/">
+                                        <img width="640" height="427" src="https://www.vapexhale.com/wp-content/uploads/2024/03/Cannabis-Has-Become-Harder-to-Access-for-Young-People-Post-Legalization-Survey-Says-1-768x512.jpg" class="attachment-medium_large size-medium_large wp-post-image" alt="Cannabis Has Become “Harder” to Access for Young People Post-Legalization, Survey Says" decoding="async" srcset="https://www.vapexhale.com/wp-content/uploads/2024/03/Cannabis-Has-Become-Harder-to-Access-for-Young-People-Post-Legalization-Survey-Says-1-768x512.jpg 768w, https://www.vapexhale.com/wp-content/uploads/2024/03/Cannabis-Has-Become-Harder-to-Access-for-Young-People-Post-Legalization-Survey-Says-1-300x200.jpg 300w, https://www.vapexhale.com/wp-content/uploads/2024/03/Cannabis-Has-Become-Harder-to-Access-for-Young-People-Post-Legalization-Survey-Says-1-1024x683.jpg 1024w, https://www.vapexhale.com/wp-content/uploads/2024/03/Cannabis-Has-Become-Harder-to-Access-for-Young-People-Post-Legalization-Survey-Says-1.jpg 1200w" sizes="(max-width: 640px) 100vw, 640px" />                                    </a>
+                                </figure>
+                            </div>
+
+                            <div class="section-content-detail section-content-bottom">
+                                                                    <div class="entry-categories">
+                                        <span class="screen-reader-text">Categories</span>
+                                        <div class="charity-house-entry-categories">
+                                            <a href="https://www.vapexhale.com/category/new-releases/" rel="category tag">New Releases</a>                                        </div>
+                                    </div><!-- .entry-categories -->
+                                                                <header class="entry-header">
+                                    <h3 class="entry-title entry-title-medium line-clamp line-clamp-3"><a href="https://www.vapexhale.com/new-releases/cannabis-has-become-harder-to-access-for-young-people-post-legalization-survey-says/" rel="bookmark">Cannabis Has Become “Harder” to Access for Young People Post-Legalization, Survey Says</a></h3>                                </header>
+                                <span class="posted-on">Posted on <a href="https://www.vapexhale.com/new-releases/cannabis-has-become-harder-to-access-for-young-people-post-legalization-survey-says/" rel="bookmark"><time class="entry-date published" datetime="2023-08-11T22:27:47+00:00">August 11, 2023</time><time class="updated" datetime="2024-03-10T22:30:53+00:00">March 10, 2024</time></a></span>                                <span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://www.vapexhale.com/author/beatrice/">beatrice</a></span></span>                            </div>
+                        </div>
+                    </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+</div> <!-- site-content-area -->
+
+<footer id="colophon" class="site-footer" >
+    <div class="wrapper">
+                    <div class="theme-footer-bottom">
+
+        
+            <div class="theme-author-credit">
+
+                                    <div class="theme-copyright-info">
+                        Copyright &copy; 2026                    </div><!-- .theme-copyright-info -->
+                            </div><!-- .theme-author-credit-->
+            
+        
+        
+        
+    </div><!-- .theme-footer-bottom-->
+
+        </div>
+
+            <a id="theme-scroll-to-start" href="javascript:void(0)">
+            <span class="screen-reader-text">Scroll to top</span>
+            <svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewbox="0 0 16 16"><path fill="currentColor" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"></path></svg>        </a>
+        </footer><!-- #colophon -->
+
+
+</div><!-- #page -->
+
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/charity-house/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+
+<!-- Koko Analytics v2.3.3 - https://www.kokoanalytics.com/ -->
+<script>
+(()=>{var e=window.koko_analytics;e.trackPageview=function(i,o){if(/bot|crawl|spider|seo|lighthouse|facebookexternalhit|preview/i.test(navigator.userAgent)||window._phantom||window.__nightmare||window.navigator.webdriver||window.Cypress){console.debug("Koko Analytics: Ignoring call to trackPageview because user agent is a bot or this is a headless browser.");return}navigator.sendBeacon(e.url,new URLSearchParams({action:"koko_analytics_collect",pa:i,po:o,r:document.referrer.indexOf(e.site_url)==0?"":document.referrer,m:e.use_cookie?"c":e.method[0]}))};var t=!1,a=()=>{!t&&document.visibilityState==="visible"&&(e.trackPageview(e.path,e.post_id),t=!0)};document.addEventListener("visibilitychange",a);window.addEventListener("load",a);})();
+</script>
+
+<script src="https://www.vapexhale.com/wp-content/themes/charity-house/assets/js/aos.js?ver=1.0.0" id="aos-script-js"></script>
+<script src="https://www.vapexhale.com/wp-content/themes/charity-house/assets/js/swiper-bundle.min.js?ver=1.0.0" id="swiper-script-js"></script>
+<script src="https://www.vapexhale.com/wp-content/themes/charity-house/assets/js/script.js?ver=1.0.0" id="charity-house-script-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.vapexhale.com/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.vapexhale.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+
+</body>
+
+</html>

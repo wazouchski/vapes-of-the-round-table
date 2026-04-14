@@ -1,0 +1,936 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# website: https://ogp.me/ns/website#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="theme-color" content="#8b6f4b">
+	<!--<meta name="google-site-verification" content="6JMoPqLfEk4Tg5PA-TGMQms9aqP6OiUx9mVpB-K8hO0" />-->
+		
+		<link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/main-style.css" />
+		<link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/style-wp.css" />
+	
+	<link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/reset.css" />
+    <!--<link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/font-awesome.min.css" />-->
+	<link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/flickity.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<meta name='robots' content='noindex, follow' />
+<!-- Speed of this site is optimised by WP Performance Score Booster plugin v2.0 - https://dipakgajjar.com/wp-performance-score-booster/ -->
+
+	<!-- This site is optimized with the Yoast SEO plugin v16.6 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Flowermate</title>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//platform-api.sharethis.com' />
+<link rel='dns-prefetch' href='//www.dwin1.com' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<link rel="alternate" type="application/rss+xml" title="Flowermate &raquo; Feed" href="https://flowermate.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Flowermate &raquo; Comments Feed" href="https://flowermate.com/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://flowermate.com/wp-includes/css/dist/block-library/style.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-vendors-style-css'  href='https://flowermate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css'  href='https://flowermate.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=5.1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='yith-wcan-shortcodes-css'  href='https://flowermate.com/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/css/shortcodes.css?ver=4.1.0' type='text/css' media='all' />
+<style id='yith-wcan-shortcodes-inline-css' type='text/css'>
+:root{
+	--yith-wcan-filters_colors_titles: #434343;
+	--yith-wcan-filters_colors_background: #FFFFFF;
+	--yith-wcan-filters_colors_accent: #A7144C;
+	--yith-wcan-filters_colors_accent_r: 167;
+	--yith-wcan-filters_colors_accent_g: 20;
+	--yith-wcan-filters_colors_accent_b: 76;
+	--yith-wcan-color_swatches_border_radius: 100%;
+	--yith-wcan-color_swatches_size: 30px;
+	--yith-wcan-labels_style_background: #FFFFFF;
+	--yith-wcan-labels_style_background_hover: #A7144C;
+	--yith-wcan-labels_style_background_active: #A7144C;
+	--yith-wcan-labels_style_text: #434343;
+	--yith-wcan-labels_style_text_hover: #FFFFFF;
+	--yith-wcan-labels_style_text_active: #FFFFFF;
+	--yith-wcan-anchors_style_text: #434343;
+	--yith-wcan-anchors_style_text_hover: #A7144C;
+	--yith-wcan-anchors_style_text_active: #A7144C;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://flowermate.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.1' type='text/css' media='all' />
+<style id='contact-form-7-inline-css' type='text/css'>
+.wpcf7 .wpcf7-recaptcha iframe {margin-bottom: 0;}.wpcf7 .wpcf7-recaptcha[data-align="center"] > div {margin: 0 auto;}.wpcf7 .wpcf7-recaptcha[data-align="right"] > div {margin: 0 0 0 auto;}
+</style>
+<link rel='stylesheet' id='dispensary-age-verification-css'  href='https://flowermate.com/wp-content/plugins/dispensary-age-verification/public/css/dispensary-age-verification-public.min.css?ver=2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='menu-image-css'  href='https://flowermate.com/wp-content/plugins/menu-image/includes/css/menu-image.css?ver=3.0.4' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='https://flowermate.com/wp-includes/css/dashicons.min.css?ver=5.7.2' type='text/css' media='all' />
+<style id='dashicons-inline-css' type='text/css'>
+[data-font="Dashicons"]:before {font-family: 'Dashicons' !important;content: attr(data-icon) !important;speak: none !important;font-weight: normal !important;font-variant: normal !important;text-transform: none !important;line-height: 1 !important;font-style: normal !important;-webkit-font-smoothing: antialiased !important;-moz-osx-font-smoothing: grayscale !important;}
+</style>
+<link rel='stylesheet' id='perfect_columns-css'  href='https://flowermate.com/wp-content/plugins/reliable-perfect-columns/css/perfect-columns.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://flowermate.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.3.3' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='share-this-share-buttons-sticky-css'  href='https://flowermate.com/wp-content/plugins/sharethis-share-buttons/css/mu-style.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wcpf-plugin-style-css'  href='https://flowermate.com/wp-content/plugins/woocommerce-product-filters/assets/css/plugin.css?ver=1.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='https://flowermate.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='https://flowermate.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=5.4.1' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='https://flowermate.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=5.4.1' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='woo_discount_rules-customize-table-ui-css-css'  href='https://flowermate.com/wp-content/plugins/woo-discount-rules/v2/Assets/Css/customize-table.css?ver=2.3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='am_style-css-css'  href='https://flowermate.com/wp-content/themes/flowermate/style.css?ver=1621331642' type='text/css' media='all' />
+<link rel='stylesheet' id='am_css-animate-css-css'  href='https://flowermate.com/wp-content/themes/flowermate/css/animate.css?ver=1621339487' type='text/css' media='all' />
+<link rel='stylesheet' id='am_style-wp-css-css'  href='https://flowermate.com/wp-content/themes/flowermate/style-wp.css?ver=1621331658' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css'  href='https:////maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='newsletter-css'  href='https://flowermate.com/wp-content/plugins/newsletter/style.css?ver=7.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmenucart-icons-css'  href='https://flowermate.com/wp-content/plugins/wp-menu-cart-pro/assets/css/wpmenucart-icons-pro.css?ver=3.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmenucart-font-css'  href='https://flowermate.com/wp-content/plugins/wp-menu-cart-pro/assets/css/wpmenucart-font.css?ver=3.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpmenucart-css'  href='https://flowermate.com/wp-content/plugins/wp-menu-cart-pro/assets/css/wpmenucart-main.css?ver=3.4.0' type='text/css' media='all' />
+<link rel='stylesheet' id='sv-wc-payment-gateway-payment-form-v5_7_1-css'  href='https://flowermate.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/css/frontend/sv-wc-payment-gateway-payment-form.min.css?ver=5.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-variation-swatches-css'  href='https://flowermate.com/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css?ver=1.1.17' type='text/css' media='all' />
+<style id='woo-variation-swatches-inline-css' type='text/css'>
+.variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
+</style>
+<link rel='stylesheet' id='woo-variation-swatches-theme-override-css'  href='https://flowermate.com/wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='woo-variation-swatches-tooltip-css'  href='https://flowermate.com/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css?ver=1.1.17' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-css-css'  href='https://flowermate.com/wp-content/themes/flowermate/css/custom.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-blog-css-css'  href='https://flowermate.com/wp-content/themes/flowermate/css/custom-blog.css?ver=5.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wpgdprc.css-css'  href='https://flowermate.com/wp-content/plugins/wp-gdpr-compliance/assets/css/front.min.css?ver=1621423788' type='text/css' media='all' />
+<style id='wpgdprc.css-inline-css' type='text/css'>
+
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:before { content: 'Yes'; }
+            div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:after { content: 'No'; }
+        
+</style>
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}</div>
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}</div>
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}</div>
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/themes/flowermate/js/jquery.min.js?ver=5.7.2' id='jquery-js'></script>
+<script type='text/javascript' id='jquery-js-after'>
+var v = jQuery.fn.jquery;
+			if (v && parseInt(v) >= 3 && window.self === window.top) {
+				var readyList=[];
+				window.originalReadyMethod = jQuery.fn.ready;
+				jQuery.fn.ready = function(){
+					if(arguments.length && arguments.length > 0 && typeof arguments[0] === "function") {
+						readyList.push({"c": this, "a": arguments});
+					}
+					return window.originalReadyMethod.apply( this, arguments );
+				};
+				window.wpfReadyList = readyList;
+			}
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/accounting/accounting.min.js?ver=0.4.2' id='accounting-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/dispensary-age-verification/public/js/js.cookie.js?ver=2.5' id='age-verification-cookie-js'></script>
+<script type='text/javascript' id='dispensary-age-verification-js-extra'>
+/* <![CDATA[ */
+var object_name = {"bgImage":"","minAge":"21","imgLogo":"https:\/\/flowermate.com\/wp-content\/uploads\/2017\/10\/logo.png","title":"Age Verification","copy":"You must be [age] years old to enter.","btnYes":"YES","btnNo":"NO","redirectOnFail":"","beforeContent":"","afterContent":"","successTitle":"Success!","successText":"You are now being redirected back to the site ...","failTitle":"Sorry!","failText":"You are not old enough to view the site ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/dispensary-age-verification/public/js/dispensary-age-verification-public.js?ver=2.5' id='dispensary-age-verification-js'></script>
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=60a4e3ad1697e500191a600a&#038;product=inline-buttons' id='share-this-share-buttons-mu-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce-product-filters/assets/js/polyfills.min.js?ver=1.2.0' id='wcpf-plugin-polyfills-script-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.12.1' id='jquery-ui-mouse-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.12.1' id='jquery-ui-slider-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce-product-filters/assets/js/front-vendor.min.js?ver=1.2.0' id='wcpf-plugin-vendor-script-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/underscore.min.js?ver=1.8.3' id='underscore-js'></script>
+<script type='text/javascript' id='wp-util-js-extra'>
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/wp-util.min.js?ver=5.7.2' id='wp-util-js'></script>
+<script type='text/javascript' id='wcpf-plugin-script-js-extra'>
+/* <![CDATA[ */
+var WCPFData = {"registerEntities":{"Project":{"id":"Project","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_project","label":"Project","default_options":{"urlNavigation":"query","filteringStarts":"auto","urlNavigationOptions":[],"useComponents":["pagination","sorting","results-count","page-title","breadcrumb"],"paginationAjax":true,"sortingAjax":true,"productsContainerSelector":".products","paginationSelector":".woocommerce-pagination","resultCountSelector":".woocommerce-result-count","sortingSelector":".woocommerce-ordering","pageTitleSelector":".woocommerce-products-header__title","breadcrumbSelector":".woocommerce-breadcrumb","multipleContainersForProducts":true},"is_grouped":true,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Project\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Project\\Filter_Component","variations":false},"BoxListField":{"id":"BoxListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Box List","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","multiSelect":true,"boxSize":"45px"},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Box_list\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Box_List\\Filter_Component","variations":true},"CheckBoxListField":{"id":"CheckBoxListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Checkbox","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","seeMoreOptionsBy":"scrollbar","heightOfVisibleContent":12},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Check_Box_List\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Check_Box_List\\Filter_Component","variations":true},"DropDownListField":{"id":"DropDownListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Drop Down","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","titleItemReset":"Show all"},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Drop_Down_List\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Drop_Down_List\\Filter_Component","variations":true},"ButtonField":{"id":"ButtonField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Button","default_options":{"cssClass":"","action":"reset"},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Button\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Button\\Filter_Component","variations":true},"ColorListField":{"id":"ColorListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Colors","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","optionKey":"colors"},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Color_List\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Color_List\\Filter_Component","variations":true},"RadioListField":{"id":"RadioListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Radio","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","titleItemReset":"Show all","seeMoreOptionsBy":"scrollbar","heightOfVisibleContent":12},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Radio_List\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Radio_List\\Filter_Component","variations":true},"TextListField":{"id":"TextListField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Text List","default_options":{"itemsSource":"attribute","itemsDisplay":"all","queryType":"or","itemsDisplayHierarchical":true,"displayHierarchicalCollapsed":false,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","cssClass":"","actionForEmptyOptions":"hide","displayProductCount":true,"productCountPolicy":"for-option-only","multiSelect":true,"useInlineStyle":false},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Text_List\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Text_List\\Filter_Component","variations":true},"PriceSliderField":{"id":"PriceSliderField","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Price slider","default_options":{"minPriceOptionKey":"min-price","maxPriceOptionKey":"max-price","optionKey":"price","optionKeyFormat":"dash","cssClass":"","displayMinMaxInput":true,"displayTitle":true,"displayToggleContent":true,"defaultToggleState":"show","displayPriceLabel":true},"is_grouped":false,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Price_Slider\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Field\\Price_Slider\\Filter_Component","variations":false},"SimpleBoxLayout":{"id":"SimpleBoxLayout","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Simple Box","default_options":{"displayToggleContent":true,"defaultToggleState":"show","cssClass":""},"is_grouped":true,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Layout\\Simple_Box\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Layout\\Simple_Box\\Filter_Component","variations":false},"ColumnsLayout":{"id":"ColumnsLayout","class":"WooCommerce_Product_Filter_Plugin\\Entity","post_type":"wcpf_item","label":"Columns","default_options":{"columns":[{"entities":[],"options":{"width":"50%"}}]},"is_grouped":true,"editor_component_class":"WooCommerce_Product_Filter_Plugin\\Layout\\Columns\\Editor_Component","filter_component_class":"WooCommerce_Product_Filter_Plugin\\Layout\\Columns\\Filter_Component","variations":false}},"messages":{"selectNoMatchesFound":"No matches found"},"selectors":{"productsContainer":".products","paginationContainer":".woocommerce-pagination","resultCount":".woocommerce-result-count","sorting":".woocommerce-ordering","pageTitle":".woocommerce-products-header__title","breadcrumb":".woocommerce-breadcrumb"},"pageUrl":"https:\/\/flowermate.com\/wp-content\/uploads\/2020\/01\/Slick.jpg","isPaged":"","scriptAfterProductsUpdate":"","scrollTop":"no","priceFormat":{"currencyFormatNumDecimals":0,"currencyFormatSymbol":"&#36;","currencyFormatDecimalSep":".","currencyFormatThousandSep":",","currencyFormat":"%s%v"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce-product-filters/assets/js/plugin.min.js?ver=1.2.0' id='wcpf-plugin-script-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/wp-retina-2x/app/picturefill.min.js?ver=1621329811' id='wr2x-picturefill-js-js'></script>
+<script type="text/javascript" src="https://www.dwin1.com/19038.js?ver=1.5.3" defer data-noptimize></script>
+<script type='text/javascript' id='shareasale-wc-tracker-autovoid-js-extra'>
+/* <![CDATA[ */
+var shareasaleWcTrackerAutovoidData = {"autovoid_key":null,"autovoid_value":null};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/shareasale-wc-tracker/includes/js/shareasale-wc-tracker-autovoid.js?ver=1.5.3' id='shareasale-wc-tracker-autovoid-js'></script>
+<script type='text/javascript' id='awdr-main-js-extra'>
+/* <![CDATA[ */
+var awdr_params = {"ajaxurl":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php","nonce":"45a9e4e024","enable_update_price_with_qty":"show_when_matched","refresh_order_review":"0","custom_target_simple_product":"","custom_target_variable_product":"","js_init_trigger":"","awdr_opacity_to_bulk_table":"","awdr_dynamic_bulk_table_status":"0","awdr_dynamic_bulk_table_off":"on","custom_simple_product_id_selector":"","custom_variable_product_id_selector":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woo-discount-rules/v2/Assets/Js/site_main.js?ver=2.3.7' id='awdr-main-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woo-discount-rules/v2/Assets/Js/awdr-dynamic-price.js?ver=2.3.7' id='awdr-dynamic-price-js'></script>
+<script type='text/javascript' id='ajax_posts-js-extra'>
+/* <![CDATA[ */
+var ajax_posts_params = {"ajaxurl":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php","maxpages":"2"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/themes/flowermate/includes/js/ajax-posts.js?ver=1621331810' id='ajax_posts-js'></script>
+<script type='text/javascript' id='wpmenucart-ajax-assist-js-extra'>
+/* <![CDATA[ */
+var wpmenucart_ajax_assist = {"shop_plugin":"WooCommerce","always_display":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/wp-menu-cart-pro/assets/js/wpmenucart-ajax-assist.js?ver=3.4.0' id='wpmenucart-ajax-assist-js'></script>
+<link rel="https://api.w.org/" href="https://flowermate.com/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://flowermate.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://flowermate.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.7.2" />
+<meta name="generator" content="WooCommerce 5.4.1" />
+		<style type="text/css">
+		.avwp-av-overlay {
+			background-image: url();
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			box-sizing: border-box;
+		}
+		.avwp-av {
+			box-shadow: none;
+		}
+		</style>
+	<script type="text/javascript">window.wp_data = {"ajax_url":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php"};</script>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	
+
+<!-- social and search optimization by WPSSO Core v8.33.0 - https://wpsso.com/ -->
+<!-- wpsso meta tags begin -->
+<meta name="wpsso:mark:begin" content="wpsso meta tags begin"/>
+<!-- generator:1 --><meta name="generator" content="WPSSO Core 8.33.0/L*"/>
+<!-- generator:2 --><meta name="generator" content="WPSSO JSON 4.17.2/L*"/>
+<!-- generator:3 --><meta name="generator" content="WPSSO UM 4.4.1/S"/>
+<meta property="fb:app_id" content="324461518060387"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://flowermate.com/wp-content/uploads/2020/01/Slick.jpg"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Flowermate - Aromatherapy Made Easy."/>
+<meta property="og:title" content="Page not found"/>
+<meta property="og:description" content="No Description."/>
+<!-- og:image:1 --><meta property="og:image" content="https://flowermate.com/wp-content/uploads/2018/01/flowermate-social-share-600x315-cropped.jpg"/>
+<!-- og:image:1 --><meta property="og:image:width" content="600"/>
+<!-- og:image:1 --><meta property="og:image:height" content="315"/>
+<meta name="twitter:domain" content="flowermate.com"/>
+<meta name="twitter:site" content="@flowermatevapes"/>
+<meta name="twitter:title" content="Page not found"/>
+<meta name="twitter:description" content="No Description."/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:image" content="https://flowermate.com/wp-content/uploads/2018/01/flowermate-social-share-600x600-cropped.jpg"/>
+<meta name="thumbnail" content="https://flowermate.com/wp-content/uploads/2018/01/flowermate-social-share-600x315-cropped.jpg"/>
+<script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@id": "/wp-content/uploads/2020/01/Slick.jpg#sso/webpage",
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "mainEntityOfPage": "https://flowermate.com/wp-content/uploads/2020/01/Slick.jpg",
+            "url": "https://flowermate.com/wp-content/uploads/2020/01/Slick.jpg",
+            "name": "Page not found",
+            "description": "No Description.",
+            "potentialAction": [
+                {
+                    "@context": "https://schema.org",
+                    "@type": "ReadAction",
+                    "target": "https://flowermate.com/wp-content/uploads/2020/01/Slick.jpg"
+                }
+            ],
+            "image": [
+                {
+                    "@id": "/wp-content/uploads/2018/01/flowermate-social-share-1200x675-cropped.jpg#sso/image.object"
+                }
+            ],
+            "headline": "Page not found",
+            "thumbnailUrl": "https://flowermate.com/wp-content/uploads/2018/01/flowermate-social-share-600x315-cropped.jpg",
+            "primaryImageOfPage": {
+                "@id": "/wp-content/uploads/2018/01/flowermate-social-share-1200x675-cropped.jpg#sso/image.object"
+            }
+        },
+        {
+            "@id": "/wp-content/uploads/2018/01/flowermate-social-share-1200x675-cropped.jpg#sso/image.object",
+            "@context": "https://schema.org",
+            "@type": "ImageObject",
+            "url": "https://flowermate.com/wp-content/uploads/2018/01/flowermate-social-share-1200x675-cropped.jpg",
+            "identifier": "919-wpsso-schema-16x9",
+            "name": "flowermate-social-share",
+            "description": "No Description.",
+            "fileFormat": "image/jpeg",
+            "uploadDate": "2018-01-23T05:48:13+00:00",
+            "width": 1200,
+            "height": 675
+        }
+    ]
+}</script>
+<meta name="wpsso:mark:end" content="wpsso meta tags end"/>
+<!-- wpsso meta tags end -->
+<!-- added on 2026-04-14T02:13:37+00:00 in 0.027237 secs from https://flowermate.com -->
+
+<meta name="generator" content="Powered by Slider Revolution 6.3.3 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<!--<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/192a42cea558da6658df7539e/d2b1d4927750cee35d0ccd01b.js");</script>--><script type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}				
+					if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+					document.getElementById(e.c).height = newh+"px";
+					window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+		<style type="text/css" id="wp-custom-css">
+			.footer .widgets h3{display:none!important}
+.footer{background:#000!important;font-size:14px;font-family: Arial;}
+.social img{width:30%}
+.footer .col p{font-size:14px}
+.footer .widgets{background:none}
+.footer .disclaimer{background: #111;font-size: 14px;}
+.xx-mailchimp{margin-bottom:100px;font-size:14px!important}
+.footer .widgets .widget{width:50%}
+.footer .col.last{padding:0px}
+.xx-mailchimp .content__formFields input{font-size:14px!important;border: 1px solid #444!important;}
+.xx-mailchimp .content__button input{font-size:16px!important;background: #242424;text-transform:uppercase;}
+.main-nav{font-size:14px!important}
+.footer .logo{width:50%}
+.footer .col p{margin-top: 120px;padding:0px!important}
+.footer .social{padding-left:30px}
+.footer .col .map-holder{height: 290px;}
+.footer .col.middle{width:30%!important}
+.footer .col.last{width:35%!important}
+.sidebar .widget_inner h3{display:none}
+.slick-track .slick-slide img{width: 75%;}
+cloudflare-app[app="welcome-bar"] alert-message-content {
+    max-width: 1250px !important;
+}
+.body.pad {
+	overflow: hidden;
+	margin: 0;
+	padding: 0px 0 60px !important;
+}
+.home .pop-main{
+/*display:block !important;	*/
+}
+
+.block-title p span {
+	font-size: 40px;
+	line-height: 50px;
+}
+.price {
+	display: none !important;
+}
+.single_add_to_cart_button.button,.cart-block,.woocommerce-Price-amount.amount,.product-info .price {
+	display: none !important;
+}		</style>
+		<style type="text/css">/** Mega Menu CSS: fs **/</style>
+<!-- WooCommerce Google Analytics Integration -->
+		<script type='text/javascript'>
+			var gaProperty = 'UA-186789575-1';
+			var disableStr = 'ga-disable-' + gaProperty;
+			if ( document.cookie.indexOf( disableStr + '=true' ) > -1 ) {
+				window[disableStr] = true;
+			}
+			function gaOptout() {
+				document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+				window[disableStr] = true;
+			}
+		</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-186789575-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('set', 'developer_id.dOGY3NW', true);
+
+		gtag('config', 'UA-186789575-1', {
+			'allow_google_signals': true,
+			'link_attribution': true,
+			'anonymize_ip': true,
+			'custom_map': {
+				'dimension1': 'logged_in'
+			},
+			'logged_in': 'no'
+		} );
+
+		gtag( 'event', '404_not_found', { 'event_category':'error', 'event_label':'page: ' + document.location.pathname + document.location.search + ' referrer: ' + document.referrer });
+		</script>
+		
+		<!-- /WooCommerce Google Analytics Integration -->    <link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/flowermate.css" />
+    <link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/media-screen.css" />
+    <link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://flowermate.com/wp-content/themes/flowermate/css/header-new.css" />
+</head>
+
+
+<body class="error404 theme-flowermate woocommerce-no-js yith-wcan-free woo-variation-swatches wvs-theme-flowermate wvs-theme-child-flowermate wvs-style-squared wvs-attr-behavior-blur wvs-tooltip wvs-css wvs-show-label unknown">
+
+<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTWZ36T"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="wrapper">
+
+		<!--<div class="top-header">
+			            	<div class="container">
+					            	</div>
+			            <div class="close">
+                <img src="/images/close.png" alt="close" />
+            </div>
+        </div>-->
+       <div class="header othrpge">
+        	<div class="container">
+                <div class="header-in justify-content-between align-items-center">
+                   <nav class="top-nav">
+											</nav>
+					<div class="logo-nav-wrap">
+						<div class="col-lg-5 col-sm-3 col-xs-6">
+							<div class="logo">
+		                        <a href="https://flowermate.com/" class="logo">
+									<img src="https://flowermate.com/wp-content/uploads/2017/10/logo.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/logo.png 2x" width="179" height="57" alt="Flowermate Logo" class="">								</a>
+                    		</div>
+						</div>
+						<div class="col-lg-7 col-sm-9 col-xs-6">
+							<div class="main-menu">
+		                    	<ul>
+		                    		<li><a href="https://flowermate.com">HOME</a></li>
+		                    		<li><a href="https://flowermate.com/product-category/dry-herb">PRODUCTS</a>
+		                    			<ul class="submenu">
+		                    													
+		                    					<li><a href="https://flowermate.com/product/slick/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/12/slick-2.png" srcset="https://flowermate.com/wp-content/uploads/2018/12/slick-2.png 2x" width="687" height="764" alt="Slick- Dry Herb Pen" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						SLICK		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/aura/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/12/img-aura6-1.png" srcset="https://flowermate.com/wp-content/uploads/2017/12/img-aura6-1.png 2x" width="288" height="764" alt="Aura - Best Dry Herb Pen" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						AURA		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/hybridx/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/10/img-item06@2x.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/img-item06@2x.png 2x" width="408" height="764" alt="Hybrid X - Dry Herb Vaporizer" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						HYBRID X		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/stylo-vaporizer/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2022/01/stylo-dry-herb-vape-pen-1.png" srcset="https://flowermate.com/wp-content/uploads/2022/01/stylo-dry-herb-vape-pen-1.png 2x" width="342" height="600" alt="" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						Stylo		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/wix-oil-vaporizer-kit/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2021/08/wix-oil-vaporizer-kit-2.png" srcset="https://flowermate.com/wp-content/uploads/2021/08/wix-oil-vaporizer-kit-2.png 2x" width="475" height="640" alt="" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						Wix		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/cap-pro/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2020/10/cap-1.png" srcset="https://flowermate.com/wp-content/uploads/2020/10/cap-1.png 2x" width="294" height="764" alt="Cap 1 - Best Dry Herb Pen" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						CAP PRO		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/cap-1/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2019/11/cap-place-holder.png" srcset="https://flowermate.com/wp-content/uploads/2019/11/cap-place-holder.png 2x" width="233" height="708" alt="Cap Holder - Dry Herb Pen" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						CAP		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/v5-nano/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/01/4.png" srcset="https://flowermate.com/wp-content/uploads/2018/01/4.png 2x" width="568" height="471" alt="" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						V5 NANO		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/v5s-pro/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/10/img-item10@2x.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/img-item10@2x.png 2x" width="491" height="764" alt="V5.os Pro - Dry Herb And Oil Vaporizer" class=""></div>
+		                    						<?php// echo wp_trim_words( get_the_title(), 1 ); ?>
+		                    						<?php// the_title(); ?>
+		                    						V5.0s PRO		                    					</a></li>
+		                    						    										                    			</ul>
+		                    		</li>
+		                    		<li class="accs"><a href="https://flowermate.com/product-category/accessories">ACCESSORIES</a>
+		                    			<ul class="submenu">
+		                    													
+		                    					<li><a href="https://flowermate.com/product/replacement-mouthpiece-for-slick/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2020/05/slick-mp-copy.png" srcset="https://flowermate.com/wp-content/uploads/2020/05/slick-mp-copy.png 2x" width="154" height="301" alt="Slick Mouthpiece - Dry Herb Pen" class=""></div>
+		                    						<!--<span>Replacement&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						Slick <br>Mouthpiece		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/replacement-v5-nano-mouthpiece/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/06/Untitled-1-2.png" srcset="https://flowermate.com/wp-content/uploads/2018/06/Untitled-1-2.png 2x" width="100" height="292" alt="V5 Nano Mouthpiece - Flowermate" class=""></div>
+		                    						<!--<span>Replacement&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						V5 NANO Mouthpiece		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/borosilicate-mouthpiece/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/10/borosilicat-mouthpiece.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/borosilicat-mouthpiece@2x.png 2x" width="99" height="407" alt="Borosilicat Mouthpiece - Dry Herb Pen" class=""></div>
+		                    						<!--<span>Replacement&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						Borosilicate Mouthpiece		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/lithium-ion-18650-2500mah-battery/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/05/nano-water-pipe-adapter@2x.png" srcset="https://flowermate.com/wp-content/uploads/2018/05/nano-water-pipe-adapter@2x.png 2x" width="265" height="307" alt="V5 Nano Water Pipe Adapter - Flowermate" class=""></div>
+		                    						<!--<span>Lithium-ion&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						18650 Battery		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/loading-cap/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/05/loading-cap-nano@2x.png" srcset="https://flowermate.com/wp-content/uploads/2018/05/loading-cap-nano@2x.png 2x" width="263" height="212" alt="V5 Nano Loading Cap - Flowermate Shop" class=""></div>
+		                    						<!--<span>Loading&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						V5 Nano loading cap		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/v5-nano-water-pipe-adapter/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/05/nano-water-pipe-adapter@2x.png" srcset="https://flowermate.com/wp-content/uploads/2018/05/nano-water-pipe-adapter@2x.png 2x" width="265" height="307" alt="V5 Nano Water Pipe Adapter - Flowermate" class=""></div>
+		                    						<!--<span>Water&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						V5 Nano Adapter		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/replacement-aura-mouthpiece/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2018/03/aura-mouthpiece.png" srcset="https://flowermate.com/wp-content/uploads/2018/03/aura-mouthpiece.png 2x" width="348" height="403" alt="Aura Mouthpiece - Dry Herb Vape" class=""></div>
+		                    						<!--<span>Replacement&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						AURA Mouthpiece		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/mini-borosilicat-mouthpiece/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/10/borosilicat-mouthpiece-mini.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/borosilicat-mouthpiece-mini@2x.png 2x" width="99" height="365" alt="Borosilicat Mouthpiece - Dry Herb Pen" class=""></div>
+		                    						<!--<span>Replacement&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						Mini <br>Borosilicate		                    					</a></li>
+		                    													
+		                    					<li><a href="https://flowermate.com/product/water-pipe-adapter/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2017/10/Water-Pipe-Adapter.png" srcset="https://flowermate.com/wp-content/uploads/2017/10/Water-Pipe-Adapter@2x.png 2x" width="265" height="456" alt="Water Pipe Adapter" class=""></div>
+		                    						<!--<span>Water&hellip;</span>-->
+		                    						<?php// the_title(); ?>
+		                    						Pipe <br>Adapter		                    					</a></li>
+		                    						    										                    			</ul>
+		                    		</li>
+		                    		<li class="merch"><a href="https://flowermate.com/product-category/merch">MERCH</a>
+		                    			<ul class="submenu">
+		                    													
+		                    					<li><a href="https://flowermate.com/product/flowermate-polo-t-shirt/">
+		                    																			<div class="nav-pic-holder"><img src="https://flowermate.com/wp-content/uploads/2021/06/FM-T-shirt-1-2.jpg" srcset="https://flowermate.com/wp-content/uploads/2021/06/FM-T-shirt-1-2.jpg 2x" width="764" height="764" alt="" class=""></div>
+		                    						<span><?php// echo wp_trim_words( get_the_title(), 1 ); ?></span>
+		                    						<?php// the_title(); ?>
+		                    						Flowermate Polo T-Shirt		                    					</a></li>
+		                    						    										                    			</ul>
+		                    		</li>
+		                    		<li><a href="https://flowermate.com/blog-page">BLOG</a></li>
+		                    		<li><a href="https://flowermate.com/contact">CONTACT</a></li>
+		                    	</ul>
+                    		</div>
+		                    <div id="nav-icon1" class="mob-only">
+		                        <span></span>
+		                        <span></span>
+		                        <span></span>
+		                    </div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+                    
+                    
+                </div>
+            </div>
+		</div>
+		      
+    <div class="body pad">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div class="content-left">
+	
+                		<div class="breadcrumb"><div class="breadcrumb-trail">  <a href="https://flowermate.com/" title="Flowermate" rel="home" class="trail-begin">Home</a> <span class="sep">/</span> 404 Not Found</div></div>                                                                                    
+                        <div class="post page">
+
+                            <div class="title">
+                            	<h2>Error 404 - Page not found!</h2>
+                            </div><!-- /title -->
+                            <div class="entry"><p>The page you trying to reach does not exist, or has been moved. Please use the menus or the search box to find what you are looking for.</p></div>
+
+                        </div><!-- /post -->
+        
+                    </div>
+
+                    <aside class="sidebar">
+<span class="bloglink"></span><p><a href="/blog/" class="backtoblog">Return to Blog Home</a></p>
+<h3>Latest Posts</h3>
+		
+		<div id="recent-posts-2" class="widget widget_recent_entries"><div class="widget_inner">
+		<h3 class="widgettitle">Recent Posts</h3>
+		<ul>
+											<li>
+					<a href="https://flowermate.com/flowermate-at-the-champs-show-2022/">Flowermate at the CHAMPS Show 2022</a>
+									</li>
+											<li>
+					<a href="https://flowermate.com/dry-herb-vaporizers-vs-other-smoking-methods/">Dry Herb Vaporizers &#038; Other Smoking Methods &#8211; Which One’s Best</a>
+									</li>
+											<li>
+					<a href="https://flowermate.com/mjbizcon-2021-las-vegas/">MJBizCon 2021, Las Vegas</a>
+									</li>
+											<li>
+					<a href="https://flowermate.com/special-mothers-day-giveaway/">Special Mother’s Day Giveaway</a>
+									</li>
+											<li>
+					<a href="https://flowermate.com/black-friday-vape-deals-10-off-2019/">Black Friday Vape Deals Are Just Around The Corner!— 10% OFF ALL SITEWIDE!</a>
+									</li>
+					</ul>
+
+		</div></div>
+</aside><!-- /sidebar -->                </div>
+            </div>
+        </div><!-- /content -->
+    </div>
+	
+
+
+		<div class="footer custom-footer">
+            <!--<div class="follow-us">
+                <div class="container">
+                    <h4>Follow Us on Social Media</h4>
+                    <ul>
+                                                <li><a target="_blank" href="https://facebook.com/flowermatevaporizers"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a target="_blank" href="https://instagram.com/flowermatevapes"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                <li><a target="_blank" href="https://twitter.com/flowermatevapes"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            </ul>
+                </div>
+            </div>-->
+            <div class="main-footer">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="sitemap d-flex">
+                        <div class="sitemap-link">
+                            <h6>QUICK LINKS</h6>
+                            <ul>
+							    							  									<li><a href=" /my-account/">My Account</a></li>
+                                							  									<li><a href="/contact/">Contact Us</a></li>
+                                							  									<li><a href="/code-check/">Code Check</a></li>
+                                                            </ul>
+                        </div>
+                        <div class="sitemap-link">
+                            <h6>INFORMATION</h6>
+                            <ul>
+                                                                 								 <li><a href="/return-policy/">Return Policy</a></li>
+                                                                 								 <li><a href="/terms-conditions/">Terms & Conditions</a></li>
+                                                                 								 <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                                                                 								 <li><a href="/nicotine-warning/">Nicotine Warning</a></li>
+                                                                 								 <li><a href="/affiliate-program/">Affiliate Program</a></li>
+                                                            </ul>
+                        </div>
+                    </div>
+                    <div class="f-logo">
+                        <a href="https://flowermate.com"><img src="https://flowermate.com/wp-content/uploads/2017/10/logo.png" alt="Flowermate Logo" /></a>
+                        <h4>Follow Us on Social Media</h4>
+                    <ul>
+                                                <li><a target="_blank" href="https://facebook.com/flowermatevaporizers"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a target="_blank" href="https://instagram.com/flowermatevapes"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                <li><a target="_blank" href="https://twitter.com/flowermatevapes"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		<!--<div class="pop-main">
+			<div class="overlay-close"></div>
+			<div class="popup">
+				<div class="close">
+					<img src="https://flowermate.com/wp-content/themes/flowermate/images/close2.png" alt="close" />
+				</div>
+				<img src="https://flowermate.com/wp-content/uploads/2020/01/popup-img.png" alt="" />
+
+				<div class="pop-up-txt">
+					<div class="the-img">
+						<img src="https://flowermate.com/wp-content/uploads/2020/01/the.png" alt="EXPLORE the DEFERENCE" />
+					</div>
+					<div class="sign-up">
+						<p>SIGN UP FOR OUR NEWSLETTER TO RECEIVE A COUPON FOR 10% OFF</p>
+					</div>
+					<form>
+						<div class="newsletter-form d-flex">
+							<form method="post" action="https://flowermate.com/?na=s"><div class="newsletter-form d-flex">
+<input type="email" placeholder="Email Address"  name="ne" />
+<input type="submit" value="Sign Up" />
+</div></form>						</div>
+					</form>
+					<div class="no-thanks">
+						<a href="#">NO THANKS</a>
+					</div>
+				</div>
+			</div>
+		</div>-->
+ 
+	<script src="https://code.jquery.com/jquery-migrate-1.4.1.js"></script>
+	<script src="https://flowermate.com/wp-content/themes/flowermate/js/flickity-docs.min.js"></script>
+	<script src="https://flowermate.com/wp-content/themes/flowermate/js/jquery.cookie.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://flowermate.com/wp-content/themes/flowermate/js/owl.carousel.min.js"></script>
+    <!--<script>
+		jQuery(document).ready(function () {
+			var visited = jQuery.cookie('visited');
+			if (visited == 'yes') {
+				jQuery('.pop-main').hide('slow');
+			} else {
+				jQuery('.pop-main').show('slow');
+			}
+			jQuery.cookie('visited', 'yes', { expires: 7 });
+		});
+	</script>-->
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('button.wcpf-button.wcpf-button-action-filter').click(function() {
+				setTimeout(function(){ console.log(window.location.href); location.reload(); }, 3000);
+			});
+		});
+	</script>
+    <script type="text/javascript">
+        jQuery(window).on('load', function() {
+            var postClass = '.news-announcement .news-box';
+
+            var thisPost = jQuery(postClass),
+                thisEntry = thisPost.find('.entry'),
+                thisExcerpt = thisEntry.find('.excerpt');
+
+            thisEntry.stop().animate({
+                'bottom': ('-' + thisExcerpt.outerHeight() + 'px')
+            }, 400);
+
+
+
+            if (jQuery(window).width() > 768) {
+                jQuery(postClass).each(function() {
+                    var _post = jQuery(this),
+                        entry = _post.find('.entry'),
+                        postExcerpt = entry.find('.excerpt'),
+                        transitionSpeed = 400;
+
+                    if (postExcerpt.css('visibility') == 'hidden') {
+                        entry.css({
+                            'bottom': ('-' + postExcerpt.outerHeight() + 'px'),
+                            'visibility': 'visible'
+                        });
+                    }
+                });
+
+                jQuery(document.body).on('mouseenter', postClass, function(e) {
+                    var thisPost = jQuery(e.currentTarget),
+                        thisEntry = thisPost.find('.entry');
+
+                    thisEntry.stop().animate({
+                        'bottom': 0
+                    }, 400);
+
+                }).on('mouseleave', postClass, function(e) {
+                    var thisPost = jQuery(e.currentTarget),
+                        thisEntry = thisPost.find('.entry'),
+                        thisExcerpt = thisEntry.find('.excerpt');
+
+                    thisEntry.stop().animate({
+                        'bottom': ('-' + thisExcerpt.outerHeight() + 'px')
+                    }, 400);
+                });
+            } else {
+                jQuery(postClass).find('.entry').css({
+                    'bottom': 0,
+                    'visibility': 'visible'
+                });
+            }
+        });
+
+		jQuery('#main_menu li ul.sub-menu li a img').wrap('<em></em>');
+
+    </script>
+
+    <script src="https://flowermate.com/wp-content/themes/flowermate/js/custom.js"></script>
+			<script type="text/javascript">
+			(function( $ ) {
+				$.ageCheck({
+					"bgImage" : object_name.bgImage,
+					"minAge" : object_name.minAge,
+					"imgLogo" : object_name.imgLogo,
+					"title" : object_name.title,
+					"copy" : object_name.copy,
+					"btnYes" : object_name.btnYes,
+					"btnNo" : object_name.btnNo,
+					"redirectOnFail" : object_name.redirectOnFail,
+					"successTitle" : object_name.successTitle,
+					"successText" : object_name.successText,
+					"failTitle" : object_name.failTitle,
+					"failText" : object_name.failText,
+					"cookieDays" : object_name.cookieDays,
+					"adminDebug" : object_name.adminDebug,
+					"beforeContent" : object_name.beforeContent,
+					"afterContent" : object_name.afterContent
+				});
+			})( jQuery );
+		</script>
+	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a414f93d5b13275488706de12/c95e44f2c05f689fc7157e27a.js");</script>	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type='text/javascript' src='https://flowermate.com/wp-includes/js/jquery/ui/menu.min.js?ver=1.12.1' id='jquery-ui-menu-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type='text/javascript' id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://flowermate.com/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/dist/dom-ready.min.js?ver=eb19f7980f0268577acb5c2da5457de3' id='wp-dom-ready-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/dist/hooks.min.js?ver=50e23bed88bcb9e6e14023e9961698c1' id='wp-hooks-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/dist/i18n.min.js?ver=db9a9a37da262883343e941c3731bc67' id='wp-i18n-js'></script>
+<script type='text/javascript' id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type='text/javascript' id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/dist/a11y.min.js?ver=5e00de7a43b31bbb9eaf685f089a3903' id='wp-a11y-js'></script>
+<script type='text/javascript' id='jquery-ui-autocomplete-js-extra'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.12.1' id='jquery-ui-autocomplete-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js?ver=1.0.9' id='selectWoo-js'></script>
+<script type='text/javascript' id='yith-wcan-shortcodes-js-extra'>
+/* <![CDATA[ */
+var yith_wcan_shortcodes = {"query_param":"yith_wcan","supported_taxonomies":["product_cat","product_tag","pa_color","pa_included","pa_select-a-color","pa_select-your-unit","pa_size"],"content":"#content","change_browser_url":"1","instant_filters":"1","ajax_filters":"1","show_clear_filter":"","scroll_top":"","scroll_target":"","modal_on_mobile":"","session_param":"","base_url":"https:\/\/flowermate.com\/wp-content\/uploads\/2020\/01\/Slick.jpg\/","terms_per_page":"10","loader":"","mobile_media_query":"991","show_current_children":"","currency_format":{"symbol":"&#36;","decimal":".","thousand":",","precision":2,"format":"%s%v"},"labels":{"empty_option":"All","search_placeholder":"Search...","no_items":"No item found","show_more":"Show %d more","close":"Close","save":"Save","show_results":"Show results","clear_selection":"Clear","clear_all_selections":"Clear All"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/yith-woocommerce-ajax-navigation/assets/js/yith-wcan-shortcodes.min.js?ver=4.1.0' id='yith-wcan-shortcodes-js'></script>
+<script type='text/javascript' id='contact-form-7-js-extra'>
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/flowermate.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.1' id='contact-form-7-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.3.3' id='tp-tools-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.3.3' id='revmin-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70' id='jquery-blockui-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4' id='js-cookie-js'></script>
+<script type='text/javascript' id='woocommerce-js-extra'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=5.4.1' id='woocommerce-js'></script>
+<script type='text/javascript' id='wc-cart-fragments-js-extra'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_22051dafa2092bd69c27bc2578f3b2c1","fragment_name":"wc_fragments_22051dafa2092bd69c27bc2578f3b2c1","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=5.4.1' id='wc-cart-fragments-js'></script>
+<script type='module' src='https://flowermate.com/wp-content/plugins/wp-performance-score-booster//assets/js/page-preloader.js?ver=5.1.0' id='wppsb-page-preload-js'></script>
+<script type='text/javascript' id='mailchimp-woocommerce-js-extra'>
+/* <![CDATA[ */
+var mailchimp_public_data = {"site_url":"https:\/\/flowermate.com","ajax_url":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php","language":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/mailchimp-for-woocommerce/public/js/mailchimp-woocommerce-public.min.js?ver=2.5.1' id='mailchimp-woocommerce-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/jquery-payment/jquery.payment.min.js?ver=3.0.0' id='jquery-payment-js'></script>
+<script type='text/javascript' id='sv-wc-payment-gateway-payment-form-v5_7_1-js-extra'>
+/* <![CDATA[ */
+var sv_wc_payment_gateway_payment_form_params = {"card_number_missing":"Card number is missing","card_number_invalid":"Card number is invalid","card_number_digits_invalid":"Card number is invalid (only digits allowed)","card_number_length_invalid":"Card number is invalid (wrong length)","cvv_missing":"Card security code is missing","cvv_digits_invalid":"Card security code is invalid (only digits are allowed)","cvv_length_invalid":"Card security code is invalid (must be 3 or 4 digits)","card_exp_date_invalid":"Card expiration date is invalid","check_number_digits_invalid":"Check Number is invalid (only digits are allowed)","check_number_missing":"Check Number is missing","drivers_license_state_missing":"Drivers license state is missing","drivers_license_number_missing":"Drivers license number is missing","drivers_license_number_invalid":"Drivers license number is invalid","account_number_missing":"Account Number is missing","account_number_invalid":"Account Number is invalid (only digits are allowed)","account_number_length_invalid":"Account number is invalid (must be between 5 and 17 digits)","routing_number_missing":"Routing Number is missing","routing_number_digits_invalid":"Routing Number is invalid (only digits are allowed)","routing_number_length_invalid":"Routing number is invalid (must be 9 digits)"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/js/frontend/sv-wc-payment-gateway-payment-form.min.js?ver=5.7.1' id='sv-wc-payment-gateway-payment-form-v5_7_1-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce-gateway-authorize-net-cim/assets/js/frontend/wc-authorize-net-cim.min.js?ver=3.2.8' id='wc-authorize-net-cim-js'></script>
+<script type='text/javascript' id='wc-add-to-cart-variation-js-extra'>
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=5.4.1' id='wc-add-to-cart-variation-js'></script>
+<script type='text/javascript' id='woo-variation-swatches-js-extra'>
+/* <![CDATA[ */
+var woo_variation_swatches_options = {"is_product_page":"","show_variation_label":"1","variation_label_separator":":","wvs_nonce":"09d2e410fc"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js?ver=1.1.17' id='woo-variation-swatches-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1' id='hoverIntent-js'></script>
+<script type='text/javascript' id='megamenu-js-extra'>
+/* <![CDATA[ */
+var megamenu = {"timeout":"300","interval":"100"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.9.4' id='megamenu-js'></script>
+<script type='text/javascript' id='wpgdprc.js-js-extra'>
+/* <![CDATA[ */
+var wpgdprcData = {"ajaxURL":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php","ajaxSecurity":"8d25e33122","isMultisite":"","path":"\/","blogId":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/wp-gdpr-compliance/assets/js/front.min.js?ver=1621423782' id='wpgdprc.js-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/themes/flowermate/includes/js/vendor.js?ver=1621331809' id='am_includes-js-vendor-js-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/themes/flowermate/includes/js/main.js?ver=1621331808' id='am_includes-js-main-js-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/themes/flowermate/includes/js/general.js?ver=1621331809' id='am_includes-js-general-js-js'></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js?ver=4.1.2' id='am_handlebars-js'></script>
+<script type='text/javascript' src='https://flowermate.com/wp-includes/js/wp-embed.min.js?ver=5.7.2' id='wp-embed-js'></script>
+<script type='text/javascript' id='cbr-pro-front-js-js-extra'>
+/* <![CDATA[ */
+var ajax_object = {"cbr_ajax_url":"https:\/\/flowermate.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://flowermate.com/wp-content/plugins/woo-product-country-base-restrictions/assets/js/front.js?ver=2.9' id='cbr-pro-front-js-js'></script>
+<!-- WooCommerce JavaScript -->
+<script type="text/javascript">
+jQuery(function($) { 
+
+			$( '.add_to_cart_button:not(.product_type_variable, .product_type_grouped)' ).on( 'click', function() {
+				gtag( 'event', 'add_to_cart', { 'event_category': 'ecommerce', 'event_label': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')), 'items': [ {'id': ($(this).data('product_sku')) ? ($(this).data('product_sku')) : ('#' + $(this).data('product_id')),'quantity': $(this).data('quantity')} ] } );
+			});
+		
+ });
+</script>
+</body>
+</html>
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced (Page is 404) 
+
+Served from: flowermate.com @ 2026-04-13 19:13:37 by W3 Total Cache
+-->
