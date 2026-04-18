@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're In — The Round Table</title>
+  <meta name="description" content="You're now a member of The Round Table. Welcome to the community.">
+  <link rel="stylesheet" href="assets/style.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSX1RMMMSL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSX1RMMMSL');
+</script>
+<style>
+  .welcome-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 24px;
+  }
+
+  .welcome-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+
+  .welcome-title {
+    font-family: var(--font-title);
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .welcome-title span {
+    color: var(--gold);
+  }
+
+  .welcome-divider {
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 24px auto;
+  }
+
+  .welcome-desc {
+    max-width: 520px;
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 48px;
+  }
+
+  .welcome-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    max-width: 760px;
+  }
+
+  .welcome-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    text-align: left;
+    width: 220px;
+    text-decoration: none;
+    transition: border-color var(--transition), transform var(--transition);
+  }
+
+  .welcome-card:hover {
+    border-color: var(--gold-dark);
+    transform: translateY(-3px);
+    color: inherit;
+  }
+
+  .welcome-card-icon {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .welcome-card h3 {
+    font-family: var(--font-title);
+    font-size: 0.9rem;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+
+  .welcome-card p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">The Round Table</a>
+  <ul class="nav-links">
+    <li><a href="https://muddyriverworkshop.com/vapes-of-the-round-table/" target="_blank" rel="noopener">Reviews</a></li>
+    <li><a href="compendium/index.html">Compendium</a></li>
+    <li><a href="artisans.html">Artisans</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="https://buymeacoffee.com/theroundtable" target="_blank" class="nav-bmc">☕ Support Us</a></li>
+  </ul>
+</nav>
+
+<div class="welcome-wrap">
+
+  <p class="welcome-eyebrow">Confirmation Received</p>
+
+  <h1 class="welcome-title">You're at<br><span>The Table</span></h1>
+
+  <div class="welcome-divider"></div>
+
+  <p class="welcome-desc">
+    Your seat is reserved. We'll be in touch when there's something worth saying —
+    new reviews, compendium updates, and community news. No filler. Ever.
+  </p>
+
+  <div class="welcome-cards">
+
+    <a class="welcome-card" href="compendium/index.html">
+      <div class="welcome-card-icon">📜</div>
+      <h3>The Compendium</h3>
+      <p>Fifteen years of community knowledge, organized by device.</p>
+    </a>
+
+    <a class="welcome-card" href="https://muddyriverworkshop.com/vapes-of-the-round-table/" target="_blank" rel="noopener">
+      <div class="welcome-card-icon">⚔️</div>
+      <h3>Reviews</h3>
+      <p>Five reviewers. One vaporizer. Unsponsored and unscripted.</p>
+    </a>
+
+    <a class="welcome-card" href="artisans.html">
+      <div class="welcome-card-icon">🛠️</div>
+      <h3>Trusted Artisans</h3>
+      <p>Cottage vendors and makers trusted by the community.</p>
+    </a>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    &copy; 2026 The Round Table
+    &nbsp;&middot;&nbsp; <a href="https://buymeacoffee.com/theroundtable" target="_blank">☕ Buy Us a Coffee</a>
+    &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a>
+    &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy Policy</a>
+  </p>
+</footer>
+
+<script src="assets/age-gate.js"></script>
+</body>
+</html>
