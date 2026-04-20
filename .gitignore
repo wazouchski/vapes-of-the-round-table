@@ -2,6 +2,3 @@
 *.log
 Thumbs.db
 .DS_Store
-
-# Reviewer photos — pending group decision on names vs. handles
-assets/img/reviewers/
