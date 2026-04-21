@@ -226,6 +226,16 @@
       applyFilters();
     });
   });
+
+  // When a reviewer filter is active, pass it to the review page via query param
+  cards.forEach(function (card) {
+    card.addEventListener('click', function (e) {
+      if (activeReviewer === 'all') return;
+      e.preventDefault();
+      var href = card.getAttribute('href').split('?')[0];
+      window.location.href = href + '?reviewer=' + activeReviewer;
+    });
+  });
 }());
 </script>
 </body>

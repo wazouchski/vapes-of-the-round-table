@@ -262,6 +262,14 @@
       document.getElementById('tab-' + btn.dataset.tab).hidden = false;
     });
   });
+
+  // Activate tab from ?reviewer= query param (set by reviews index filter)
+  var params = new URLSearchParams(window.location.search);
+  var reviewer = params.get('reviewer');
+  if (reviewer) {
+    var target = document.querySelector('.tab-btn[data-tab="' + reviewer + '"]');
+    if (target) target.click();
+  }
 }());
 </script>
 </body>
