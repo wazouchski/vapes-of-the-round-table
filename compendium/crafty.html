@@ -59,6 +59,7 @@
 <tr><td><strong>App Control</strong></td><td>Yes — Bluetooth-connected smartphone app (iOS/Android)</td></tr>
 <tr><td><strong>Accessories Included</strong></td><td>Cooling unit, filling tool, brush, spare screens, spare sealing rings, USB charging cable with power adapter</td></tr>
 <tr><td><strong>Concentrate Use</strong></td><td>Supported via Liquid Pad accessory</td></tr>
+<tr><td><strong>Battery Temperature Sensor</strong></td><td>10k thermistor with JST connector (extremely fine gauge wire — fragile)</td></tr>
 <tr><td><strong>Dimensions</strong></td><td>Compact; designed for pocket portability</td></tr>
 </table>
 <p></p>
@@ -160,6 +161,26 @@
 <li><strong>Aftermarket battery pack replacement</strong>: A community member developed <strong>custom Crafty battery packs</strong> designed for easy user replacement, specifically for out-of-warranty units. This was a popular alternative to shipping the device back to the manufacturer.</li>
 <li><strong>DIY battery replacement</strong>: Some users attempted replacing the internal 18650 cell themselves. The original cell was identified as an <strong>NCR18650GA (3350 mAh)</strong>. Users who substituted lower-capacity cells (e.g., NCR18650PF at 2900 mAh) sometimes encountered charging recognition problems, suggesting that the battery management system may be sensitive to cell specifications.</li>
 </ul>
+<h3>JCat Custom Battery Packs</h3>
+<p>A community member known as <strong>JCat</strong> developed and sold custom aftermarket battery packs specifically engineered for easy Crafty/Mighty replacement. Pre-assembled with spot-welded cells and the correct connectors, these packs let users open the device and swap batteries without trying to source matching cells:</p>
+<ul>
+<li><strong>Crafty</strong>: 1 pack required (~$35–40 USD)</li>
+<li><strong>Mighty</strong>: 2 packs required (~$70 USD pair)</li>
+<li>Sold with a satisfaction guarantee.</li>
+</ul>
+<p>Widely considered the most reliable path to extending the device&#x27;s usable life past the original battery&#x27;s lifespan, vs. trying to swap in a generic 18650 (which often fails to be recognized by the BMS).</p>
+
+<h3>Battery Temperature Sensor Failure</h3>
+<p><strong>Symptoms</strong>: Blue and red flashing lights; app displays &quot;battery too low, warm up vaporizer&quot; even when the device is warm; intermittent functionality.</p>
+<p><strong>Cause</strong>: The 10k thermistor temperature sensor is connected via a tiny JST connector with extremely fine wire — fragile and prone to breaking during battery replacement or other internal repairs.</p>
+<p><strong>Community fix</strong>: One member successfully repaired a broken sensor by inserting solid-core breadboard jumper wire into the original connector (under the original crimp) and securing it with epoxy as a permanent fix. Salvaging a working sensor from a dead Mighty/Crafty unit is also an option. JCat noted that fabricating reliable replacement sensors is extremely difficult — only ~10% success rate using standard crimp tools.</p>
+
+<h3>Error Code 04 (Err 04) on Initial Use</h3>
+<p>Reported by at least one early adopter on first power-up. Resolved by holding the power button to fully shut the unit off, waiting a few minutes, then restarting. Persistent error codes typically indicate a hardware defect requiring warranty service.</p>
+
+<h3>Cracking at Cooling Unit Connection Point</h3>
+<p>The plastic housing where the cooling unit attaches is a known structural weak point. Repeated over-rotation of the cooling unit past the built-in tab stops can stress the joint and crack the outer shell. Storz &amp; Bickel covered such failures under warranty during the warranty period. Users were advised to be gentle when attaching/rotating the cooling unit and never force it past its stop points.</p>
+
 <h3>Charging Issues After Battery Swap</h3>
 <p>Users who replaced batteries with non-identical cells reported the device falsely indicating a full charge. Reconnecting the battery connectors sometimes temporarily resolved the issue, but it tended to recur. The community recommended using the <strong>exact same cell specification</strong> as the original or purchasing purpose-built replacement packs.</p>
 <h2>Accessories &amp; Modifications</h2>
@@ -174,7 +195,9 @@
 <tr><td><strong>Wear &amp; Tear Set</strong></td><td>Replacement sealing rings and screens from S&amp;B</td></tr>
 </table>
 <p></p>
-<p>The <strong>WPA</strong> was a popular community modification, allowing the Crafty to be used through a water pipe for additional cooling and filtration. Combined with the already-effective cooling unit, this setup was praised for exceptionally smooth vapor delivery.</p>
+<p>The <strong>WPA</strong> was a popular community modification, allowing the Crafty to be used through a water pipe for additional cooling and filtration. Combined with the already-effective cooling unit, this setup was praised for exceptionally smooth vapor delivery. The <strong>&quot;Easy Flow Water Tool Adapter&quot;</strong> for Crafty/Mighty was specifically called out — it replaces the standard cooling unit mouthpiece and accepts 14mm or 18mm glass joints. Some members also used a whip attachment as an alternative cooling path between the device and the user.</p>
+
+<p>One member specifically recommended the Crafty for a medical patient with ALS, noting its &quot;free flowing ease of draw&quot; was an excellent fit for users with limited lung capacity — a meaningful accessibility advantage over higher-resistance portables.</p>
 <p>The <strong>extra battery modification</strong> (20% extra capacity packs available from aftermarket sources) was noted in community marketplace listings, suggesting this was a sought-after upgrade given the device&#x27;s limited stock battery life.</p>
 <h2>Comparisons</h2>
 <h3>Crafty vs. Mighty</h3>

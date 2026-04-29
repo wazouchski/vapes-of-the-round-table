@@ -42,7 +42,7 @@
   <div class="article-body">
     <p># RBT Splinter</p>
 <h2>Overview</h2>
-<p>The RBT Splinter is a discontinued 510-threaded convection dry herb vaporizer designed by RastaBuddhaTao (RBT), a small artisan manufacturer known for the Milaana line of portable vaporizers. The Splinter adapted the Milaana&#x27;s convection heater design into a 510 form factor, allowing it to be powered by widely available box mods (regulated or unregulated electronic cigarette mods). This approach leveraged the sophisticated power electronics and temperature control firmware already present in box mods, eliminating the need for proprietary electronics.</p>
+<p>The RBT Splinter is a discontinued 510-threaded convection dry herb vaporizer designed by RastaBuddhaTao / Right Brain Technologies (RBT) — a small artisan operation based in the Adirondack region of New York, with founder Ryan handcrafting many of the early units., a small artisan manufacturer known for the Milaana line of portable vaporizers. The Splinter adapted the Milaana&#x27;s convection heater design into a 510 form factor, allowing it to be powered by widely available box mods (regulated or unregulated electronic cigarette mods). This approach leveraged the sophisticated power electronics and temperature control firmware already present in box mods, eliminating the need for proprietary electronics.</p>
 <p>The Splinter was developed with significant input from the vaporizer enthusiast community. As the designer noted, the community provided &quot;expert input early in the design process [that] enabled the rapid evolution of the RBT technology,&quot; and this spirit of customer involvement persisted throughout the product&#x27;s lifecycle. The device is frequently described as a &quot;log-style&quot; convection vaporizer in a portable 510 package — essentially a glass-lined heating chamber wrapped in an attractive wood body that screws onto a standard box mod.</p>
 <p>The Splinter line was discontinued, making it a sought-after collector&#x27;s piece in the community. Various versions were produced over its lifespan, reflecting an iterative design philosophy.</p>
 <h2>Specifications</h2>
@@ -110,6 +110,15 @@
 </table>
 <p></p>
 <p><strong>Community Note:</strong> The &quot;sweet spot&quot; was highly individual and depended on draw speed, ambient temperature, pack density, and the specific mod and firmware in use. A setting of approximately <strong>30W in VW mode with a 5-second manual preheat</strong> was a widely referenced baseline for new users.</p>
+<h3>TCR Sweet Spots (Temperature Control Mode)</h3>
+<p>For users running TC mode, the community converged on a relatively narrow range of TCR values for the Splinter&#x27;s stainless steel mesh heater (nominal resistance ~0.25 Ω):</p>
+<ul>
+<li><strong>TCR 125</strong> — preferred by some experienced users; works well across Splinter variants</li>
+<li><strong>TCR 140</strong> — widely used and commonly recommended; appears in most setup descriptions</li>
+<li><strong>TCR 170</strong> — reported by at least one user with a YiHi mod, on the high end of reported values</li>
+</ul>
+<p><strong>Resistance locking</strong>: Lock coil resistance at room temperature before use. Fine-tune in 0.001–0.002 Ω increments to adjust effective temperature delivery without changing the displayed setpoint.</p>
+
 <h3>Temperature Control Mode</h3>
 <p>For users with mods and firmware supporting TC mode with the Splinter&#x27;s stainless steel heater, temperature control could provide a more consistent experience. However, community opinion was divided on whether TC mode offered meaningful advantages over well-tuned wattage mode with the Splinter, as TC performance depended heavily on the mod&#x27;s TC implementation quality.</p>
 <h2>Maintenance &amp; Cleaning</h2>
@@ -176,7 +185,21 @@
 </table>
 <p></p>
 <h3>Firmware Options</h3>
-<p>Custom firmware was considered essential for optimal Splinter performance. The community discussed several options including <strong>Arctic Fox</strong> (for Joyetech/Wismec/Eleaf mods), which offered features like autofire, customizable preheat, and power curves that could be tailored to the Splinter&#x27;s convection heater characteristics.</p>
+<p>Custom firmware was considered essential for optimal Splinter performance:</p>
+<ul>
+<li><strong>Arctic Fox</strong> (Joyetech/Wismec/Eleaf mods) — autofire, customizable preheat, power curves tunable to the Splinter&#x27;s convection heater.</li>
+<li><strong>sur_myevic</strong> (Joyetech/Wismec) — community-recommended specifically for its <strong>cruise mode</strong> and <strong>sweet PID</strong> algorithm (under Vaping &gt; Algo). Different myevic builds have different feature sets — make sure you&#x27;re on sur_myevic, not vanilla myevic.</li>
+<li><strong>EScribe</strong> (DNA mods) — community-created Splinter and Splinter Z profiles are shared via the Evolv Vapor forum, allowing one-click configuration. Custom DNA75C themes were also developed.</li>
+</ul>
+<p><strong>EScribe gotcha</strong>: When importing Splinter profiles into a DNA mod that already has too many &quot;materials&quot; loaded, new profiles import without their associated material curves. <strong>Fix</strong>: Remove unused materials in EScribe before importing Splinter profiles.</p>
+
+<h3>Recommended DNA &amp; YiHi Mods</h3>
+<ul>
+<li><strong>HCigar VT75D</strong> (DNA) — specifically called out as a great pairing with the Splinter Z.</li>
+<li><strong>Lost Vape Therion</strong> (DNA, dual-battery) — popular pairing with OG Beta Splinters.</li>
+<li><strong>YiHi SXmini G Class</strong> — premium mod with its own TC implementation.</li>
+<li><strong>Wismec RX Gen3 Dual</strong> / <strong>RX200S</strong> — widely used budget options, especially with sur_myevic.</li>
+</ul>
 <h2>Comparisons</h2>
 <h3>Splinter vs. Lil&#x27; Bud</h3>
 <p>The most directly discussed comparison in the community was between the Splinter and the RBT Lil&#x27; Bud, both being RBT convection designs.</p>
