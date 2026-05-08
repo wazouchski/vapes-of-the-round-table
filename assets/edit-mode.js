@@ -40,7 +40,7 @@
   // Intercept image paste and drop, resize client-side, upload to the worker,
   // then insert an <img> with the returned R2-backed URL.
 
-  var MAX_DIMENSION = 1920;
+  var MAX_DIMENSION = 1600;
   var JPEG_QUALITY = 0.85;
   var ALLOWED_MIME = { "image/jpeg": 1, "image/png": 1, "image/webp": 1, "image/gif": 1 };
 
