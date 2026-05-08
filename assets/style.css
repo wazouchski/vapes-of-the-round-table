@@ -296,6 +296,113 @@ a:hover { color: var(--gold-light); }
   color: var(--gold-light);
 }
 
+/* ── Contact form modal ──────────────────────────────────── */
+.rt-contact-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 10000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.rt-contact-backdrop.open { display: flex; }
+
+.rt-contact-dialog {
+  background: var(--card-bg);
+  color: var(--text);
+  border: 1px solid var(--gold-dark);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.8rem;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  font-family: var(--font-body);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.rt-contact-dialog h2 {
+  font-family: var(--font-title);
+  color: var(--gold);
+  margin: 0 0 0.4rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.04em;
+}
+
+.rt-contact-dialog p.muted {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 1.1rem;
+}
+
+.rt-contact-dialog label {
+  display: block;
+  margin: 0.7rem 0 0.25rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+.rt-contact-dialog input,
+.rt-contact-dialog textarea {
+  width: 100%;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  background: var(--deep-navy);
+  border: 1px solid var(--card-border);
+  border-radius: 4px;
+  color: var(--text);
+  resize: vertical;
+}
+.rt-contact-dialog input:focus,
+.rt-contact-dialog textarea:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: 0;
+  border-color: var(--gold);
+}
+
+.rt-contact-dialog .rt-contact-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+
+.rt-contact-dialog button {
+  padding: 0.55rem 1.2rem;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  font-family: var(--font-body);
+}
+.rt-contact-dialog .rt-contact-cancel {
+  background: #444;
+  color: var(--text);
+}
+.rt-contact-dialog .rt-contact-cancel:hover { background: #555; }
+.rt-contact-dialog .rt-contact-submit {
+  background: var(--gold);
+  color: var(--charcoal);
+}
+.rt-contact-dialog .rt-contact-submit:hover { background: var(--gold-light); }
+.rt-contact-dialog .rt-contact-submit:disabled { opacity: 0.6; cursor: wait; }
+
+.rt-contact-dialog .rt-contact-status {
+  margin-top: 0.6rem;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  min-height: 1.2em;
+}
+.rt-contact-dialog .rt-contact-status.error { color: #e88; }
+.rt-contact-dialog .rt-contact-status.success { color: #6c6; }
+
 /* ── Footer ── */
 footer {
   text-align: center;
