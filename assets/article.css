@@ -67,6 +67,129 @@
   line-height: 1.75;
 }
 
+/* ── Photo slideshow ─────────────────────────────────────────
+   Renders <div class="article-photos"> as a single-image-at-a-time
+   slideshow with hover arrows and touch swipe support. Sits at the
+   top of the article body; the floated TOC sits to its right on desktop.
+   Hidden when empty. In edit mode (body.rt-editing) the slideshow chrome
+   is torn down by JS and images stack vertically so contributors can
+   manage them inline. */
+.article-photos:not(.has-photos) { display: none; }
+
+.article-photos.rt-slideshow-active {
+  position: relative;
+  margin: 0 0 28px 0;
+  background: var(--deep-navy);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  max-height: 460px;
+  outline: none;
+}
+
+.article-photos.rt-slideshow-active > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: var(--deep-navy);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  pointer-events: none;
+}
+.article-photos.rt-slideshow-active > img.active {
+  opacity: 1;
+}
+
+.rt-photo-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: var(--white);
+  font-size: 1.7rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.18s, background 0.18s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  padding: 0 0 3px 0; /* nudge the chevron up a hair */
+  z-index: 2;
+}
+.article-photos.rt-slideshow-active:hover .rt-photo-nav,
+.article-photos.rt-slideshow-active:focus-within .rt-photo-nav {
+  opacity: 1;
+}
+.rt-photo-nav:hover { background: rgba(0, 0, 0, 0.85); }
+.rt-photo-prev { left: 12px; }
+.rt-photo-next { right: 12px; }
+
+.rt-photo-counter {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  padding: 3px 9px;
+  border-radius: 10px;
+  pointer-events: none;
+  font-family: var(--font-body);
+  z-index: 2;
+}
+
+/* Single-photo case: hide nav/counter (only one image to show) */
+.article-photos.rt-slideshow-active:not(.multi) .rt-photo-nav,
+.article-photos.rt-slideshow-active:not(.multi) .rt-photo-counter {
+  display: none;
+}
+
+/* Mobile / touch: arrows always visible (no hover on touch devices) */
+@media (hover: none) {
+  .article-photos.rt-slideshow-active .rt-photo-nav { opacity: 0.85; }
+}
+
+/* Edit mode: slideshow chrome is removed by JS; show all photos stacked */
+body.rt-editing .article-photos {
+  display: block;
+  margin: 0 0 24px 0;
+  padding: 12px;
+  background: rgba(201, 160, 74, 0.06);
+  border: 1px dashed var(--gold-dark);
+  border-radius: var(--radius);
+}
+body.rt-editing .article-photos > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+  border-radius: 4px;
+  position: static;
+  opacity: 1;
+  pointer-events: auto;
+  background: transparent;
+}
+body.rt-editing .article-photos:empty::before,
+body.rt-editing .article-photos:not(:has(img))::before {
+  content: "Drop or paste device photos here";
+  display: block;
+  text-align: center;
+  padding: 32px 16px;
+  color: var(--text-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
 .article-body h2 {
   font-family: var(--font-title);
   font-size: 1.3rem;

@@ -33,6 +33,7 @@
     injectDialog();
     wireSuggestEditLink();
     wireImagePasteDrop();
+    initPhotoSlideshow();
   }
 
   // ─── IMAGE PASTE/DROP ──────────────────────────────────────────────────
@@ -201,6 +202,9 @@
 
   function enterEditMode() {
     if (document.body.classList.contains("rt-editing")) return;
+    // Tear down slideshow chrome so the user sees the raw markup of the photos
+    // div and can edit/remove individual photos inline.
+    teardownSlideshow();
     originalHtml = articleBody.innerHTML;
     articleBody.setAttribute("contenteditable", "true");
     articleBody.setAttribute("spellcheck", "true");
@@ -217,6 +221,8 @@
     articleBody.removeAttribute("contenteditable");
     articleBody.removeAttribute("spellcheck");
     document.body.classList.remove("rt-editing");
+    // Re-initialize the slideshow now that we're out of edit mode.
+    initPhotoSlideshow();
   }
 
   function injectToolbar() {
@@ -323,6 +329,96 @@
       setStatus("Network error: " + e.message, "error");
       submitBtn.disabled = false;
     }
+  }
+
+  // ─── PHOTO SLIDESHOW ───────────────────────────────────────────────────
+  // Renders <div class="article-photos"> as a single-image-at-a-time slideshow
+  // with hover arrows on desktop and touch swipe on mobile.
+
+  function initPhotoSlideshow() {
+    var photosEl = articleBody.querySelector(".article-photos");
+    if (!photosEl) return;
+    var imgs = photosEl.querySelectorAll(":scope > img");
+    if (imgs.length === 0) {
+      photosEl.style.display = "none";
+      return;
+    }
+    photosEl.classList.add("rt-slideshow-active");
+    photosEl.classList.add("has-photos");
+    if (imgs.length > 1) photosEl.classList.add("multi");
+
+    // Each image needs to know its index for show()
+    var idx = 0;
+    function show(i) {
+      idx = ((i % imgs.length) + imgs.length) % imgs.length;
+      for (var j = 0; j < imgs.length; j++) {
+        imgs[j].classList.toggle("active", j === idx);
+      }
+      var counter = photosEl.querySelector(".rt-photo-counter");
+      if (counter) counter.textContent = (idx + 1) + " / " + imgs.length;
+    }
+
+    if (imgs.length > 1) {
+      var prev = document.createElement("button");
+      prev.type = "button";
+      prev.className = "rt-photo-nav rt-photo-prev";
+      prev.setAttribute("aria-label", "Previous photo");
+      prev.innerHTML = "&#8249;";
+
+      var next = document.createElement("button");
+      next.type = "button";
+      next.className = "rt-photo-nav rt-photo-next";
+      next.setAttribute("aria-label", "Next photo");
+      next.innerHTML = "&#8250;";
+
+      var counter = document.createElement("div");
+      counter.className = "rt-photo-counter";
+
+      photosEl.appendChild(prev);
+      photosEl.appendChild(next);
+      photosEl.appendChild(counter);
+
+      prev.addEventListener("click", function (e) { e.preventDefault(); show(idx - 1); });
+      next.addEventListener("click", function (e) { e.preventDefault(); show(idx + 1); });
+
+      // Keyboard: arrow keys when slideshow is focused
+      photosEl.tabIndex = 0;
+      photosEl.addEventListener("keydown", function (e) {
+        if (e.key === "ArrowLeft")  { e.preventDefault(); show(idx - 1); }
+        if (e.key === "ArrowRight") { e.preventDefault(); show(idx + 1); }
+      });
+
+      // Touch swipe
+      var startX = null, startY = null;
+      photosEl.addEventListener("touchstart", function (e) {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+      }, { passive: true });
+      photosEl.addEventListener("touchend", function (e) {
+        if (startX === null) return;
+        var dx = e.changedTouches[0].clientX - startX;
+        var dy = e.changedTouches[0].clientY - startY;
+        if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+          if (dx < 0) show(idx + 1); else show(idx - 1);
+        }
+        startX = startY = null;
+      });
+    }
+
+    show(0);
+  }
+
+  function teardownSlideshow() {
+    var photosEl = articleBody.querySelector(".article-photos.rt-slideshow-active");
+    if (!photosEl) return;
+    // Remove the chrome we added
+    var navs = photosEl.querySelectorAll(".rt-photo-nav, .rt-photo-counter");
+    for (var i = 0; i < navs.length; i++) navs[i].remove();
+    var imgs = photosEl.querySelectorAll(":scope > img.active");
+    for (var i = 0; i < imgs.length; i++) imgs[i].classList.remove("active");
+    photosEl.classList.remove("rt-slideshow-active", "has-photos", "multi");
+    photosEl.style.display = "";
+    photosEl.removeAttribute("tabindex");
   }
 
   // Expose
