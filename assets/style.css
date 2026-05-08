@@ -296,16 +296,19 @@ a:hover { color: var(--gold-light); }
   color: var(--gold-light);
 }
 
-/* ── Contact form modal ──────────────────────────────────── */
+/* ── Contact form modal ──────────────────────────────────────
+   Styled to match the age gate: dramatic dark blurred backdrop,
+   gold-bordered box with a gold glow, Cinzel headings + buttons. */
 .rt-contact-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(10, 10, 20, 0.97);
   z-index: 10000;
   display: none;
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  backdrop-filter: blur(6px);
 }
 .rt-contact-backdrop.open { display: flex; }
 
@@ -313,11 +316,11 @@ a:hover { color: var(--gold-light); }
   background: var(--card-bg);
   color: var(--text);
   border: 1px solid var(--gold-dark);
-  border-radius: var(--radius);
-  padding: 1.6rem 1.8rem;
+  border-radius: 16px;
+  padding: 44px 44px 36px;
   max-width: 520px;
   width: 100%;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 60px rgba(233, 196, 106, 0.12);
   font-family: var(--font-body);
   max-height: 90vh;
   overflow-y: auto;
@@ -326,79 +329,101 @@ a:hover { color: var(--gold-light); }
 .rt-contact-dialog h2 {
   font-family: var(--font-title);
   color: var(--gold);
-  margin: 0 0 0.4rem;
-  font-size: 1.4rem;
+  margin: 0 0 0.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   letter-spacing: 0.04em;
+  text-align: center;
 }
 
 .rt-contact-dialog p.muted {
   color: var(--text-muted);
-  font-size: 0.9rem;
-  margin: 0 0 1.1rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0 0 1.4rem;
+  text-align: center;
 }
 
 .rt-contact-dialog label {
   display: block;
-  margin: 0.7rem 0 0.25rem;
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--text);
-  letter-spacing: 0.02em;
+  margin: 0.85rem 0 0.3rem;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
 .rt-contact-dialog input,
 .rt-contact-dialog textarea {
   width: 100%;
-  padding: 0.55rem 0.75rem;
+  padding: 0.65rem 0.85rem;
   font-size: 0.95rem;
   font-family: var(--font-body);
   background: var(--deep-navy);
   border: 1px solid var(--card-border);
-  border-radius: 4px;
+  border-radius: 6px;
   color: var(--text);
   resize: vertical;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 .rt-contact-dialog input:focus,
 .rt-contact-dialog textarea:focus {
-  outline: 2px solid var(--gold);
-  outline-offset: 0;
-  border-color: var(--gold);
+  outline: none;
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 0 2px rgba(233, 196, 106, 0.18);
 }
 
 .rt-contact-dialog .rt-contact-actions {
   display: flex;
-  gap: 0.5rem;
-  justify-content: flex-end;
-  margin-top: 1.2rem;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 1.6rem;
 }
 
 .rt-contact-dialog button {
-  padding: 0.55rem 1.2rem;
-  border: 0;
-  border-radius: 4px;
+  padding: 13px 30px;
+  border-radius: 8px;
+  font-size: 0.95rem;
   font-weight: 700;
   cursor: pointer;
-  font-size: 0.92rem;
-  letter-spacing: 0.04em;
-  font-family: var(--font-body);
+  border: none;
+  font-family: var(--font-title);
+  letter-spacing: 0.06em;
+  transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
 }
-.rt-contact-dialog .rt-contact-cancel {
-  background: #444;
-  color: var(--text);
-}
-.rt-contact-dialog .rt-contact-cancel:hover { background: #555; }
+.rt-contact-dialog button:hover { transform: translateY(-2px); }
+
 .rt-contact-dialog .rt-contact-submit {
   background: var(--gold);
   color: var(--charcoal);
+  box-shadow: 0 4px 18px rgba(233, 196, 106, 0.3);
 }
-.rt-contact-dialog .rt-contact-submit:hover { background: var(--gold-light); }
-.rt-contact-dialog .rt-contact-submit:disabled { opacity: 0.6; cursor: wait; }
+.rt-contact-dialog .rt-contact-submit:hover {
+  box-shadow: 0 8px 28px rgba(233, 196, 106, 0.45);
+}
+.rt-contact-dialog .rt-contact-submit:disabled {
+  opacity: 0.5;
+  cursor: wait;
+  transform: none;
+}
+
+.rt-contact-dialog .rt-contact-cancel {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--card-border);
+}
+.rt-contact-dialog .rt-contact-cancel:hover {
+  border-color: var(--gold-dark);
+  color: var(--text);
+}
 
 .rt-contact-dialog .rt-contact-status {
-  margin-top: 0.6rem;
+  margin-top: 1rem;
   font-size: 0.88rem;
   color: var(--text-muted);
   min-height: 1.2em;
+  text-align: center;
 }
 .rt-contact-dialog .rt-contact-status.error { color: #e88; }
 .rt-contact-dialog .rt-contact-status.success { color: #6c6; }
