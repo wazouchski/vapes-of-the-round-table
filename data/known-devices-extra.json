@@ -1,0 +1,16 @@
+{
+  "devices": [
+    {
+      "name": "IO Hornet",
+      "manufacturer": "IO MFG",
+      "slug": "io-hornet",
+      "added_at": 1778274692154
+    },
+    {
+      "name": "Screwball",
+      "manufacturer": "Vapvana",
+      "slug": "screwball",
+      "added_at": 1778274692154
+    }
+  ]
+}
