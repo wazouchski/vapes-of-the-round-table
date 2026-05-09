@@ -3,7 +3,7 @@
 // Same modal serves three flows depending on the trigger button's mode:
 //   mode "general"     — "Send us a note" (roadmap page) → POST /api/contact
 //   mode "device"      — "Suggest a device" (compendium index) → POST /api/contact
-//   mode "sponsorship" — "Request a sponsorship" (sponsors page) → POST /api/sponsorship-request
+//   mode "sponsorship" — "Request a brand partnership" (sponsors page) → POST /api/sponsorship-request
 //
 // General + device land in the admin dashboard at /admin/contacts.
 // Sponsorship lands in /admin/sponsorships (separate lifecycle queue).
@@ -119,8 +119,8 @@
   function sponsorshipTemplate() {
     return [
       '<div class="rt-contact-dialog" role="dialog" aria-modal="true">',
-      '  <h2>Request a Sponsorship</h2>',
-      '  <p class="muted">Manufacturer or vendor interested in supporting the project? Tell us about your brand and we\'ll get back to you.</p>',
+      '  <h2>Request a Brand Partnership</h2>',
+      '  <p class="muted">Manufacturer or vendor interested in partnering with the project? Tell us about your brand and we\'ll get back to you.</p>',
       '  <label for="rt-s-company">Company / brand *</label>',
       '  <input type="text" id="rt-s-company" maxlength="200" required placeholder="e.g. DynaVap" />',
       '  <label for="rt-s-name">Your name *</label>',
@@ -134,8 +134,8 @@
       '  <label for="rt-s-tier">Interested tier (optional)</label>',
       '  <select id="rt-s-tier">',
       '    <option value="">Not sure yet</option>',
-      '    <option value="Founding Sponsor">Founding Sponsor</option>',
-      '    <option value="Compendium Sponsor">Compendium Sponsor</option>',
+      '    <option value="Founding Partner">Founding Partner</option>',
+      '    <option value="Compendium Partner">Compendium Partner</option>',
       '    <option value="Custom">Custom / let\'s discuss</option>',
       '  </select>',
       '  <label for="rt-s-products">What you make / sell (optional)</label>',
