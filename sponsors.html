@@ -121,7 +121,7 @@
       Reach out and we'll put together a proposal that fits your brand and budget.
       We keep it simple and transparent.
     </p>
-    <a href="mailto:guardiansoftheround@gmail.com" class="btn-gold">Get in Touch</a>
+    <a href="#" class="btn-gold" data-sponsorship-form>Request a Sponsorship</a>
   </div>
 
 </div>
@@ -135,5 +135,9 @@
 </footer>
 
 <script src="assets/age-gate.js"></script>
+<script src="assets/contact-form.js"></script>
+<script>
+  if (window.RoundTableContact) RoundTableContact.init({ trigger: "[data-sponsorship-form]", mode: "sponsorship" });
+</script>
 </body>
 </html>

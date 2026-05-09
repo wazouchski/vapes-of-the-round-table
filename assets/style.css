@@ -355,7 +355,8 @@ a:hover { color: var(--gold-light); }
 }
 
 .rt-contact-dialog input,
-.rt-contact-dialog textarea {
+.rt-contact-dialog textarea,
+.rt-contact-dialog select {
   width: 100%;
   padding: 0.65rem 0.85rem;
   font-size: 0.95rem;
@@ -368,7 +369,8 @@ a:hover { color: var(--gold-light); }
   transition: border-color 0.15s, box-shadow 0.15s;
 }
 .rt-contact-dialog input:focus,
-.rt-contact-dialog textarea:focus {
+.rt-contact-dialog textarea:focus,
+.rt-contact-dialog select:focus {
   outline: none;
   border-color: var(--gold-dark);
   box-shadow: 0 0 0 2px rgba(233, 196, 106, 0.18);

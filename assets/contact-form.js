@@ -1,12 +1,12 @@
-// Round Table — contact / device-suggestion modal.
+// Round Table — contact / device-suggestion / sponsorship-request modal.
 //
-// Same modal serves two flows depending on the trigger button's mode:
-//   mode "general" — "Send us a note" (roadmap page)
-//   mode "device"  — "Suggest a device" (compendium index)
+// Same modal serves three flows depending on the trigger button's mode:
+//   mode "general"     — "Send us a note" (roadmap page) → POST /api/contact
+//   mode "device"      — "Suggest a device" (compendium index) → POST /api/contact
+//   mode "sponsorship" — "Request a sponsorship" (sponsors page) → POST /api/sponsorship-request
 //
-// Both POST to /api/contact on the edits worker; submissions land in the
-// admin dashboard at /admin/contacts. Device suggestions are pre-formatted
-// so they're easy to spot in the list.
+// General + device land in the admin dashboard at /admin/contacts.
+// Sponsorship lands in /admin/sponsorships (separate lifecycle queue).
 //
 // Usage:
 //   <script src="assets/contact-form.js"></script>
@@ -56,7 +56,10 @@
 
   function openModal(mode) {
     currentMode = mode;
-    modalEl.innerHTML = mode === "device" ? deviceTemplate() : generalTemplate();
+    var tpl = generalTemplate;
+    if (mode === "device") tpl = deviceTemplate;
+    else if (mode === "sponsorship") tpl = sponsorshipTemplate;
+    modalEl.innerHTML = tpl();
     bindModalActions();
     modalEl.classList.add("open");
     setTimeout(function () {
@@ -113,6 +116,41 @@
     ].join("");
   }
 
+  function sponsorshipTemplate() {
+    return [
+      '<div class="rt-contact-dialog" role="dialog" aria-modal="true">',
+      '  <h2>Request a Sponsorship</h2>',
+      '  <p class="muted">Manufacturer or vendor interested in supporting the project? Tell us about your brand and we\'ll get back to you.</p>',
+      '  <label for="rt-s-company">Company / brand *</label>',
+      '  <input type="text" id="rt-s-company" maxlength="200" required placeholder="e.g. DynaVap" />',
+      '  <label for="rt-s-name">Your name *</label>',
+      '  <input type="text" id="rt-s-name" maxlength="200" required autocomplete="name" />',
+      '  <label for="rt-s-email">Email *</label>',
+      '  <input type="email" id="rt-s-email" maxlength="200" required autocomplete="email" />',
+      '  <label for="rt-s-phone">Phone (optional)</label>',
+      '  <input type="tel" id="rt-s-phone" maxlength="60" autocomplete="tel" />',
+      '  <label for="rt-s-website">Website (optional)</label>',
+      '  <input type="url" id="rt-s-website" maxlength="500" autocomplete="url" placeholder="https://..." />',
+      '  <label for="rt-s-tier">Interested tier (optional)</label>',
+      '  <select id="rt-s-tier">',
+      '    <option value="">Not sure yet</option>',
+      '    <option value="Founding Sponsor">Founding Sponsor</option>',
+      '    <option value="Compendium Sponsor">Compendium Sponsor</option>',
+      '    <option value="Custom">Custom / let\'s discuss</option>',
+      '  </select>',
+      '  <label for="rt-s-products">What you make / sell (optional)</label>',
+      '  <textarea id="rt-s-products" maxlength="1000" rows="2" placeholder="Brief description of products, target customer..."></textarea>',
+      '  <label for="rt-s-message">Message *</label>',
+      '  <textarea id="rt-s-message" maxlength="5000" rows="6" required placeholder="What you\'re hoping to do, timeline, anything else useful."></textarea>',
+      '  <div class="rt-contact-status" id="rt-c-status"></div>',
+      '  <div class="rt-contact-actions">',
+      '    <button type="button" class="rt-contact-cancel">Cancel</button>',
+      '    <button type="button" class="rt-contact-submit">Send request</button>',
+      '  </div>',
+      '</div>',
+    ].join("");
+  }
+
   function bindModalActions() {
     modalEl.querySelector(".rt-contact-cancel").addEventListener("click", closeModal);
     modalEl.querySelector(".rt-contact-submit").addEventListener("click", submitForm);
@@ -131,9 +169,59 @@
   }
 
   async function submitForm() {
+    var submitBtn = modalEl.querySelector(".rt-contact-submit");
+
+    // Sponsorship mode hits a different endpoint with a different shape.
+    if (currentMode === "sponsorship") {
+      var company = valOf("rt-s-company");
+      var contactName = valOf("rt-s-name");
+      var contactEmail = valOf("rt-s-email");
+      var phone = valOf("rt-s-phone");
+      var website = valOf("rt-s-website");
+      var tier = valOf("rt-s-tier");
+      var products = valOf("rt-s-products");
+      var sponMsg = valOf("rt-s-message");
+
+      if (!company) return setStatus("Company / brand is required.", "error");
+      if (!contactName) return setStatus("Your name is required.", "error");
+      if (!contactEmail) return setStatus("Email is required.", "error");
+      if (!sponMsg) return setStatus("Please enter a message.", "error");
+
+      submitBtn.disabled = true;
+      setStatus("Sending...");
+      try {
+        var sres = await fetch(apiBase + "/api/sponsorship-request", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            company_name: company,
+            contact_name: contactName,
+            contact_email: contactEmail,
+            contact_phone: phone || null,
+            website: website || null,
+            tier_interest: tier || null,
+            products: products || null,
+            message: sponMsg,
+          }),
+        });
+        var sdata = await sres.json().catch(function () { return {}; });
+        if (!sres.ok) {
+          setStatus("Error: " + (sdata.error || sres.status), "error");
+          submitBtn.disabled = false;
+          return;
+        }
+        setStatus("Thanks — we'll be in touch. (request #" + sdata.id + ")", "success");
+        setTimeout(closeModal, 2200);
+      } catch (e) {
+        setStatus("Network error: " + e.message, "error");
+        submitBtn.disabled = false;
+      }
+      return;
+    }
+
+    // General + device modes both hit /api/contact
     var name = valOf("rt-c-name") || null;
     var email = valOf("rt-c-email") || null;
-    var submitBtn = modalEl.querySelector(".rt-contact-submit");
     var message;
 
     if (currentMode === "device") {
