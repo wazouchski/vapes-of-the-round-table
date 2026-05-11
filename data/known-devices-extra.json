@@ -43,12 +43,6 @@
       "added_at": 1778477916799
     },
     {
-      "name": "Herborizer EVO",
-      "manufacturer": null,
-      "slug": "herborizer-evo",
-      "added_at": 1778504476546
-    },
-    {
       "name": "Vivant Ambit",
       "manufacturer": null,
       "slug": "vivant-ambit",
@@ -61,9 +55,9 @@
       "added_at": 1778504778372
     },
     {
-      "name": "Newvape Flowerpot",
-      "manufacturer": null,
-      "slug": "newvape-flowerpot",
+      "name": "Cannabis Hardware Flowerpot",
+      "manufacturer": "Cannabis Hardware (formerly Newvape)",
+      "slug": "cannabis-hardware-flowerpot",
       "added_at": 1778505042300
     },
     {
@@ -139,12 +133,6 @@
       "added_at": 1778505745416
     },
     {
-      "name": "Tafée Bowle",
-      "manufacturer": null,
-      "slug": "taf-e-bowle",
-      "added_at": 1778505770535
-    },
-    {
       "name": "Sticky Brick OG",
       "manufacturer": null,
       "slug": "sticky-brick-og",
@@ -185,12 +173,6 @@
       "manufacturer": null,
       "slug": "pax-era",
       "added_at": 1778505993438
-    },
-    {
-      "name": "Xmax V3Pro",
-      "manufacturer": null,
-      "slug": "xmax-v3pro",
-      "added_at": 1778506000752
     },
     {
       "name": "Tubo Evic",
