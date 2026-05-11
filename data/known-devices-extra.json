@@ -11,6 +11,12 @@
       "manufacturer": "Vapvana",
       "slug": "screwball",
       "added_at": 1778274692154
+    },
+    {
+      "name": "Tubo",
+      "manufacturer": null,
+      "slug": "tubo",
+      "added_at": 1778477115504
     }
   ]
 }
