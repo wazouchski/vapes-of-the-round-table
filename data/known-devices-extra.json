@@ -59,6 +59,12 @@
       "manufacturer": null,
       "slug": "palm-2-0",
       "added_at": 1778504778372
+    },
+    {
+      "name": "Newvape Flowerpot",
+      "manufacturer": null,
+      "slug": "newvape-flowerpot",
+      "added_at": 1778505042300
     }
   ]
 }
