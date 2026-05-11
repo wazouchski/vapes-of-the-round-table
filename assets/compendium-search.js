@@ -25,6 +25,13 @@
   var catalogMeta = Object.create(null);
   var catalogReady = false;
 
+  // Map from slug → full article body text (lowercased plain text).
+  // Loaded lazily on the FIRST search keystroke — keeps the page-load weight
+  // light for visitors who never use the search box. ~1.6 MB raw, ~250 KB
+  // gzipped via Cloudflare. Source: pipeline/build_search_index.py.
+  var bodyIndex = null;
+  var bodyIndexLoading = false;
+
   // ── 1. Build the searchable index from the catalog JSON ─────────────────
 
   function indexCatalog(devices) {
@@ -73,6 +80,40 @@
         }
         indexCatalog(devices);
         return devices.length;
+      });
+  }
+
+  /**
+   * Fetch the full body-text search index on demand. Called the first time
+   * the user types in the search box. Caches in `bodyIndex` for the rest
+   * of the session. Re-runs filterModels() once the index lands so the
+   * results update transparently.
+   */
+  function loadBodyIndex() {
+    if (bodyIndex !== null || bodyIndexLoading) return;
+    bodyIndexLoading = true;
+    fetch("../data/search-index.json", { cache: "default" })
+      .then(function (r) {
+        if (!r.ok) throw new Error("search-index fetch " + r.status);
+        return r.json();
+      })
+      .then(function (j) {
+        bodyIndex = j || {};
+        var n = Object.keys(bodyIndex).length;
+        // eslint-disable-next-line no-console
+        console.log("[smarter-search] body index loaded: " + n + " articles");
+        if (typeof window.filterModels === "function") {
+          window.filterModels();
+        }
+      })
+      .catch(function (err) {
+        // eslint-disable-next-line no-console
+        console.warn("[smarter-search] body index load failed: " + err);
+        // Mark as failed (empty object) so we don't keep retrying forever
+        bodyIndex = {};
+      })
+      .finally(function () {
+        bodyIndexLoading = false;
       });
   }
 
@@ -157,13 +198,20 @@
       var heatMatch = heatPick === "any" || meta.heat_type === heatPick;
       var eraMatch = eraPick === "any" || meta.era === eraPick;
 
-      // Text match: catalog index first, fall back to card body
+      // Text match — try in order of confidence:
+      //   1. Catalog metadata (name, manufacturer, specs_extracted, aliases)
+      //   2. Full article body text (only after lazy load completes)
+      //   3. Visible card body (always available, narrowest)
+      // Any hit wins; we OR the three sources.
       var textMatch = true;
       if (q.length > 0) {
-        if (catalogReady && catalogIndex[slug]) {
-          textMatch = catalogIndex[slug].indexOf(q) !== -1;
-        } else {
-          textMatch = card.textContent.toLowerCase().indexOf(q) !== -1;
+        textMatch = false;
+        if (catalogReady && catalogIndex[slug] && catalogIndex[slug].indexOf(q) !== -1) {
+          textMatch = true;
+        } else if (bodyIndex && bodyIndex[slug] && bodyIndex[slug].indexOf(q) !== -1) {
+          textMatch = true;
+        } else if (card.textContent.toLowerCase().indexOf(q) !== -1) {
+          textMatch = true;
         }
       }
 
@@ -195,6 +243,23 @@
     // The category-tab onclick still uses window.filterModels (legacy global),
     // so reassigning here picks up category clicks too.
     window.filterModels = smarterFilterModels;
+
+    // Lazy-load the full body-text index the FIRST time the user types in
+    // the search box. Most visitors never search, so we avoid the 250 KB
+    // (gzipped) fetch on page load.
+    var searchInput = document.getElementById("search");
+    if (searchInput) {
+      var triggerLoad = function () {
+        if (bodyIndex === null) loadBodyIndex();
+        // Remove ourselves — only fire once
+        searchInput.removeEventListener("input", triggerLoad);
+        searchInput.removeEventListener("focus", triggerLoad);
+      };
+      searchInput.addEventListener("input", triggerLoad);
+      // Also pre-warm when the user just clicks/focuses the box — they're
+      // about to type, fetch can finish in the background.
+      searchInput.addEventListener("focus", triggerLoad);
+    }
 
     loadCatalog().then(function (count) {
       updateSearchPlaceholder();
