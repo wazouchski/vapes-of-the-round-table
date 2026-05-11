@@ -91,6 +91,28 @@
       verification gate — you will be asked to verify your age on each visit.
     </p>
 
+    <h2>The Archivist (AI Companion)</h2>
+    <p>
+      The Round Table offers an optional AI companion called The Archivist. When you summon
+      it, your message is sent to our Cloudflare Worker, which retrieves matching wiki content
+      and forwards your message along with that retrieved context to Anthropic's Claude API.
+      Anthropic's processing is subject to their
+      <a href="https://www.anthropic.com/legal/privacy" target="_blank">privacy policy</a>.
+    </p>
+    <p>
+      We do not store your IP address in association with chat messages. Rate-limiting uses
+      a salted hash of your IP that is unkeyable once the salt rotates. A short conversation
+      history is kept in your browser's local storage on your device only — you can clear it
+      any time via the "Clear memory" link in the dock footer. We do not maintain long-term
+      server-side chat logs.
+    </p>
+    <p>
+      The Archivist is read-only. It cannot edit the wiki, send messages on your behalf, or
+      access any systems beyond the public archive. It is also not a medical professional —
+      questions touching on health or safety are redirected to a disclaimer. Do not rely on
+      The Archivist for medical, legal, or safety-critical decisions.
+    </p>
+
     <h2>Third-Party Links</h2>
     <p>
       Our site links to external websites including manufacturer sites, retailer pages, and community
