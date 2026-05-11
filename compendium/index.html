@@ -47,6 +47,52 @@
       margin-bottom: 24px;
     }
 
+    /* Smarter Search refine-chip rows (injected by compendium-search.js) */
+    .refine-chips {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      margin: -16px auto 16px;
+      max-width: 720px;
+      font-size: 0.82rem;
+    }
+    .refine-label {
+      color: var(--text-muted);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      margin-right: 4px;
+    }
+    .refine-chip {
+      padding: 5px 11px;
+      background: transparent;
+      border: 1px solid var(--card-border);
+      border-radius: 999px;
+      color: var(--text-muted);
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .refine-chip:hover {
+      border-color: var(--gold-dark);
+      color: var(--gold);
+    }
+    .refine-chip.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--deep-navy);
+      font-weight: 700;
+    }
+    @media (max-width: 540px) {
+      .refine-chips { font-size: 0.78rem; gap: 4px; }
+      .refine-chip { padding: 4px 8px; font-size: 0.74rem; }
+      .refine-label { font-size: 0.7rem; }
+    }
+
     .suggest-device-cta {
       text-align: center;
       margin: 0 auto 36px;
@@ -1203,6 +1249,7 @@ function filterModels() {
 
 <script src="../assets/age-gate.js"></script>
 <script src="../assets/contact-form.js"></script>
+<script src="../assets/compendium-search.js"></script>
 <script>
   if (window.RoundTableContact) RoundTableContact.init({ trigger: "[data-suggest-device]", mode: "device" });
 </script>
