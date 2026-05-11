@@ -71,6 +71,12 @@
       "manufacturer": null,
       "slug": "firewood-6",
       "added_at": 1778505062100
+    },
+    {
+      "name": "Herbalaire 2.1",
+      "manufacturer": null,
+      "slug": "herbalaire-2-1",
+      "added_at": 1778505079398
     }
   ]
 }
