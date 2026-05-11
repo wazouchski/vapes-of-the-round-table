@@ -23,6 +23,12 @@
       "manufacturer": null,
       "slug": "triihouse-peace",
       "added_at": 1778477778618
+    },
+    {
+      "name": "ThermoVape T1",
+      "manufacturer": null,
+      "slug": "thermovape-t1",
+      "added_at": 1778477848711
     }
   ]
 }
