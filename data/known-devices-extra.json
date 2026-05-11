@@ -155,6 +155,12 @@
       "manufacturer": null,
       "slug": "woodeez",
       "added_at": 1778505866187
+    },
+    {
+      "name": "I-Inhale",
+      "manufacturer": null,
+      "slug": "i-inhale",
+      "added_at": 1778505874485
     }
   ]
 }
