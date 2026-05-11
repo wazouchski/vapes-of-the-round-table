@@ -119,6 +119,12 @@
       "manufacturer": null,
       "slug": "stempod",
       "added_at": 1778505432187
+    },
+    {
+      "name": "Flowermate Mini",
+      "manufacturer": null,
+      "slug": "flowermate-mini",
+      "added_at": 1778505687553
     }
   ]
 }
