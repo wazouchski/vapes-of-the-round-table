@@ -47,6 +47,12 @@
       "manufacturer": null,
       "slug": "herborizer-evo",
       "added_at": 1778504476546
+    },
+    {
+      "name": "Vivant Ambit",
+      "manufacturer": null,
+      "slug": "vivant-ambit",
+      "added_at": 1778504554209
     }
   ]
 }
