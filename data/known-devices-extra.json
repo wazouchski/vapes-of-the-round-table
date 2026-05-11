@@ -35,6 +35,12 @@
       "manufacturer": null,
       "slug": "errlectric-concentration-station",
       "added_at": 1778477879505
+    },
+    {
+      "name": "Volcano Evo",
+      "manufacturer": null,
+      "slug": "volcano-evo",
+      "added_at": 1778477916799
     }
   ]
 }
