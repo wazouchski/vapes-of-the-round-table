@@ -1,16 +1,19 @@
-// Round Table — contact / device-suggestion / sponsorship-request / artisan modal.
+// Round Table — multi-mode submission modal.
 //
-// Same modal serves four flows depending on the trigger button's mode:
-//   mode "general"     — "Send us a note" (roadmap page) → POST /api/contact
+// Same modal serves five flows depending on the trigger button's mode:
+//   mode "general"     — "Send us a note" (general feedback) → POST /api/contact
 //   mode "device"      — "Suggest a device" (compendium index) → POST /api/contact
 //   mode "artisan"     — "Get Listed" (artisans page) → POST /api/contact
 //   mode "sponsorship" — "Request a brand partnership" (sponsors page) → POST /api/sponsorship-request
+//   mode "suggestion"  — "Drop an idea" (roadmap page) → POST /api/suggestion
 //
-// General, device, and artisan land in the admin dashboard at /admin/contacts.
-// Sponsorship lands in /admin/sponsorships (separate lifecycle queue).
+// general/device/artisan land in /admin/contacts (the contacts queue).
+// sponsorship lands in /admin/sponsorships.
+// suggestion lands in /admin/ideas (the suggestion-box tab).
+//
 // Device + artisan messages have structured prefixes ("Device suggestion:" /
-// "Artisan submission:") so the dashboard can detect them and show an
-// "Approve & create" button alongside the usual "Mark read" / "Archive".
+// "Artisan submission:") so the dashboard can detect them and show
+// "Approve & create" buttons. Ideas have their own table, no approval flow.
 //
 // Usage:
 //   <script src="assets/contact-form.js"></script>
@@ -64,6 +67,7 @@
     if (mode === "device") tpl = deviceTemplate;
     else if (mode === "sponsorship") tpl = sponsorshipTemplate;
     else if (mode === "artisan") tpl = artisanTemplate;
+    else if (mode === "suggestion") tpl = suggestionTemplate;
     modalEl.innerHTML = tpl();
     bindModalActions();
     modalEl.classList.add("open");
@@ -156,6 +160,37 @@
     ].join("");
   }
 
+  function suggestionTemplate() {
+    return [
+      '<div class="rt-contact-dialog" role="dialog" aria-modal="true">',
+      '  <h2>Drop an Idea in the Suggestion Box</h2>',
+      '  <p class="muted">Not a question or a complaint — a "you should build X" pitch. Lands in our backlog; we read every one. Approved ideas show up on the public roadmap.</p>',
+      '  <label for="rt-i-title">Idea (short headline) *</label>',
+      '  <input type="text" id="rt-i-title" maxlength="120" required placeholder="e.g. Add a session timer to each article" />',
+      '  <label for="rt-i-category">Category</label>',
+      '  <select id="rt-i-category">',
+      '    <option value="">Not sure</option>',
+      '    <option value="device">Device — a vape you want covered</option>',
+      '    <option value="feature">Feature — site/app functionality</option>',
+      '    <option value="design">Design — visual / UX feedback</option>',
+      '    <option value="content">Content — gap in articles or data</option>',
+      '    <option value="other">Other</option>',
+      '  </select>',
+      '  <label for="rt-i-description">Details *</label>',
+      '  <textarea id="rt-i-description" maxlength="5000" rows="6" required placeholder="Describe the idea. What problem does it solve, who benefits, what should it look like? More detail = more likely to ship."></textarea>',
+      '  <label for="rt-c-name">Your name (optional)</label>',
+      '  <input type="text" id="rt-c-name" maxlength="100" autocomplete="name" />',
+      '  <label for="rt-c-email">Email (optional, if you want a reply)</label>',
+      '  <input type="email" id="rt-c-email" maxlength="200" autocomplete="email" />',
+      '  <div class="rt-contact-status" id="rt-c-status"></div>',
+      '  <div class="rt-contact-actions">',
+      '    <button type="button" class="rt-contact-cancel">Cancel</button>',
+      '    <button type="button" class="rt-contact-submit">Drop in box</button>',
+      '  </div>',
+      '</div>',
+    ].join("");
+  }
+
   function artisanTemplate() {
     return [
       '<div class="rt-contact-dialog" role="dialog" aria-modal="true">',
@@ -203,6 +238,47 @@
 
   async function submitForm() {
     var submitBtn = modalEl.querySelector(".rt-contact-submit");
+
+    // Suggestion (ideas) mode hits its own endpoint with its own shape.
+    if (currentMode === "suggestion") {
+      var iTitle = valOf("rt-i-title");
+      var iDescription = valOf("rt-i-description");
+      var iCategory = valOf("rt-i-category");
+      var iName = valOf("rt-c-name") || null;
+      var iEmail = valOf("rt-c-email") || null;
+
+      if (!iTitle) return setStatus("Idea headline is required.", "error");
+      if (!iDescription) return setStatus("Details are required.", "error");
+
+      submitBtn.disabled = true;
+      setStatus("Submitting...");
+      try {
+        var ires = await fetch(apiBase + "/api/suggestion", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            title: iTitle,
+            description: iDescription,
+            category: iCategory || null,
+            submitter_name: iName,
+            submitter_email: iEmail,
+            page_url: window.location.href,
+          }),
+        });
+        var idata = await ires.json().catch(function () { return {}; });
+        if (!ires.ok) {
+          setStatus("Error: " + (idata.error || ires.status), "error");
+          submitBtn.disabled = false;
+          return;
+        }
+        setStatus("Thanks — idea #" + idata.id + " landed in the box.", "success");
+        setTimeout(closeModal, 1800);
+      } catch (e) {
+        setStatus("Network error: " + e.message, "error");
+        submitBtn.disabled = false;
+      }
+      return;
+    }
 
     // Sponsorship mode hits a different endpoint with a different shape.
     if (currentMode === "sponsorship") {
