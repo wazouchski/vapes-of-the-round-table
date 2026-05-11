@@ -1,12 +1,16 @@
-// Round Table — contact / device-suggestion / sponsorship-request modal.
+// Round Table — contact / device-suggestion / sponsorship-request / artisan modal.
 //
-// Same modal serves three flows depending on the trigger button's mode:
+// Same modal serves four flows depending on the trigger button's mode:
 //   mode "general"     — "Send us a note" (roadmap page) → POST /api/contact
 //   mode "device"      — "Suggest a device" (compendium index) → POST /api/contact
+//   mode "artisan"     — "Get Listed" (artisans page) → POST /api/contact
 //   mode "sponsorship" — "Request a brand partnership" (sponsors page) → POST /api/sponsorship-request
 //
-// General + device land in the admin dashboard at /admin/contacts.
+// General, device, and artisan land in the admin dashboard at /admin/contacts.
 // Sponsorship lands in /admin/sponsorships (separate lifecycle queue).
+// Device + artisan messages have structured prefixes ("Device suggestion:" /
+// "Artisan submission:") so the dashboard can detect them and show an
+// "Approve & create" button alongside the usual "Mark read" / "Archive".
 //
 // Usage:
 //   <script src="assets/contact-form.js"></script>
@@ -59,6 +63,7 @@
     var tpl = generalTemplate;
     if (mode === "device") tpl = deviceTemplate;
     else if (mode === "sponsorship") tpl = sponsorshipTemplate;
+    else if (mode === "artisan") tpl = artisanTemplate;
     modalEl.innerHTML = tpl();
     bindModalActions();
     modalEl.classList.add("open");
@@ -151,6 +156,34 @@
     ].join("");
   }
 
+  function artisanTemplate() {
+    return [
+      '<div class="rt-contact-dialog" role="dialog" aria-modal="true">',
+      '  <h2>Get Listed: Trusted Artisan</h2>',
+      '  <p class="muted">Cottage vendor, maker, or small-batch craftsperson in the DHV space? Tell us about your shop. We curate based on community reputation — approved listings appear on the Trusted Artisans page.</p>',
+      '  <label for="rt-a-name">Artisan / shop name *</label>',
+      '  <input type="text" id="rt-a-name" maxlength="120" required placeholder="e.g. Muddy River Workshop" />',
+      '  <label for="rt-a-subtitle">Subtitle / specialty *</label>',
+      '  <input type="text" id="rt-a-subtitle" maxlength="160" required placeholder="e.g. Wooden Trays, Stems &amp; Accessories" />',
+      '  <label for="rt-a-summary">Short description (1-3 sentences) *</label>',
+      '  <textarea id="rt-a-summary" maxlength="700" rows="4" required placeholder="What you make, where you make it, what sets you apart. The text that will appear on your card."></textarea>',
+      '  <label for="rt-a-link">Shop URL *</label>',
+      '  <input type="url" id="rt-a-link" maxlength="500" required placeholder="https://yourshop.com" />',
+      '  <label for="rt-a-link-label">Link button text (optional)</label>',
+      '  <input type="text" id="rt-a-link-label" maxlength="40" placeholder="Default: &quot;Visit Shop &rarr;&quot;" />',
+      '  <label for="rt-c-name">Your name (optional)</label>',
+      '  <input type="text" id="rt-c-name" maxlength="100" autocomplete="name" />',
+      '  <label for="rt-c-email">Email (so we can follow up)</label>',
+      '  <input type="email" id="rt-c-email" maxlength="200" autocomplete="email" />',
+      '  <div class="rt-contact-status" id="rt-c-status"></div>',
+      '  <div class="rt-contact-actions">',
+      '    <button type="button" class="rt-contact-cancel">Cancel</button>',
+      '    <button type="button" class="rt-contact-submit">Submit for review</button>',
+      '  </div>',
+      '</div>',
+    ].join("");
+  }
+
   function bindModalActions() {
     modalEl.querySelector(".rt-contact-cancel").addEventListener("click", closeModal);
     modalEl.querySelector(".rt-contact-submit").addEventListener("click", submitForm);
@@ -219,7 +252,7 @@
       return;
     }
 
-    // General + device modes both hit /api/contact
+    // General, device, and artisan modes all hit /api/contact
     var name = valOf("rt-c-name") || null;
     var email = valOf("rt-c-email") || null;
     var message;
@@ -232,13 +265,33 @@
         setStatus("Device name is required.", "error");
         return;
       }
-      var lines = ["Device suggestion: " + deviceName];
-      if (maker) lines.push("Manufacturer: " + maker);
+      var dLines = ["Device suggestion: " + deviceName];
+      if (maker) dLines.push("Manufacturer: " + maker);
       if (notes) {
-        lines.push("");
-        lines.push(notes);
+        dLines.push("");
+        dLines.push(notes);
       }
-      message = lines.join("\n");
+      message = dLines.join("\n");
+    } else if (currentMode === "artisan") {
+      var aName = valOf("rt-a-name");
+      var aSubtitle = valOf("rt-a-subtitle");
+      var aSummary = valOf("rt-a-summary");
+      var aLink = valOf("rt-a-link");
+      var aLinkLabel = valOf("rt-a-link-label");
+      if (!aName)     return setStatus("Artisan / shop name is required.", "error");
+      if (!aSubtitle) return setStatus("Subtitle / specialty is required.", "error");
+      if (!aSummary)  return setStatus("Short description is required.", "error");
+      if (!aLink)     return setStatus("Shop URL is required.", "error");
+      // Worker parses this format in worker/src/artisan.ts::parseArtisanSubmission
+      var aLines = [
+        "Artisan submission: " + aName,
+        "Subtitle: " + aSubtitle,
+        "Link: " + aLink,
+      ];
+      if (aLinkLabel) aLines.push("Link Label: " + aLinkLabel);
+      aLines.push("");
+      aLines.push(aSummary);
+      message = aLines.join("\n");
     } else {
       message = valOf("rt-c-message");
       if (!message) {
@@ -267,9 +320,14 @@
         submitBtn.disabled = false;
         return;
       }
-      var successMsg = currentMode === "device"
-        ? "Thanks — device added to the queue. (#" + data.id + ")"
-        : "Thanks — we got it. (#" + data.id + ")";
+      var successMsg;
+      if (currentMode === "device") {
+        successMsg = "Thanks — device added to the queue. (#" + data.id + ")";
+      } else if (currentMode === "artisan") {
+        successMsg = "Thanks — your listing is in for review. (#" + data.id + ")";
+      } else {
+        successMsg = "Thanks — we got it. (#" + data.id + ")";
+      }
       setStatus(successMsg, "success");
       setTimeout(closeModal, 1800);
     } catch (e) {

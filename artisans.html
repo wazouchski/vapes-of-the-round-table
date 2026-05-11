@@ -136,7 +136,7 @@
       We curate this directory based on community reputation.
       Featured and donor-supported listings available for vetted sellers.
     </p>
-    <a href="mailto:guardiansoftheround@gmail.com" class="btn-gold">Get Listed</a>
+    <a href="#" class="btn-gold" data-artisan-form>Get Listed</a>
   </div>
 
 </div>
@@ -148,5 +148,9 @@
 </footer>
 
 <script src="assets/age-gate.js"></script>
+<script src="assets/contact-form.js"></script>
+<script>
+  if (window.RoundTableContact) RoundTableContact.init({ trigger: "[data-artisan-form]", mode: "artisan" });
+</script>
 </body>
 </html>
