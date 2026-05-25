@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How-To Videos — The Round Table</title>
+  <meta name="description" content="Short walkthroughs of the four community-contribution flows on The Round Table: in-page editing, submitting a review, suggesting a device, and getting listed as an artisan.">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .tutorials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .tutorial-card {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+      width: 100%;
+    }
+    .tutorial-card:hover,
+    .tutorial-card:focus-visible {
+      border-color: var(--gold, #d4af37);
+      background: rgba(212, 175, 55, 0.05);
+      outline: none;
+    }
+    .tutorial-card:active {
+      transform: translateY(1px);
+    }
+    .tutorial-card h2 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.15rem;
+    }
+    .tutorial-card p {
+      margin: 0 0 1rem 0;
+      color: var(--text-muted, #aaa);
+      flex: 1;
+    }
+    .tutorial-card .play-cue {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--gold, #d4af37);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .lightbox.open {
+      display: flex;
+    }
+    .lightbox-panel {
+      max-width: 480px;
+      width: 100%;
+      background: #1a1a1a;
+      border: 1px solid var(--gold, #d4af37);
+      border-radius: 12px;
+      padding: 2rem;
+      position: relative;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 0.75rem;
+      right: 1rem;
+      background: none;
+      border: 0;
+      color: #aaa;
+      font-size: 1.75rem;
+      line-height: 1;
+      cursor: pointer;
+      padding: 0.25rem 0.5rem;
+    }
+    .lightbox-close:hover { color: var(--gold, #d4af37); }
+    .lightbox h3 {
+      margin: 0 0 0.5rem 0;
+      color: var(--gold, #d4af37);
+      padding-right: 2rem;
+    }
+    .lightbox p {
+      margin: 0 0 1.5rem 0;
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .lightbox-link {
+      display: block;
+      padding: 0.85rem 1rem;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--gold, #d4af37);
+      border-radius: 6px;
+      color: var(--gold, #d4af37);
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      word-break: break-all;
+      font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+    }
+    .lightbox-link:hover {
+      background: rgba(212, 175, 55, 0.2);
+    }
+    .lightbox-note {
+      margin-top: 1rem !important;
+      font-size: 0.85rem !important;
+      color: #888 !important;
+    }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSX1RMMMSL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSX1RMMMSL');
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">The Round Table</a>
+  <ul class="nav-links">
+    <li><a href="reviews/index.html">Reviews</a></li>
+    <li><a href="compendium/index.html">Compendium</a></li>
+    <li><a href="artisans.html">Artisans</a></li>
+    <li><a href="sponsors.html">Brand Partners</a></li>
+    <li><a href="https://buymeacoffee.com/theroundtable" target="_blank" class="nav-bmc">☕ Support Us</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <h1>How-To Videos</h1>
+    <div class="page-divider"></div>
+    <p>
+      Short walkthroughs of the four ways the community can contribute to
+      The Round Table. Each is a couple of minutes — no fluff. Videos open
+      on YouTube (they're age-restricted, so they can't play inline here).
+    </p>
+  </div>
+
+  <div class="terms-body">
+
+    <div class="tutorials-grid">
+
+      <button type="button"
+              class="tutorial-card"
+              data-video-title="How to edit a page"
+              data-video-url="https://youtu.be/ji57QGNBt3U">
+        <h2>How to edit a page</h2>
+        <p>Click <em>Suggest an Edit</em> on any compendium article. The body becomes editable in place — text and photos.</p>
+        <span class="play-cue">▶ Watch on YouTube</span>
+      </button>
+
+      <button type="button"
+              class="tutorial-card"
+              data-video-title="How to submit a user review"
+              data-video-url="https://youtu.be/z6xgDIcnNv0">
+        <h2>How to submit a user review</h2>
+        <p>Share your own take on a vaporizer. Approved reviews land in the Community Reviews section alongside our panel reviews.</p>
+        <span class="play-cue">▶ Watch on YouTube</span>
+      </button>
+
+      <button type="button"
+              class="tutorial-card"
+              data-video-title="How to add a device"
+              data-video-url="https://youtu.be/XLbuHljkTLk">
+        <h2>How to add a device</h2>
+        <p>Don't see your vaporizer? Suggest it. Approved devices get their own article, ready for community contributions.</p>
+        <span class="play-cue">▶ Watch on YouTube</span>
+      </button>
+
+      <button type="button"
+              class="tutorial-card"
+              data-video-title="How to get listed as an artisan"
+              data-video-url="https://youtu.be/_CZAizOfLEY">
+        <h2>How to get listed as an artisan</h2>
+        <p>Cottage vendors, makers, and small-batch craftspeople: here's how to apply for a spot in the Trusted Artisans directory.</p>
+        <span class="play-cue">▶ Watch on YouTube</span>
+      </button>
+
+    </div>
+
+    <h2 style="margin-top:3rem;">Questions?</h2>
+    <p>
+      Drop us a line at
+      <a href="mailto:guardiansoftheround@gmail.com">guardiansoftheround@gmail.com</a>
+      or read the
+      <a href="contribute.html" style="color:var(--gold);">contributor guidelines</a>
+      for the full rundown of how submissions are reviewed.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- Lightbox -->
+<div id="video-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="video-lightbox-title" aria-hidden="true">
+  <div class="lightbox-panel">
+    <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+    <h3 id="video-lightbox-title"></h3>
+    <p>This video is age-restricted on YouTube and can't play inline. Open it on YouTube to watch:</p>
+    <a id="video-lightbox-link" class="lightbox-link" href="#" target="_blank" rel="noopener"></a>
+    <p class="lightbox-note">You'll need to be signed in to YouTube to confirm your age.</p>
+  </div>
+</div>
+
+<footer>
+  <p>
+    &copy; 2026 The Round Table
+    &nbsp;&middot;&nbsp; <a href="https://buymeacoffee.com/theroundtable" target="_blank">☕ Buy Us a Coffee</a>
+    &nbsp;&middot;&nbsp; <a href="contribute.html">Contribute</a>
+    &nbsp;&middot;&nbsp; <a href="transparency.html">How AI was used</a>
+    &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a>
+    &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy Policy</a>
+    &nbsp;&middot;&nbsp; <a href="sponsors.html">Become a Brand Partner</a>
+  </p>
+</footer>
+
+<script src="assets/age-gate.js"></script>
+<script>
+(function() {
+  var lb = document.getElementById('video-lightbox');
+  var lbTitle = document.getElementById('video-lightbox-title');
+  var lbLink = document.getElementById('video-lightbox-link');
+  var lbClose = lb.querySelector('.lightbox-close');
+  var lastTrigger = null;
+
+  function open(triggerEl) {
+    var title = triggerEl.getAttribute('data-video-title') || 'Watch on YouTube';
+    var url = triggerEl.getAttribute('data-video-url') || '#';
+    lbTitle.textContent = title;
+    lbLink.textContent = url;
+    lbLink.href = url;
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    lastTrigger = triggerEl;
+    // Focus the link so Enter opens it immediately.
+    setTimeout(function() { lbLink.focus(); }, 0);
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    if (lastTrigger) { lastTrigger.focus(); lastTrigger = null; }
+  }
+
+  document.querySelectorAll('.tutorial-card').forEach(function(card) {
+    card.addEventListener('click', function(e) { e.preventDefault(); open(card); });
+  });
+
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', function(e) {
+    // Click on backdrop (not on the panel) closes.
+    if (e.target === lb) close();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) close();
+  });
+})();
+</script>
+</body>
+</html>

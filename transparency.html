@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How AI was used — The Round Table</title>
+  <meta name="description" content="Plain language about how AI was used to bootstrap the compendium, what's been human-only since, and how we treat the privacy of the original forum posters.">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .transparency-body h2 { margin-top: 2.5rem; }
+    .transparency-body h3 { margin-top: 1.5rem; color: var(--gold, #d4af37); }
+    .transparency-body table {
+      width: 100%; margin: 1rem 0; border-collapse: collapse;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(212,175,55,0.2);
+    }
+    .transparency-body th, .transparency-body td {
+      padding: 0.6rem 0.9rem;
+      border-bottom: 1px solid rgba(212,175,55,0.15);
+      text-align: left;
+      vertical-align: top;
+    }
+    .transparency-body th {
+      background: rgba(212,175,55,0.08);
+      color: var(--gold, #d4af37);
+      font-weight: 600;
+    }
+    .transparency-body tr:last-child td { border-bottom: 0; }
+    .lede {
+      font-style: italic;
+      color: var(--text-muted, #aaa);
+      margin: -0.5rem 0 1.5rem 0;
+    }
+    .callout {
+      border-left: 3px solid var(--gold, #d4af37);
+      background: rgba(212,175,55,0.04);
+      padding: 0.9rem 1.2rem;
+      margin: 1.25rem 0;
+    }
+    .callout p:last-child { margin-bottom: 0; }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSX1RMMMSL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-TSX1RMMMSL');
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="index.html" class="nav-logo">The Round Table</a>
+  <ul class="nav-links">
+    <li><a href="reviews/index.html">Reviews</a></li>
+    <li><a href="compendium/index.html">Compendium</a></li>
+    <li><a href="artisans.html">Artisans</a></li>
+    <li><a href="sponsors.html">Brand Partners</a></li>
+    <li><a href="https://buymeacoffee.com/theroundtable" target="_blank" class="nav-bmc">☕ Support Us</a></li>
+  </ul>
+</nav>
+
+<div class="page-wrap">
+
+  <div class="page-header">
+    <h1>How AI was used at The Round Table</h1>
+    <div class="page-divider"></div>
+    <p class="lede">A one-time job. Now finished.</p>
+  </div>
+
+  <div class="transparency-body">
+
+    <p>
+      We want to be plain about this, because "AI slop" is a fair concern to raise
+      and we'd rather lay it out than dance around it.
+    </p>
+
+    <h2>The honest summary</h2>
+
+    <p>
+      The compendium was bootstrapped by AI. <strong>That phase is complete.</strong>
+      Every article you see was AI-drafted, then <strong>reviewed and edited by a
+      human</strong> before it shipped to the live site. Every change made since
+      shipping has been made by a human community member.
+    </p>
+
+    <ul>
+      <li><strong>Phase 1 (complete):</strong> Claude Opus drafted one article per
+        device from the archived FuckCombustion forum corpus. A human reviewer read
+        each draft, edited it where it needed editing, and pushed it live. Drafts
+        that didn't pass review didn't ship. We are not regenerating articles.</li>
+      <li><strong>Phase 2 (now and ongoing):</strong> Humans only. Community edits,
+        photo contributions, device suggestions, reviews, artisan additions —
+        every word and image added from here is written by a person who clicks
+        through our submission flow.</li>
+    </ul>
+
+    <p>The AI gave us a draft. A human shipped it. The community owns it from here.</p>
+
+    <h2>Why we used AI for the seed</h2>
+
+    <p>
+      FuckCombustion ran for fifteen years before going dark. That's a vast
+      archive of accumulated knowledge — temperature sweet spots, maintenance
+      tricks, stem compatibility, which device revisions have which quirks —
+      written by people who actually used these vapes for years. When the site
+      went offline, that knowledge was effectively lost. No human team was
+      realistically going to read 22,000+ archived threads from scratch and turn
+      them into something searchable.
+    </p>
+
+    <p>
+      So we built a one-time pipeline. <strong>It ran between April 9 and May 11,
+      2026</strong> — roughly a month of active scraping, then done. Every page
+      our pipeline fetched came from the <strong>Wayback Machine</strong>
+      (<code>web.archive.org</code>) and the Internet Archive's public CDX index.
+      <strong>Our scraper never made a single HTTP request to a
+      fuckcombustion.com server.</strong> The FC URLs in our data are lookup
+      keys against the public archive — not destinations. If you've heard claims
+      that this project had anything to do with FC going down, those claims are
+      not based on what actually happened: we hit the Internet Archive's mirror,
+      not FC. If you want to audit the scraping code yourself, email
+      <a href="mailto:guardiansoftheround@gmail.com">guardiansoftheround@gmail.com</a>
+      and we'll share it.
+    </p>
+
+    <p>
+      Once we had the archived threads, the pipeline grouped them by device and
+      fed the aggregated posts to Claude Opus with one instruction:
+      <em>summarize what the community actually said, not invent things</em>.
+      The model's output was a draft — never the published article. A human
+      reviewer read every draft, cut hallucinations, fixed the model's
+      misreadings, and edited until the article was accurate. Only then did it
+      ship. That review work is what makes this the seed of a wiki and not an
+      AI content dump.
+    </p>
+
+    <p>
+      The choice was: lose the FC community's knowledge entirely, or AI-draft
+      + human-edit one synthesis pass to preserve it. We chose the second.
+      That pass is now complete.
+    </p>
+
+    <h2>What happens from here</h2>
+
+    <p>
+      Every article has a <strong>Suggest an Edit</strong> link. Click it, the
+      body becomes editable text and photos, your submission goes to a
+      moderation queue, and approved edits land on the live site within
+      minutes — committed to the site's public git history under your
+      submitted display name. No AI rewrites. No AI passes "to clean up."
+      Human edits stay as you wrote them.
+    </p>
+
+    <p>
+      If a new device emerges that we don't have an article for, we'll add it
+      the way you'd add any new entry to any wiki: a human writes a stub,
+      the community fills it in, contributors get credited.
+    </p>
+
+    <h2>Why we don't credit individual FC forum users</h2>
+
+    <p>This one matters and we want to be plain about it.</p>
+
+    <p>
+      The FC archive is publicly browsable on the Wayback Machine, including
+      every poster's username. We could, in theory, list every FC user whose
+      posts went into the synthesis of each article.
+      <strong>We chose not to, on purpose.</strong>
+    </p>
+
+    <p>
+      Those users posted to a niche forum with forum-scale audience
+      expectations, often under pseudonyms they used for years and never
+      offered up for indexing or republication elsewhere. They didn't consent
+      to being credited on a wiki. Aggregating their names across articles —
+      "thanks to user X for sharing on threads Y and Z" — would drag their
+      forum identity into a different context than the one they participated in.
+    </p>
+
+    <p>
+      So we treat the FC archive the way you might treat a long Reddit thread
+      or a private mailing list quoted in good faith: we use the public
+      information, we point people back to the original source on Wayback so
+      anyone can read the discussion in context, but we don't lift names out
+      of that context into a roster.
+    </p>
+
+    <div class="callout">
+      <p>
+        <strong>Removal policy.</strong>
+        If you contributed to FuckCombustion and would prefer specific content
+        not be used in our synthesis, email
+        <a href="mailto:guardiansoftheround@gmail.com">guardiansoftheround@gmail.com</a>
+        with the article URL and a description of your concern. We will review
+        every request in good faith and remove or revise the article as
+        appropriate. We do not require proof of authorship to honor a request.
+      </p>
+    </div>
+
+    <p>
+      All source material we drew from was publicly-archived forum content.
+      We are not the original publisher of any of that material, and we do
+      not claim copyright over what the community discussed.
+    </p>
+
+    <h2>What we <em>do</em> credit: post-synthesis contributors</h2>
+
+    <p>
+      People who submit edits and additions through The Round Table know
+      up-front their contribution lands on the wiki. That's a different
+      consent context. Every approved community edit is already committed
+      under the submitter's display name in the site's public git history —
+      so the credit exists today, it's just in the commit log rather than
+      on the article page.
+    </p>
+
+    <p>
+      We're working on surfacing that more visibly: a per-article
+      "Contributors" strip near the footer of each compendium page, listing
+      every person who's made an approved edit to that article by their
+      submitted display name and the date of their first contribution. Opt
+      out is always available — submit with the name field blank and you'll
+      appear as "Anonymous contributor."
+    </p>
+
+    <h2>What models we used</h2>
+
+    <table>
+      <thead>
+        <tr><th>Use</th><th>Model</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Article drafting</td>
+          <td>Claude Opus 4.6 (Anthropic)</td>
+          <td>Phase 1 — complete</td>
+        </tr>
+        <tr>
+          <td>Thread classification</td>
+          <td>Claude Haiku 4.5 (Anthropic)</td>
+          <td>Phase 1 — complete</td>
+        </tr>
+        <tr>
+          <td>Device-metadata extraction</td>
+          <td>Claude Haiku 4.5 (Anthropic)</td>
+          <td>Phase 1 — complete</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      The classification and metadata pipelines may run again
+      <em>only</em> if new archived data is ingested — never to rewrite
+      existing articles.
+    </p>
+
+    <h2>What's <em>not</em> AI, never was</h2>
+
+    <ul>
+      <li><strong>Round Table Reviews</strong> — panel reviews from the
+        Highly Accessible Podcast crew. Five reviewers, one vaporizer, two
+        weeks each, then we compare notes.</li>
+      <li><strong>Community Reviews</strong> — every word is from the person
+        who submitted it.</li>
+      <li><strong>Trusted Artisans Directory</strong> — vetted by community
+        trust.</li>
+      <li><strong>Brand Partners</strong> — human-negotiated, always
+        disclosed, restricted to device compendium pages (never reviews).</li>
+      <li><strong>Newsletter, Honorable Mentions, Roadmap, Moderation,
+        Approval decisions</strong> — all human.</li>
+    </ul>
+
+    <h2>Push back if you see slop</h2>
+
+    <p>
+      If an article reads as generic, hallucinated, or just wrong, the
+      <strong>Suggest an Edit</strong> link is right there at the top of
+      every page. Or email
+      <a href="mailto:guardiansoftheround@gmail.com">guardiansoftheround@gmail.com</a>.
+      The site's git history is public; nothing is a black box.
+    </p>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>
+    &copy; 2026 The Round Table
+    &nbsp;&middot;&nbsp; <a href="https://buymeacoffee.com/theroundtable" target="_blank">☕ Buy Us a Coffee</a>
+    &nbsp;&middot;&nbsp; <a href="contribute.html">Contribute</a>
+    &nbsp;&middot;&nbsp; <a href="terms.html">Terms &amp; Credits</a>
+    &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy Policy</a>
+    &nbsp;&middot;&nbsp; <a href="sponsors.html">Become a Brand Partner</a>
+  </p>
+</footer>
+
+<script src="assets/age-gate.js"></script>
+</body>
+</html>
