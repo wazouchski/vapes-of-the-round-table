@@ -13,6 +13,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # Fails the workflow before anything is published if the generated
+      # catalog has drifted out of sync with the compendium articles.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Verify the device catalog is in sync
+        run: python3 tools/build_catalog.py --check
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         env:
@@ -29,4 +39,5 @@ jobs:
             **/.git*/**
             **/node_modules/**
             .github/**
+            tools/**
             README.md
