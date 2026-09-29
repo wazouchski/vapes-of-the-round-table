@@ -23,6 +23,11 @@ jobs:
       - name: Verify the device catalog is in sync
         run: python3 tools/build_catalog.py --check
 
+      # Catches an article edited without rebuilding the search index, which
+      # would leave the new text unfindable by visitors.
+      - name: Verify the search index is in sync
+        run: python3 tools/build_search_index.py --check
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         env:
