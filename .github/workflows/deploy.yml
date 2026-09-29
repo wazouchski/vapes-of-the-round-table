@@ -45,4 +45,5 @@ jobs:
             **/node_modules/**
             .github/**
             tools/**
+            docs/**
             README.md
