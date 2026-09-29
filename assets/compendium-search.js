@@ -28,7 +28,7 @@
   // Map from slug → full article body text (lowercased plain text).
   // Loaded lazily on the FIRST search keystroke — keeps the page-load weight
   // light for visitors who never use the search box. ~1.6 MB raw, ~250 KB
-  // gzipped via Cloudflare. Source: pipeline/build_search_index.py.
+  // gzipped via Cloudflare. Source: tools/build_search_index.py.
   var bodyIndex = null;
   var bodyIndexLoading = false;
 

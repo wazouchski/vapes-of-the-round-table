@@ -38,13 +38,16 @@ Just open `index.html` in a browser — no build step needed.
 
 ## Adding Wiki Articles
 
-Add the article HTML to `compendium/`, then regenerate the catalog:
+Add the article HTML to `compendium/`, then regenerate both generated files:
 
 ```bash
 python3 tools/build_catalog.py
+python3 tools/build_search_index.py
 ```
 
-Commit both the new article and the regenerated `data/device-catalog.json`.
+Commit the new article together with the regenerated `data/device-catalog.json`
+and `data/search-index.json`. Editing an existing article needs the same two
+commands — otherwise the new text is not findable by the site search.
 
 ## The device catalog
 
@@ -59,6 +62,20 @@ python3 tools/build_catalog.py --check    # verify only, exits 1 on drift
 
 `--check` runs in CI before deploy, so a push that leaves the catalog out of sync
 with the articles cannot reach production.
+
+## The search index
+
+`data/search-index.json` maps each article slug to its flattened body text. It
+is what `assets/compendium-search.js` loads on the first search keystroke, so a
+visitor can match against article prose and not only device names.
+
+```bash
+python3 tools/build_search_index.py           # regenerate
+python3 tools/build_search_index.py --check   # verify only, exits 1 on drift
+```
+
+This also runs in CI before deploy, so an article edit that skips the rebuild
+fails the build rather than shipping text nobody can search for.
 
 ### What the generator guarantees
 
